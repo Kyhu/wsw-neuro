@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/ISE/hdmi/mux.tfi -lib work /home/kyhu/Workspace/ISE/hdmi//mux.v -module mux -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

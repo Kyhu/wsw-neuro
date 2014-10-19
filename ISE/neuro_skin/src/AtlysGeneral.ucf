@@ -1,0 +1,207 @@
+# This file is a general .ucf for Atlys rev C board
+# To use it in a project:
+# - remove or comment the lines corresponding to unused pins
+# - rename the used signals according to the project
+
+
+CONFIG VCCAUX = 3.3;
+
+#
+# Constraint for RX0
+#
+#NET "dvi_rx0/rxclk" TNM_NET = DVI_CLOCK0;
+#TIMESPEC TS_DVI_CLOCK0 = PERIOD "DVI_CLOCK0" 100 MHz HIGH 50%;
+
+#
+# Constraint for RX1
+#
+NET "dvi_rx1/rxclk" TNM_NET = DVI_CLOCK1;
+TIMESPEC TS_DVI_CLOCK1 = PERIOD "DVI_CLOCK1" 100 MHz HIGH 50%;
+
+#
+# Multi-cycle paths for TX0
+#
+TIMEGRP "bramgrp_0" = RAMS(dvi_tx/pixel2x/dataint<*>);
+TIMEGRP "fddbgrp_0" = FFS(dvi_tx/pixel2x/db<*>);
+TIMEGRP "bramra_0"  = FFS(dvi_tx/pixel2x/ra<*>);
+
+TIMESPEC "TS_ramdo_0" = FROM "bramgrp_0" TO "fddbgrp_0" TS_DVI_CLOCK0;
+TIMESPEC "TS_ramra_0" = FROM "bramra_0"  TO "fddbgrp_0" TS_DVI_CLOCK0;
+
+#
+# Multi-cycle paths for TX1
+#
+#TIMEGRP "bramgrp_1" = RAMS(dvi_tx1/pixel2x/dataint<*>);
+#TIMEGRP "fddbgrp_1" = FFS(dvi_tx1/pixel2x/db<*>);
+#TIMEGRP "bramra_1"  = FFS(dvi_tx1/pixel2x/ra<*>);
+
+#TIMESPEC "TS_ramdo_1" = FROM "bramgrp_1" TO "fddbgrp_1" TS_DVI_CLOCK1;
+#TIMESPEC "TS_ramra_1" = FROM "bramra_1"  TO "fddbgrp_1" TS_DVI_CLOCK1;
+
+
+# clock pin for Atlys rev C board
+NET "clk100"        LOC = "L15" | IOSTANDARD = LVCMOS33 | PERIOD = 100 MHz;
+
+
+
+# onBoard Leds
+NET "rstbtn_n" LOC = "T15" | IOSTANDARD = LVCMOS33;
+NET "LED<0>"   LOC = "U18" | IOSTANDARD = LVCMOS33;
+NET "LED<1>"   LOC = "M14" | IOSTANDARD = LVCMOS33;
+NET "LED<2>"   LOC = "N14" | IOSTANDARD = LVCMOS33;
+NET "LED<3>"   LOC = "L14" | IOSTANDARD = LVCMOS33;
+NET "LED<4>"   LOC = "M13" | IOSTANDARD = LVCMOS33;
+NET "LED<5>"   LOC = "D4"  | IOSTANDARD = LVCMOS33;
+NET "LED<6>"   LOC = "P16" | IOSTANDARD = LVCMOS33;
+NET "LED<7>"   LOC = "N12" | IOSTANDARD = LVCMOS33;
+ 
+# onBoard PUSH BUTTONS 
+ NET "rstbtn_n" LOC = "T15"; # Bank = 2, Pin name = IO_L1N_M0_CMPMISO_2, Sch name = M0/RESET
+ #NET "btn<1>" LOC = "N4";  # Bank = 3, Pin name = IO_L1P, 	   		   Sch name = BTNU
+ #NET "btn<2>" LOC = "P4";  # Bank = 3, Pin name = IO_L2P, 	   		   Sch name = BTNL
+ #NET "btn<3>" LOC = "P3";  # Bank = 3, Pin name = IO_L2N, 	   		   Sch name = BTND
+ #NET "btn<4>" LOC = "F6";  # Bank = 3, Pin name = IO_L55P_M3A13, 	   Sch name = BTNR
+ #NET "btn<5>" LOC = "F5";  # Bank = 3, Pin name = IO_L55N_M3A14, 	   Sch name = BTNC
+ 
+# onBoard SWITCHES
+ NET "SW<0>"         LOC = "A10" | IOSTANDARD = LVCMOS33 ;
+ NET "SW<1>"         LOC = "D14" | IOSTANDARD = LVCMOS33 ;
+ NET "sw<2>" LOC = "C14"| IOSTANDARD = LVCMOS33 ; # Bank = 0, Pin name = IO_L65N_SCP2,      	Sch name = SW2
+# NET "sw<3>" LOC = "P15"; # Bank = 1, Pin name = IO_L74P_AWAKE_1,       Sch name = SW3
+# NET "sw<4>" LOC = "P12"; # Bank = 2, Pin name = IO_L13N_D10,      		Sch name = SW4
+# NET "sw<5>" LOC = "R5";  # Bank = 2, Pin name = IO_L48P_D7,      		Sch name = SW5
+# NET "sw<6>" LOC = "T5";  # Bank = 2, Pin name = IO_L48N_RDWR_B_VREF_2, Sch name = SW6
+# NET "sw<7>" LOC = "E4";  # Bank = 3, Pin name = IO_L54P_M3RESET,       Sch name = SW7
+#
+
+
+## onboard HDMI OUT
+NET "TX0_TMDS(3)"  	LOC = "B6" |IOSTANDARD = TMDS_33 ; # Clock	
+NET "TX0_TMDSB(3)"  LOC = "A6" |IOSTANDARD = TMDS_33 ;
+NET "TX0_TMDS(2)"  	LOC = "B8" |IOSTANDARD = TMDS_33 ; # Red 	
+NET "TX0_TMDSB(2)"  LOC = "A8" |IOSTANDARD = TMDS_33 ;
+NET "TX0_TMDS(1)"  	LOC = "C7" |IOSTANDARD = TMDS_33 ; # Green	
+NET "TX0_TMDSB(1)"  LOC = "A7" |IOSTANDARD = TMDS_33 ;
+NET "TX0_TMDS(0)"  	LOC = "D8" |IOSTANDARD = TMDS_33 ; # Blue
+NET "TX0_TMDSB(0)"  LOC = "C8" |IOSTANDARD = TMDS_33 ;
+
+# NET "HDMIOUTSDA"  LOC = "C9"; # Bank = 0, Pin name = IO_L34N_GCLK18, Sch name = TMDS-TX-SDA
+#
+## onboard HDMI IN1 (PMODA)
+##############################################
+# TMDS pairs for Atlys IN (FPGA Bank 0): J1
+##############################################
+#NET "RX0_TMDS(3)"  	LOC = "D11" |IOSTANDARD = TMDS_33 ; # CLK
+#NET "RX0_TMDSB(3)"  LOC = "C11" |IOSTANDARD = TMDS_33 ;
+#NET "RX0_TMDS(2)"  	LOC = "B12" |IOSTANDARD = TMDS_33 ; # Red
+#NET "RX0_TMDSB(2)"  LOC = "A12" |IOSTANDARD = TMDS_33 ;
+#NET "RX0_TMDS(1)"  	LOC = "B11" |IOSTANDARD = TMDS_33 ; # Green	
+#NET "RX0_TMDSB(1)"  LOC = "A11" |IOSTANDARD = TMDS_33 ;
+#NET "RX0_TMDS(0)"  	LOC = "G9"  |IOSTANDARD = TMDS_33 ; # Blue	
+#NET "RX0_TMDSB(0)"  LOC = "F9"  |IOSTANDARD = TMDS_33 ;
+
+# NET "HDMIIN1SCL"  LOC = "C13"; # Bank = 0, Pin name = IO_L50P,        Sch name = PMOD-SCL
+# NET "HDMIIN1SDA"  LOC = "A13"; # Bank = 0, Pin name = IO_L50N,        Sch name = PMOD-SDA
+#
+## onboard HDMI IN2
+
+##################################################
+# TMDS pairs for Atlys IN (FPGA Bank 1): J3
+##################################################
+NET "RX1_TMDS(3)"  	LOC = "H17" |IOSTANDARD = TMDS_33 ; # CLK
+NET "RX1_TMDSB(3)"  LOC = "H18" |IOSTANDARD = TMDS_33 ;
+NET "RX1_TMDS(2)"  	LOC = "J16" |IOSTANDARD = TMDS_33 ; # Red
+NET "RX1_TMDSB(2)"  LOC = "J18" |IOSTANDARD = TMDS_33 ;
+NET "RX1_TMDS(1)"  	LOC = "L17" |IOSTANDARD = TMDS_33 ; # Green	
+NET "RX1_TMDSB(1)"  LOC = "L18" |IOSTANDARD = TMDS_33 ;
+NET "RX1_TMDS(0)"  	LOC = "K17" |IOSTANDARD = TMDS_33 ; # Blue	
+NET "RX1_TMDSB(0)"  LOC = "K18" |IOSTANDARD = TMDS_33 ;
+
+##############################################
+# TMDS pairs for Atlys top OUT: JA - Bank 2
+# Use TML_33 to add output series termination
+##############################################
+#NET "TX1_TMDS(3)"  	LOC = "T9" |IOSTANDARD = TML_33; #TMDS_33 ; ## Clock	
+#NET "TX1_TMDSB(3)"  LOC = "V9" |IOSTANDARD = TML_33; #TMDS_33 ; #
+#NET "TX1_TMDS(2)"  	LOC = "N5" |IOSTANDARD = TML_33; #TMDS_33 ; ## Red 	
+#NET "TX1_TMDSB(2)"  LOC = "P6" |IOSTANDARD = TML_33; #TMDS_33 ; #
+#NET "TX1_TMDS(1)"  	LOC = "T4" |IOSTANDARD = TML_33; #TMDS_33 ; ## Green	
+#NET "TX1_TMDSB(1)"  LOC = "V4" |IOSTANDARD = TML_33; #TMDS_33 ; #
+#NET "TX1_TMDS(0)"  	LOC = "R3" |IOSTANDARD = TML_33; #TMDS_33 ; ## Blue
+#NET "TX1_TMDSB(0)"  LOC = "T3" |IOSTANDARD = TML_33; #TMDS_33 ; #
+
+# NET "HDMIIN2SCL"  LOC = "M16"; # Bank = 1, Pin name = IO_L47P_FWE_B_M1DQ0, Sch name = TMDS-RX-SCL
+# NET "HDMIIN2SDA"  LOC = "M18"; # Bank = 1, Pin name = IO_L47N_LDC_M1DQ1,   Sch name = TMDS-RX-SDA
+#
+## onboard USB Host Controller
+# NET "USBCLK" LOC = "P17"; # Bank = 1, Pin name = IO_L49P_M1DQ10, Sch name = PIC32-SCK1
+# NET "USBSS"  LOC = "P18"; # Bank = 1, Pin name = IO_L49N_M1DQ11, Sch name = PIC32-SS1
+# NET "USBSDI" LOC = "N15"; # Bank = 1, Pin name = IO_L50P_M1UDQS, Sch name = PIC32-SDI1
+# NET "USBSDO" LOC = "N18"; # Bank = 1, Pin name = IO_L48N_M1DQ9,  Sch name = PIC32-SDO1
+# 
+## Audio
+# NET "BITCLK"   LOC = "L13"; # Bank = 1, Pin name = IO_L40N_GCLK10_M1A6, Sch name = AUD-BIT-CLK
+# NET "AUDSDI"   LOC = "T18"; # Bank = 1, Pin name = IO_L51N_M1DQ13,      Sch name = AUD-SDI
+# NET "AUDSDO"   LOC = "N16"; # Bank = 1, Pin name = IO_L50N_M1UDQSN,     Sch name = AUD-SDO
+# NET "AUDSYNC"  LOC = "U17"; # Bank = 1, Pin name = IO_L52P_M1DQ14,      Sch name = AUD-SYNC
+# NET "AUDRST"   LOC = "T17"; # Bank = 1, Pin name = IO_L51P_M1DQ12,      Sch name = AUD-RESET
+# 
+## PMOD Connector
+# NET "JB<0>"  LOC = "T3"; # Bank = 2,  Pin name = IO_L62N_D6,     Sch name = JA-D0_N
+# NET "JB<1>"  LOC = "R3"; # Bank = 2,  Pin name = IO_L62P_D5,     Sch name = JA-D0_P
+# NET "JB<2>"  LOC = "P6"; # Bank = 2,  Pin name = IO_L64N_D9,     Sch name = JA-D2_N
+# NET "JB<3>"  LOC = "N5"; # Bank = 2,  Pin name = IO_L64P_D8,     Sch name = JA-D2_P
+# NET "JB<4>"  LOC = "V9"; # Bank = 2,  Pin name = IO_L32N_GCLK28, Sch name = JA-CLK_N
+# NET "JB<5>"  LOC = "T9"; # Bank = 2,  Pin name = IO_L32P_GCLK29, Sch name = JA-CLK_P
+# NET "JB<6>"  LOC = "V4"; # Bank = 2,  Pin name = IO_L63N,        Sch name = JA-D1_N
+# NET "JB<7>"  LOC = "T4"; # Bank = 2,  Pin name = IO_L63P,        Sch name = JA-D1_P
+#
+## onboard VHDCI
+## Channnel 1 connects to P signals, Channel 2 to N signals
+# NET "VHDCIIO1<0>"  LOC = "U16"; # Bank = 2,  Pin name = IO_L2P_CMPCLK,        	Sch name = EXP-IO1_P
+# NET "VHDCIIO1<1>"  LOC = "U15"; # Bank = 2,  Pin name = *IO_L5P,        		Sch name = EXP-IO2_P
+# NET "VHDCIIO1<2>"  LOC = "U13"; # Bank = 2,  Pin name = IO_L14P_D11,        	Sch name = EXP-IO3_P
+# NET "VHDCIIO1<3>"  LOC = "M11"; # Bank = 2,  Pin name = *IO_L15P,        		Sch name = EXP-IO4_P
+# NET "VHDCIIO1<4>"  LOC = "R11"; # Bank = 2,  Pin name = IO_L16P,        		Sch name = EXP-IO5_P
+# NET "VHDCIIO1<5>"  LOC = "T12"; # Bank = 2,  Pin name = *IO_L19P,        		Sch name = EXP-IO6_P
+# NET "VHDCIIO1<6>"  LOC = "N10"; # Bank = 2,  Pin name = *IO_L20P,        		Sch name = EXP-IO7_P
+# NET "VHDCIIO1<7>"  LOC = "M10"; # Bank = 2,  Pin name = *IO_L22P,        		Sch name = EXP-IO8_P
+# NET "VHDCIIO1<8>"  LOC = "U11"; # Bank = 2,  Pin name = IO_L23P,        		Sch name = EXP-IO9_P
+# NET "VHDCIIO1<9>"  LOC = "R10"; # Bank = 2,  Pin name = IO_L29P_GCLK3,        	Sch name = EXP-IO10_P
+# NET "VHDCIIO1<10>" LOC = "U10"; # Bank = 2,  Pin name = IO_L30P_GCLK1_D13,      Sch name = EXP-IO11_P
+# NET "VHDCIIO1<11>" LOC = "R8";  # Bank = 2,  Pin name = IO_L31P_GCLK31_D14,     Sch name = EXP-IO12_P
+# NET "VHDCIIO1<12>" LOC = "M8";  # Bank = 2,  Pin name = *IO_L40P,        		Sch name = EXP-IO13_P
+# NET "VHDCIIO1<13>" LOC = "U8";  # Bank = 2,  Pin name = IO_L41P,        		Sch name = EXP-IO14_P
+# NET "VHDCIIO1<14>" LOC = "U7";  # Bank = 2,  Pin name = IO_L43P,        		Sch name = EXP-IO15_P
+# NET "VHDCIIO1<15>" LOC = "N7";  # Bank = 2,  Pin name = *IO_L44P,        		Sch name = EXP-IO16_P
+# NET "VHDCIIO1<16>" LOC = "T6";  # Bank = 2,  Pin name = IO_L45P,        		Sch name = EXP-IO17_P
+# NET "VHDCIIO1<17>" LOC = "R7";  # Bank = 2,  Pin name = IO_L46P,        		Sch name = EXP-IO18_P
+# NET "VHDCIIO1<18>" LOC = "N6";  # Bank = 2,  Pin name = *IO_L47P,        		Sch name = EXP-IO19_P
+# NET "VHDCIIO1<19>" LOC = "U5";  # Bank = 2,  Pin name = IO_49P_D3,        		Sch name = EXP-IO20_P
+#
+# NET "VHDCIIO2<0>"  LOC = "V16"; # Bank = 2,  Pin name = IO_L2N_CMPMOSI,        	Sch name = EXP-IO1_N
+# NET "VHDCIIO2<1>"  LOC = "V15"; # Bank = 2,  Pin name = *IO_L5N,        		Sch name = EXP-IO2_N
+# NET "VHDCIIO2<2>"  LOC = "V13"; # Bank = 2,  Pin name = IO_L14N_D12,        	Sch name = EXP-IO3_N
+# NET "VHDCIIO2<3>"  LOC = "N11"; # Bank = 2,  Pin name = *IO_L15N,        		Sch name = EXP-IO4_N
+# NET "VHDCIIO2<4>"  LOC = "T11"; # Bank = 2,  Pin name = IO_L16N_VREF,        	Sch name = EXP-IO5_N
+# NET "VHDCIIO2<5>"  LOC = "V12"; # Bank = 2,  Pin name = *IO_L19N,        		Sch name = EXP-IO6_N
+# NET "VHDCIIO2<6>"  LOC = "P11"; # Bank = 2,  Pin name = *IO_L20N,        		Sch name = EXP-IO7_N
+# NET "VHDCIIO2<7>"  LOC = "N9";  # Bank = 2,  Pin name = *IO_L22N,        		Sch name = EXP-IO8_N
+# NET "VHDCIIO2<8>"  LOC = "V11"; # Bank = 2,  Pin name = IO_L23N,        		Sch name = EXP-IO9_N
+# NET "VHDCIIO2<9>"  LOC = "T10"; # Bank = 2,  Pin name = IO_L29N_GCLK2,          Sch name = EXP-IO10_N
+# NET "VHDCIIO2<10>" LOC = "V10"; # Bank = 2,  Pin name = IO_L30N_GCLK0_USERCCLK, Sch name = EXP-IO11_N
+# NET "VHDCIIO2<11>" LOC = "T8";  # Bank = 2,  Pin name = IO_L31N_GCLK30_D15,     Sch name = EXP-IO12_N
+# NET "VHDCIIO2<12>" LOC = "N8";  # Bank = 2,  Pin name = *IO_L40N,        		Sch name = EXP-IO13_N
+# NET "VHDCIIO2<13>" LOC = "V8";  # Bank = 2,  Pin name = IO_L41N_VREF,        	Sch name = EXP-IO14_N
+# NET "VHDCIIO2<14>" LOC = "V7";  # Bank = 2,  Pin name = IO_L43N,        		Sch name = EXP-IO15_N
+# NET "VHDCIIO2<15>" LOC = "P8";  # Bank = 2,  Pin name = *IO_L44N,        		Sch name = EXP-IO16_N
+# NET "VHDCIIO2<16>" LOC = "V6";  # Bank = 2,  Pin name = IO_L45N,        		Sch name = EXP-IO17_N
+# NET "VHDCIIO2<17>" LOC = "T7";  # Bank = 2,  Pin name = IO_L46N,        		Sch name = EXP-IO18_N
+# NET "VHDCIIO2<18>" LOC = "P7";  # Bank = 2,  Pin name = *IO_L47N,        		Sch name = EXP-IO19_N
+# NET "VHDCIIO2<19>" LOC = "V5";  # Bank = 2,  Pin name = IO_49N_D4,        		Sch name = EXP-IO20_N 
+# 
+## USB UART Connector
+# NET "UartRx" LOC = "A16"; # Bank = 0, Pin name = IO_L66N_SCP0, Sch name = USBB-RXD
+# NET "UartTx" LOC = "B16"; # Bank = 0, Pin name = IO_L66P_SCP1, Sch name = USBB-TXD
+
+

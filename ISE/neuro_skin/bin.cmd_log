@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/ISE/hdmi_bin/bin.tfi -lib work /home/kyhu/Workspace/ISE/hdmi_bin//bin.v -module bin -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

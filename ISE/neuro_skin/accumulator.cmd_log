@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi -o D:/PSRA/OdrzywolekKrzysztof/hdmi_bin/accumulator.tfi -lib work D:/PSRA/OdrzywolekKrzysztof/hdmi_bin//accumulator.v -module accumulator -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 

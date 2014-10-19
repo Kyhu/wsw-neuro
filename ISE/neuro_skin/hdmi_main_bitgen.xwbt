@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\PSRA\OdrzywolekKrzysztof\hdmi_centroid2\hdmi_main.ncd
+OUTFILE=D:\PSRA\OdrzywolekKrzysztof\hdmi_centroid2\hdmi_main.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=D:\PSRA\OdrzywolekKrzysztof\hdmi_centroid2
+LICENSE=WebPack
+USER_INFO=176281944_174171439_210573127_948
