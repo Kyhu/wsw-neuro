@@ -1,4 +1,6 @@
 %% Test wykrywania skroy przy pomocy sieci neuronowych z Toolboxa Matlabowego
+%% Jeden 0neuron wyjsciowy i próg
+
 
 clear all
 close all
@@ -22,13 +24,13 @@ targets = skin';
 %% Create Neural Network
 
 % Create a Pattern Recognition Network
-hiddenLayerSize = 18;
+hiddenLayerSize = 13;
 net = patternnet(hiddenLayerSize);
 
 % Setup Division of Data for Training, Validation, Testing
-net.divideParam.trainRatio = 70/100;
-net.divideParam.valRatio = 15/100;
-net.divideParam.testRatio = 15/100;
+net.divideParam.trainRatio = 80/100;
+net.divideParam.valRatio = 10/100;
+net.divideParam.testRatio = 10/100;
 
 % Train the Network
 [net,tr] = train(net,inputs,targets);
@@ -45,27 +47,22 @@ figure, plotperform(tr)
 %% Test it
 
 test_picture = imread('hand64.ppm');
+skin = zeros(size(test_picture,1), size(test_picture,2));
 
-result_picture = uint8(zeros(size(test_picture)));
 
 for i = 1:size(test_picture,1)
+    i
     for j = 1:size(test_picture,2)
         
         rgb = [test_picture(i,j,1), test_picture(i,j,2), test_picture(i,j,3)];
         ycbr = rgb2ycbcr(rgb);
         hsv = rgb2hsv(rgb);
         
-        skin =  net([rgb';ycbr(2:3);hsv(1:2)']);
-        
-        if(skin > 0.002)
-            result_picture(i,j,1) = 255;
-            result_picture(i,j,2) = 255;
-            result_picture(i,j,3) = 255;
-        end;
+        skin(i,j) = net([rgb';ycbr(2:3);hsv(1:2)']);        
     end;
 
 end;
 
 figure(3);
-imshow(result_picture);
+imshow(skin);
 
