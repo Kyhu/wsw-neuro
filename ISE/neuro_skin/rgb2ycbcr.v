@@ -147,7 +147,6 @@ module rgb2ycbcr(
 	  .b(A_22), // input [17 : 0] b
 	  .p(Cb_G_w) // output [35 : 0] p
 	);
-
 	 
 	 // Latency = 2
 	 mult Cb_B (

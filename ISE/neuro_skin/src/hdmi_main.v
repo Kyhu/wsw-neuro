@@ -201,18 +201,17 @@ module hdmi_main
   // IMAGE PROCESSING  
   // -----------------------------------------------------------------------------  
  
-
-	
+ 
+	// YCbCR Conversion
 	wire [7:0]   Y;
 	wire [7:0]   Cb;
 	wire [7:0]   Cr;
  
- 	wire  de_ycbcr_bin;
-	wire  hsync_ycbcr_bin;
-	wire  vsync_ycbcr_bin;
+ 	wire  de_ycbcr;
+	wire  hsync_ycbcr;
+	wire  vsync_ycbcr;	
 	
-	
-	rgb2ycbcr converter (
+	rgb2ycbcr ycbcr_converter (
     .clk(rx_pclk), 
     .ce({1'b1}), 
     .de_in(rx_de), 
@@ -224,75 +223,38 @@ module hdmi_main
     .Y(Y), 
     .Cb(Cb), 
     .Cr(Cr), 
-    .de_out(de_ycbcr_bin), 
-    .hsync_out(hsync_ycbcr_bin), 
-    .vsync_out(vsync_ycbcr_bin)
+    .de_out(de_ycbcr), 
+    .hsync_out(hsync_ycbcr), 
+    .vsync_out(vsync_ycbcr)
     );
 	 
-	wire [7:0]  bin_rgb;
- 	wire  de_bin_centr;
-	wire  hsync_bin_centr;
-	wire  vsync_bin_centr;
+	 // HSV Conversion
+	wire [7:0]   H;
+	wire [7:0]   S;
+	wire [7:0]   V;
+ 
+ 	wire  de_hsv;
+	wire  hsync_hsv;
+	wire  vsync_hsv;
 	 
-	bin binaryzation (
-    .clk(rx_pclk), 
-    .cb(Cb), 
-    .cr(Cr), 
-    .de_in(de_ycbcr_bin), 
-    .hsync_in(hsync_ycbcr_bin), 
-    .vsync_in(vsync_ycbcr_bin), 
-    .bin_rgb(bin_rgb), 
-    .de_out(de_bin_centr), 
-    .hsync_out(hsync_bin_centr), 
-    .vsync_out(vsync_bin_centr)
-    );
-	 
-	 
-	//Centroid
-	
-	wire [7:0] r_centroid;
-	wire [7:0] g_centroid;
-	wire [7:0] b_centroid;
-	
-	wire  de_out;
-	wire  hsync_out;
-	wire  vsync_out;	 
-	
-	wire [10:0]xg;
-	wire [10:0]yg;
-	 
-	 
-	 centroid centroid (
-    .clk(rx_pclk), 
+	rgb2hsv hsv_converter (
+	 .clk(rx_pclk), 
     .ce({1'b1}), 
-    .de(de_out), 
-    .hsync(hsync_out), 
-    .vsync(vsync_out), 
-    .color(bin_rgb), 
-    .x(xg), 
-    .y(yg)
-    );
-	 	 
-	 
-	 visualize visualize(
-    .clk(rx_pclk), 
-    .de_in(de_bin_centr), 
-    .hsync_in(hsync_bin_centr),
-    .vsync_in(vsync_bin_centr),
-    .x(xg), 
-    .y(yg), 
-	 .de_out(de_out), 
-    .hsync_out(hsync_out), 
-    .vsync_out(vsync_out), 
-    .mask(bin_rgb), 
-    .red_out(r_centroid), 
-    .green_out(g_centroid), 
-    .blue_out(b_centroid)
-    );
-	
- 
-	// MUX
- 
+    .de_in(rx_de), 
+    .hsync_in(rx_hsync), 
+    .vsync_in(rx_vsync), 
+    .red(rx_red), 
+    .green(rx_green), 
+    .blue(rx_blue), 
+    .H(H), 
+    .S(S), 
+    .V(V), 
+    .de_out(de_hsv), 
+    .hsync_out(hsync_hsv), 
+    .vsync_out(vsync_hsv)
+	 );
+
+	// MUX 
 	wire [7:0]r_mux[7:0];
 	wire [7:0]g_mux[7:0];
 	wire [7:0]b_mux[7:0];
@@ -300,6 +262,7 @@ module hdmi_main
 	wire hsync_mux[7:0];
 	wire vsync_mux[7:0];
 		
+	// MUX assigning	
 	assign r_mux[0] = rx_red;
 	assign g_mux[0] = rx_green;
 	assign b_mux[0] = rx_blue;
@@ -310,48 +273,17 @@ module hdmi_main
 	assign r_mux[1] = Y;
 	assign g_mux[1] = Cb;
 	assign b_mux[1] = Cr;
-	assign de_mux[1] = de_ycbcr_bin;
-	assign hsync_mux[1] = hsync_ycbcr_bin;
-	assign vsync_mux[1] = vsync_ycbcr_bin;
+	assign de_mux[1] = de_ycbcr;
+	assign hsync_mux[1] = hsync_ycbcr;
+	assign vsync_mux[1] = vsync_ycbcr;
 	
-	assign r_mux[2] = bin_rgb;
-	assign g_mux[2] = bin_rgb;
-	assign b_mux[2] = bin_rgb;
-	assign de_mux[2] = de_bin_centr;
-	assign hsync_mux[2] = hsync_bin_centr;
-	assign vsync_mux[2] = vsync_bin_centr;
+	assign r_mux[2] = H;
+	assign g_mux[2] = S;
+	assign b_mux[2] = V;
+	assign de_mux[2] = de_hsv;
+	assign hsync_mux[2] = hsync_hsv;
+	assign vsync_mux[2] = vsync_hsv;
 	
-	assign r_mux[3] = r_centroid;
-	assign g_mux[3] = g_centroid;
-	assign b_mux[3] = b_centroid;
-	assign de_mux[3] = de_out;
-	assign hsync_mux[3] = hsync_out;
-	assign vsync_mux[3] = vsync_out;
-
-	wire  de_d;
-	wire  hsync_d;
-	wire  vsync_d;	
-	 
-	delayx #(
-		.N(3),
-		.DELAY(2)
-	)
-	sync_delay(
-    .clk(rx_pclk), 
-    .ce({1'b1}), 
-    .d({de_ycbcr_bin, hsync_ycbcr_bin, vsync_ycbcr_bin}), 
-    .q({de_d, hsync_d, vsync_d})
-    );
-	 
-
-	assign r_mux[4] = Y;
-	assign g_mux[4] = Cb;
-	assign b_mux[4] = Cr;
-	assign de_mux[4] = de_d;
-	assign hsync_mux[4] = hsync_d;
-	assign vsync_mux[4] = vsync_d;
-
- 
   // -----------------------------------------------------------------------------
   // HDMI output port 
   // -----------------------------------------------------------------------------  

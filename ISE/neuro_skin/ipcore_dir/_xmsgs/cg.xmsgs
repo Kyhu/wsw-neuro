@@ -8,26 +8,22 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;delayLineBRAM&apos;...</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find /home/kyhu/Workspace/ISE/hdmi/lut.coe</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Overwriting existing file /home/kyhu/Workspace/ISE/hdmi_centroid3/ipcore_dir/tmp/_cg/delayLineBRAM/doc/blk_mem_gen_v7_3_vinfo.html with file from view xilinx_documentation</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for D:\home\kyhu\Workspace\ISE\hdmi\lut.coe</arg>
 </msg>
 
-<msg type="error" file="sim" num="938" delta="new" >Error while preparing for IP customization
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find /home/kyhu/Workspace/ISE/hdmi/lut.coe</arg>
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" >Failed to initialize IP model.
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for D:\home\kyhu\Workspace\ISE\hdmi\lut.coe</arg>
 </msg>
 
-<msg type="warning" file="sim" num="946" delta="new" >Failed to initialise IP Model for ASY schematic symbol
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">An invalid core configuration has been detected during</arg>
 </msg>
 
-<msg type="error" file="sim" num="944" delta="new" >Failed to generate ASY schematic symbol.
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;delayLineBRAM&apos;.  Failed to initialise IP Model for ASY schematic symbol
-
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Customization. Core parameters will be reset to their default values.</arg>
 </msg>
 
 </messages>

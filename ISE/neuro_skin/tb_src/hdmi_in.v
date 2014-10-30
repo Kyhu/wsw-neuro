@@ -119,7 +119,7 @@ begin
 	 //TB only
 	 vsc=vsc+1;
 
-    rgbfile = $fopen("hand64.ppm","rb");	
+    rgbfile = $fopen("geirangerfjord_64.ppm","rb");	
 
 	 // read header file
 	 for(i=0;i<13;i=i+1)

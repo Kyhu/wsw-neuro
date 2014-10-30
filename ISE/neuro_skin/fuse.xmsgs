@@ -5,28 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/ipcore_dir/adder.v" Line 531: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/adder.v" Line 531: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/ipcore_dir/sum.v" Line 614: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/ipcore_dir/mult_28_20_lm.v" Line 3152: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/divider_28_20.v" Line 42: Parameter declaration becomes local in <arg fmt="%s" index="1">divider_28_20</arg> with formal parameter declaration list
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/divider_28_20.v" Line 43: Parameter declaration becomes local in <arg fmt="%s" index="1">divider_28_20</arg> with formal parameter declaration list
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/divider_28_20.v" Line 44: Parameter declaration becomes local in <arg fmt="%s" index="1">divider_28_20</arg> with formal parameter declaration list
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/divider_28_20.v" Line 45: Parameter declaration becomes local in <arg fmt="%s" index="1">divider_28_20</arg> with formal parameter declaration list
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/delayx.v" Line 36: Block identifier is required on this block
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/delayx.v" Line 36: Block identifier is required on this block
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.

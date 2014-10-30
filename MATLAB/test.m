@@ -48,6 +48,8 @@ test_picture = imread('hand64.ppm');
 
 result_picture = uint8(zeros(size(test_picture)));
 
+result = zeros(size(test_picture,1),size(test_picture,2));
+
 for i = 1:size(test_picture,1)
     for j = 1:size(test_picture,2)
         
@@ -56,8 +58,8 @@ for i = 1:size(test_picture,1)
         hsv = rgb2hsv(rgb);
         
         skin =  net([rgb';ycbr(2:3);hsv(1:2)']);
-        
-        if(skin > 0.002)
+        result(i,j) = skin;
+        if(skin > 0.01)
             result_picture(i,j,1) = 255;
             result_picture(i,j,2) = 255;
             result_picture(i,j,3) = 255;

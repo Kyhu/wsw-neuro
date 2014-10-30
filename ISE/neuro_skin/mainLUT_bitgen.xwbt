@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/kyhu/Workspace/ISE/hdmi/mainLUT.ncd
-OUTFILE=/home/kyhu/Workspace/ISE/hdmi/mainLUT.bit
-FAMILY=Spartan6
-PART=xc6slx45-2csg324
-WORKINGDIR=/home/kyhu/Workspace/ISE/hdmi
-LICENSE=WebPack
-USER_INFO=210691920_0_0_956

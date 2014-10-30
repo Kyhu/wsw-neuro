@@ -1,2 +1,0 @@
-vhdtdtfi -lang verilog -prj hdmi -o D:/PSRA/OdrzywolekKrzysztof/hdmi_bin/divider_28_20.tfi -lib work D:/PSRA/OdrzywolekKrzysztof/hdmi_bin//divider_28_20.v -module divider_28_20 -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 
-vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/ISE/hdmi_centroid/divider_28_20.tfi -lib work /home/kyhu/Workspace/ISE/hdmi_centroid//divider_28_20.v -module divider_28_20 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

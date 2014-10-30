@@ -1,2 +1,0 @@
-vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/ISE/hdmi_centroid/visualize.tfi -lib work /home/kyhu/Workspace/ISE/hdmi_centroid//visualize.v -module visualize -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
-vhdtdtfi -lang verilog -prj hdmi -o D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/visualize.tfi -lib work D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2//visualize.v -module visualize -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 

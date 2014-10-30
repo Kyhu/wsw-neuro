@@ -1,1 +1,0 @@
-vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/ISE/hdmi_centroid/centroid.tfi -lib work /home/kyhu/Workspace/ISE/hdmi_centroid//centroid.v -module centroid -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
