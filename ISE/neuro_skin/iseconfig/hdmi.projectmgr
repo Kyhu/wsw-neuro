@@ -31,7 +31,10 @@
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_b - decode</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_g - decode</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_r - decode</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top/pixel2x - convert_30to15_fifo</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr/Y_delay - delayx</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr/sync_delay - delayx</ClosedNode>
          <ClosedNode>/mainLUT |home|kyhu|Workspace|ISE|hdmi_centroid3|mainLUT.v</ClosedNode>
          <ClosedNode>/mainLUT |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|mainLUT.v</ClosedNode>
          <ClosedNode>/rgb2ycbcr |home|kyhu|Workspace|ISE|hdmi|rgb2ycbcr.v</ClosedNode>
@@ -45,13 +48,13 @@
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>hdmi_main (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v)</SelectedItem>
+         <SelectedItem>Y_R - mult (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult.xco)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000356000000020000000000000000000000000200000064ffffffff000000810000000300000002000003560000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000032c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000032c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>hdmi_main (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v)</CurrentItem>
+      <CurrentItem>Y_R - mult (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult.xco)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -67,7 +70,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000150000000010000000100000000000000000000000064ffffffff000000810000000000000001000001500000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -102,26 +105,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000177000000010000000100000000000000000000000064ffffffff000000810000000000000001000001770000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -321,12 +324,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>
