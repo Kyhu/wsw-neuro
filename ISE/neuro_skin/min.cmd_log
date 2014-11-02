@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/min.tfi -lib work /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin//min.v -module min -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
