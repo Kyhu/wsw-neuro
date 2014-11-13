@@ -11,33 +11,5 @@
 <msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Verilog simulation file type &apos;Behavioral&apos; is not valid for this core. Overriding with simulation file type &apos;Structural&apos;.</arg>
 </msg>
 
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Verilog simulation file type &apos;Behavioral&apos; is not valid for this core. Overriding with simulation file type &apos;Structural&apos;.</arg>
-</msg>
-
-<msg type="info" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Pre-processing HDL files for &apos;mult_255&apos;...</arg>
-</msg>
-
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Verilog simulation file type &apos;Behavioral&apos; is not valid for this core. Overriding with simulation file type &apos;Structural&apos;.</arg>
-</msg>
-
-<msg type="warning" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Verilog simulation file type &apos;Behavioral&apos; is not valid for this core. Overriding with simulation file type &apos;Structural&apos;.</arg>
-</msg>
-
-<msg type="error" file="sim" num="938" delta="old" >Error while preparing for IP customization
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" >Failed to initialize IP model.
-</msg>
-
-<msg type="warning" file="sim" num="946" delta="old" >Failed to initialise IP Model for ASY schematic symbol
-</msg>
-
-<msg type="error" file="sim" num="944" delta="old" >Failed to generate ASY schematic symbol.
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;mult_255&apos;.  Failed to initialise IP Model for ASY schematic symbol
-
-</msg>
-
 </messages>
 

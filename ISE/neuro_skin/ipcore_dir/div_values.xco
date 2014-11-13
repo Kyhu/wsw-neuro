@@ -1,7 +1,7 @@
 ##############################################################
 #
-# Xilinx Core Generator version 14.7
-# Date: Sun Nov  2 19:01:41 2014
+# Xilinx Core Generator version 14.6
+# Date: Thu Nov 13 17:06:54 2014
 #
 ##############################################################
 #
@@ -12,7 +12,7 @@
 #
 ##############################################################
 #
-#  Generated from component: xilinx.com:ip:mult_gen:11.2
+#  Generated from component: xilinx.com:ip:div_gen:4.0
 #
 ##############################################################
 #
@@ -36,33 +36,35 @@ SET verilogsim = true
 SET vhdlsim = false
 # END Project Options
 # BEGIN Select
-SELECT Multiplier xilinx.com:ip:mult_gen:11.2
+SELECT Divider_Generator xilinx.com:ip:div_gen:4.0
 # END Select
 # BEGIN Parameters
-CSET ccmimp=Distributed_Memory
-CSET clockenable=false
-CSET component_name=mult_255
-CSET constvalue=255
-CSET internaluser=0
-CSET multiplier_construction=Use_LUTs
-CSET multtype=Constant_Coefficient_Multiplier
-CSET optgoal=Speed
-CSET outputwidthhigh=17
-CSET outputwidthlow=0
-CSET pipestages=2
-CSET portatype=Signed
-CSET portawidth=10
-CSET portbtype=Signed
-CSET portbwidth=18
-CSET roundpoint=0
-CSET sclrcepriority=SCLR_Overrides_CE
-CSET syncclear=false
-CSET use_custom_output_width=false
-CSET userounding=false
-CSET zerodetect=false
+CSET aclken=false
+CSET algorithm_type=Radix2
+CSET aresetn=false
+CSET clocks_per_division=1
+CSET component_name=div_values
+CSET divide_by_zero_detect=false
+CSET dividend_and_quotient_width=10
+CSET dividend_has_tlast=false
+CSET dividend_has_tuser=false
+CSET dividend_tuser_width=1
+CSET divisor_has_tlast=false
+CSET divisor_has_tuser=false
+CSET divisor_tuser_width=1
+CSET divisor_width=10
+CSET flowcontrol=NonBlocking
+CSET fractional_width=10
+CSET latency=22
+CSET latency_configuration=Automatic
+CSET operand_sign=Unsigned
+CSET optimizegoal=Performance
+CSET outtlastbehv=Null
+CSET outtready=false
+CSET remainder_type=Fractional
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2013-07-22T11:36:26Z
+MISC pkg_timestamp=2012-11-05T14:51:55Z
 # END Extra information
 GENERATE
-# CRC: ae9e0640
+# CRC: c3603cb0
