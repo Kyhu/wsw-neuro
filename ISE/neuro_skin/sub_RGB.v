@@ -19,6 +19,14 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module sub_RGB(
+    input clk,
+	 input ce,
+    input [9:0] red,
+    input [9:0] green,
+    input [9:0] blue,
+	 input [9:0] blue;
+	 output [9:0] value,
+	 output [1:0] index
     );
 
 

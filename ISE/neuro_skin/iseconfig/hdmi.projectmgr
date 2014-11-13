@@ -10,10 +10,18 @@
          <ClosedNode>/bin |home|kyhu|Workspace|ISE|hdmi_bin|bin.v</ClosedNode>
          <ClosedNode>/dvi_decoder D:|___NoweFPGA|pipeline_ise|test|hdmi|src|rx|dvi_decoder.v</ClosedNode>
          <ClosedNode>/dvi_decoder |home|kyhu|Workspace|ISE|hdmi|src|rx|dvi_decoder.v</ClosedNode>
+         <ClosedNode>/dvi_decoder_nok D:|WSW14|wsw-neuro|ISE|neuro_skin|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
          <ClosedNode>/dvi_decoder_nok |home|kyhu|Workspace|ISE|hdmi_bin|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
          <ClosedNode>/dvi_decoder_nok |home|kyhu|Workspace|ISE|hdmi_centroid3|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
          <ClosedNode>/dvi_decoder_nok |home|kyhu|Workspace|ISE|hdmi|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
          <ClosedNode>/dvi_decoder_nok |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
+         <ClosedNode>/hdmi_main D:|WSW14|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_b - decode</ClosedNode>
+         <ClosedNode>/hdmi_main D:|WSW14|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_g - decode</ClosedNode>
+         <ClosedNode>/hdmi_main D:|WSW14|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_r - decode</ClosedNode>
+         <ClosedNode>/hdmi_main D:|WSW14|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
+         <ClosedNode>/hdmi_main D:|WSW14|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr</ClosedNode>
+         <ClosedNode>/hdmi_main D:|WSW14|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr/Y_delay - delayx</ClosedNode>
+         <ClosedNode>/hdmi_main D:|WSW14|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr/sync_delay - delayx</ClosedNode>
          <ClosedNode>/hdmi_main D:|___NoweFPGA|pipeline_ise|test|hdmi|src|hdmi_main.v</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi_bin|src|hdmi_main.v/converter - rgb2ycbcr</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi_bin|src|hdmi_main.v/dvi_rx1 - dvi_decoder</ClosedNode>
@@ -40,6 +48,7 @@
          <ClosedNode>/rgb2ycbcr |home|kyhu|Workspace|ISE|hdmi|rgb2ycbcr.v</ClosedNode>
          <ClosedNode>/tb_accumulator |home|kyhu|Workspace|ISE|hdmi_centroid3|tb_accumulator.v</ClosedNode>
          <ClosedNode>/tb_accumulator |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_accumulator.v</ClosedNode>
+         <ClosedNode>/tb_hdmi D:|WSW14|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v</ClosedNode>
          <ClosedNode>/tb_hdmi D:|___NoweFPGA|pipeline_ise|test|hdmi|tb_src|tb_hdmi.v</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi_bin|tb_src|tb_hdmi.v</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi_centroid3|tb_src|tb_hdmi.v</ClosedNode>
@@ -48,13 +57,13 @@
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Y_R - mult (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult.xco)</SelectedItem>
+         <SelectedItem>max_calculator - max (D:/WSW14/wsw-neuro/ISE/neuro_skin/max.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000032c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000032c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000148000000020000000000000000000000000200000064ffffffff000000810000000300000002000001480000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Y_R - mult (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult.xco)</CurrentItem>
+      <CurrentItem>max_calculator - max (D:/WSW14/wsw-neuro/ISE/neuro_skin/max.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -70,7 +79,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000107000000010000000100000000000000000000000064ffffffff000000810000000000000001000001070000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -81,9 +90,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000594000000040101000100000000000000000000000064ffffffff000000810000000000000004000001b400000001000000000000009d0000000100000000000000660000000100000000000002dd0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000001b400000001000000000000009d0000000100000000000000660000000100000000000000db0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/accumulator.v</CurrentItem>
+      <CurrentItem>accumulator.v</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -93,11 +102,11 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000120000000010001000100000000000000000000000064ffffffff000000810000000000000001000001200000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff000000000000000200000186000000cd01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -105,13 +114,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
@@ -122,7 +131,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000107000000010000000100000000000000000000000064ffffffff000000810000000000000001000001070000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
