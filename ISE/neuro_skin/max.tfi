@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+max instance_name (
+    .clk(clk), 
+    .ce(ce), 
+    .red(red), 
+    .green(green), 
+    .blue(blue), 
+    .value(value), 
+    .index(index)
+    );
+
+

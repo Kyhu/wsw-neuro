@@ -1,0 +1,1518 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Reading design: hdmi_main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "hdmi_main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "hdmi_main"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-csg324
+
+---- Source Options
+Top Module Name                    : hdmi_main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/common/DRAM16XN.v" into library work
+Parsing module <DRAM16XN>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/serdes_1_to_5_diff_data.v" into library work
+Parsing module <serdes_1_to_5_diff_data>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" into library work
+Parsing module <phsaligner>.
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 65. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 66. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 67. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 68. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 133. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 134. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 135. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 136. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 137. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 138. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 139. parameter declaration becomes local in phsaligner with formal parameter declaration list
+INFO:HDLCompiler:693 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 169. parameter declaration becomes local in phsaligner with formal parameter declaration list
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/chnlbond.v" into library work
+Parsing module <chnlbond>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/delay.v" into library work
+Parsing module <delay>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/sub_RGB.v" into library work
+Parsing module <sub_RGB>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/serdes_n_to_1.v" into library work
+Parsing module <serdes_n_to_1>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/encode.v" into library work
+Parsing module <encode>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/convert_30to15_fifo.v" into library work
+Parsing module <convert_30to15_fifo>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/decode.v" into library work
+Parsing module <decode>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/min.v" into library work
+Parsing module <min>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/max.v" into library work
+Parsing module <max>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/subtracter.v" into library work
+Parsing module <subtracter>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult_60.v" into library work
+Parsing module <mult_60>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult_255.v" into library work
+Parsing module <mult_255>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult.v" into library work
+Parsing module <mult>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/div_360.v" into library work
+Parsing module <div_360>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/div_01.v" into library work
+Parsing module <div_01>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/divider_255.v" into library work
+Parsing module <divider_255>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/adder.v" into library work
+Parsing module <adder>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/delayx.v" into library work
+Parsing module <delayx>.
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/delayx.v" Line 36: Block identifier is required on this block
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/add_to_H.v" into library work
+Parsing module <add_to_H>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/dvi_encoder_top.v" into library work
+Parsing module <dvi_encoder_top>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" into library work
+Parsing module <dvi_decoder>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" into library work
+Parsing module <rgb2ycbcr>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" into library work
+Parsing module <rgb2hsv>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" into library work
+Parsing module <hdmi_main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <hdmi_main>.
+
+Elaborating module <BUFIO2(DIVIDE_BYPASS="FALSE",DIVIDE=5)>.
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 82: Assignment to clk25 ignored, since the identifier is never used
+
+Elaborating module <dvi_decoder>.
+
+Elaborating module <IBUFDS(IOSTANDARD="TMDS_33",DIFF_TERM="FALSE")>.
+
+Elaborating module <BUFIO2(DIVIDE_BYPASS="TRUE",DIVIDE=1)>.
+
+Elaborating module <PLL_BASE(CLKIN_PERIOD=10,CLKFBOUT_MULT=10,CLKOUT0_DIVIDE=1,CLKOUT1_DIVIDE=10,CLKOUT2_DIVIDE=5,COMPENSATION="INTERNAL")>.
+
+Elaborating module <BUFPLL(DIVIDE=5)>.
+
+Elaborating module <decode>.
+
+Elaborating module <serdes_1_to_5_diff_data(DIFF_TERM="FALSE",BITSLIP_ENABLE="TRUE")>.
+WARNING:HDLCompiler:413 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/serdes_1_to_5_diff_data.v" Line 248: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/serdes_1_to_5_diff_data.v" Line 250: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/serdes_1_to_5_diff_data.v" Line 251: Result of 2-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <IBUFDS(DIFF_TERM="FALSE")>.
+
+Elaborating module <IODELAY2(DATA_RATE="SDR",IDELAY_VALUE=0,IDELAY2_VALUE=0,IDELAY_MODE="NORMAL",ODELAY_VALUE=0,IDELAY_TYPE="DIFF_PHASE_DETECTOR",COUNTER_WRAPAROUND="STAY_AT_LIMIT",DELAY_SRC="IDATAIN",SERDES_MODE="MASTER",SIM_TAPDELAY_VALUE=49)>.
+
+Elaborating module <IODELAY2(DATA_RATE="SDR",IDELAY_VALUE=0,IDELAY2_VALUE=0,IDELAY_MODE="NORMAL",ODELAY_VALUE=0,IDELAY_TYPE="DIFF_PHASE_DETECTOR",COUNTER_WRAPAROUND="WRAPAROUND",DELAY_SRC="IDATAIN",SERDES_MODE="SLAVE",SIM_TAPDELAY_VALUE=49)>.
+
+Elaborating module <ISERDES2(DATA_WIDTH=5,DATA_RATE="SDR",BITSLIP_ENABLE="TRUE",SERDES_MODE="MASTER",INTERFACE_TYPE="RETIMED")>.
+
+Elaborating module <ISERDES2(DATA_WIDTH=5,DATA_RATE="SDR",BITSLIP_ENABLE="TRUE",SERDES_MODE="SLAVE",INTERFACE_TYPE="RETIMED")>.
+
+Elaborating module <phsaligner>.
+WARNING:HDLCompiler:1308 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 174: Found full_case directive in module phsaligner. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+WARNING:HDLCompiler:1308 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v" Line 221: Found full_case directive in module phsaligner. Use of full_case directives may cause differences between RTL and post-synthesis simulation
+
+Elaborating module <chnlbond>.
+
+Elaborating module <DRAM16XN(data_width=10)>.
+
+Elaborating module <RAM16X1D>.
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" Line 212: Assignment to de_g ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" Line 234: Assignment to de_r ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 122: Assignment to rx_pclkx2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 123: Assignment to rx_pclkx10 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 124: Assignment to rx_pllclk0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 126: Assignment to rx_pllclk2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 127: Assignment to rx_plllckd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 128: Assignment to rx_tmdsclk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 129: Assignment to rx_serdesstrobe ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 137: Assignment to rx_blue_vld ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 138: Assignment to rx_green_vld ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 139: Assignment to rx_red_vld ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 144: Assignment to rx_psalgnerr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 146: Assignment to rx_sdata ignored, since the identifier is never used
+
+Elaborating module <rgb2ycbcr>.
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 38: Using initial value of A_11 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 39: Using initial value of A_12 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 40: Using initial value of A_13 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 41: Using initial value of A_21 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 42: Using initial value of A_22 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 43: Using initial value of A_23 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 44: Using initial value of A_31 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 45: Using initial value of A_32 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 46: Using initial value of A_33 since it is never assigned
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v" Line 47: Using initial value of B since it is never assigned
+
+Elaborating module <mult>.
+
+Elaborating module <adder>.
+
+Elaborating module <delayx(N=9,DELAY=2)>.
+
+Elaborating module <delay(N=9)>.
+
+Elaborating module <delayx(N=3,DELAY=6)>.
+
+Elaborating module <delay(N=3)>.
+
+Elaborating module <rgb2hsv>.
+WARNING:HDLCompiler:872 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 40: Using initial value of divisor_255 since it is never assigned
+
+Elaborating module <divider_255>.
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 48: Assignment to rfd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 65: Assignment to rfd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 82: Assignment to rfd ignored, since the identifier is never used
+
+Elaborating module <max>.
+
+Elaborating module <min>.
+
+Elaborating module <subtracter>.
+
+Elaborating module <div_01>.
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 146: Assignment to rfd ignored, since the identifier is never used
+
+Elaborating module <sub_RGB>.
+WARNING:HDLCompiler:189 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 164: Size mismatch in connection of port <red>. Formal port size is 10-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 165: Size mismatch in connection of port <green>. Formal port size is 10-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 166: Size mismatch in connection of port <blue>. Formal port size is 10-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 180: Assignment to rfd ignored, since the identifier is never used
+
+Elaborating module <mult_60>.
+
+Elaborating module <add_to_H>.
+
+Elaborating module <div_360>.
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 216: Assignment to rfd ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 217: Size mismatch in connection of port <dividend>. Formal port size is 16-bit while actual signal size is 10-bit.
+
+Elaborating module <mult_255>.
+WARNING:HDLCompiler:413 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 236: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 243: Result of 10-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 250: Result of 10-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <PLL_BASE(CLKIN_PERIOD=10,CLKFBOUT_MULT=10,CLKOUT0_DIVIDE=1,CLKOUT1_DIVIDE=10,CLKOUT2_DIVIDE=5,COMPENSATION="SOURCE_SYNCHRONOUS")>.
+
+Elaborating module <BUFGMUX>.
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 366: Assignment to tx_bufpll_lock ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 368: Assignment to tx0_reset ignored, since the identifier is never used
+
+Elaborating module <dvi_encoder_top>.
+
+Elaborating module <serdes_n_to_1(SF=5)>.
+
+Elaborating module <OSERDES2(DATA_WIDTH=5,DATA_RATE_OQ="SDR",DATA_RATE_OT="SDR",SERDES_MODE="MASTER",OUTPUT_MODE="DIFFERENTIAL")>.
+
+Elaborating module <OSERDES2(DATA_WIDTH=5,DATA_RATE_OQ="SDR",DATA_RATE_OT="SDR",SERDES_MODE="SLAVE",OUTPUT_MODE="DIFFERENTIAL")>.
+
+Elaborating module <OBUFDS>.
+
+Elaborating module <encode>.
+
+Elaborating module <convert_30to15_fifo>.
+
+Elaborating module <FDC>.
+
+Elaborating module <DRAM16XN(data_width=30)>.
+
+Elaborating module <FDP>.
+
+Elaborating module <FD>.
+
+Elaborating module <FDR>.
+
+Elaborating module <FDRE>.
+
+Elaborating module <FDE>.
+WARNING:HDLCompiler:634 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 258: Net <r_mux[7][7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 259: Net <g_mux[7][7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 260: Net <b_mux[7][7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 261: Net <de_mux[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 262: Net <hsync_mux[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 263: Net <vsync_mux[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" Line 295: Net <tx_reset> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <hdmi_main>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v".
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <sdout> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <pclkx2> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <pclkx10> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <pllclk0> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <pllclk2> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <pll_lckd> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <serdesstrobe> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <tmdsclk> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <blue_vld> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <green_vld> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <red_vld> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v" line 107: Output port <psalgnerr> of the instance <dvi_rx1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <r_mux<7>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <r_mux<6>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <r_mux<5>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <r_mux<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <r_mux<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_mux<7>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_mux<6>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_mux<5>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_mux<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <g_mux<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <b_mux<7>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <b_mux<6>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <b_mux<5>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <b_mux<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <b_mux<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <de_mux<7:3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <hsync_mux<7:3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <vsync_mux<7:3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <tx_reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	inferred  24 Multiplexer(s).
+Unit <hdmi_main> synthesized.
+
+Synthesizing Unit <dvi_decoder>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v".
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" line 194: Output port <c0> of the instance <dec_g> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" line 194: Output port <c1> of the instance <dec_g> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" line 194: Output port <de> of the instance <dec_g> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" line 216: Output port <c0> of the instance <dec_r> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" line 216: Output port <c1> of the instance <dec_r> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/dvi_decoder.v" line 216: Output port <de> of the instance <dec_r> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <dvi_decoder> synthesized.
+
+Synthesizing Unit <decode>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/decode.v".
+        CTRLTOKEN0 = 10'b1101010100
+        CTRLTOKEN1 = 10'b0010101011
+        CTRLTOKEN2 = 10'b0101010100
+        CTRLTOKEN3 = 10'b1010101011
+    Found 1-bit register for signal <toggle>.
+    Found 5-bit register for signal <raw5bit_q>.
+    Found 10-bit register for signal <rawword>.
+    Found 1-bit register for signal <bitslip_q>.
+    Found 1-bit register for signal <bitslipx2>.
+    Found 1-bit register for signal <c0>.
+    Found 1-bit register for signal <c1>.
+    Found 1-bit register for signal <de>.
+    Found 8-bit register for signal <dout>.
+    Found 10-bit register for signal <sdout>.
+    Found 1-bit register for signal <flipgearx2>.
+    Summary:
+	inferred  40 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <decode> synthesized.
+
+Synthesizing Unit <serdes_1_to_5_diff_data>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/serdes_1_to_5_diff_data.v".
+        DIFF_TERM = "FALSE"
+        SIM_TAP_DELAY = 49
+        BITSLIP_ENABLE = "TRUE"
+    Found 9-bit register for signal <counter>.
+    Found 5-bit register for signal <pdcounter>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <cal_data_master>.
+    Found 1-bit register for signal <cal_data_sint>.
+    Found 1-bit register for signal <enable>.
+    Found 1-bit register for signal <ce_data_inta>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <rst_data>.
+    Found 1-bit register for signal <busy_data_d>.
+    Found 1-bit register for signal <incdec_data_d>.
+    Found 1-bit register for signal <valid_data_d>.
+    Found 1-bit register for signal <ce_data>.
+    Found 1-bit register for signal <inc_data_int>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 36                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | gclk (rising_edge)                             |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <counter[8]_GND_10_o_add_2_OUT> created at line 122.
+    Found 5-bit adder for signal <pdcounter[4]_GND_10_o_add_54_OUT> created at line 224.
+    Found 5-bit adder for signal <pdcounter[4]_PWR_10_o_add_57_OUT> created at line 227.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <serdes_1_to_5_diff_data> synthesized.
+
+Synthesizing Unit <phsaligner>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/phsaligner.v".
+        OPENEYE_CNT_WD = 3
+        CTKNCNTWD = 7
+        SRCHTIMERWD = 12
+    Found 1-bit register for signal <ctkn_srh_rst>.
+    Found 1-bit register for signal <ctkn_cnt_rst>.
+    Found 3-bit register for signal <bitslip_cnt>.
+    Found 6-bit register for signal <cstate>.
+    Found 1-bit register for signal <psaligned>.
+    Found 1-bit register for signal <bitslip>.
+    Found 1-bit register for signal <flipgear>.
+    Found 1-bit register for signal <blnkprd_cnt>.
+    Found 1-bit register for signal <rcvd_ctkn_q>.
+    Found 1-bit register for signal <blnkbgn>.
+    Found 12-bit register for signal <ctkn_srh_timer>.
+    Found 1-bit register for signal <ctkn_srh_tout>.
+    Found 7-bit register for signal <ctkn_counter>.
+    Found 1-bit register for signal <ctkn_cnt_tout>.
+    Found 1-bit register for signal <rcvd_ctkn>.
+    Found finite state machine <FSM_1> for signal <cstate>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000001                                         |
+    | Power Up State     | 000001                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <ctkn_srh_timer[11]_GND_18_o_add_6_OUT> created at line 98.
+    Found 7-bit adder for signal <ctkn_counter[6]_GND_18_o_add_12_OUT> created at line 122.
+    Found 3-bit adder for signal <bitslip_cnt[2]_GND_18_o_add_32_OUT> created at line 245.
+    Found 1-bit adder for signal <blnkprd_cnt[0]_PWR_17_o_add_33_OUT<0>> created at line 255.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <phsaligner> synthesized.
+
+Synthesizing Unit <chnlbond>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/chnlbond.v".
+        CTRLTOKEN0 = 10'b1101010100
+        CTRLTOKEN1 = 10'b0010101011
+        CTRLTOKEN2 = 10'b0101010100
+        CTRLTOKEN3 = 10'b1010101011
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/rx/chnlbond.v" line 86: Output port <O_DATA_OUT> of the instance <cbfifo_i> is unconnected or connected to loadless signal.
+    Register <we> equivalent to <rawdata_vld_q> has been removed
+    Found 4-bit register for signal <wa>.
+    Found 10-bit register for signal <sdata>.
+    Found 1-bit register for signal <rcvd_ctkn>.
+    Found 1-bit register for signal <rcvd_ctkn_q>.
+    Found 1-bit register for signal <blnkbgn>.
+    Found 1-bit register for signal <skip_line>.
+    Found 1-bit register for signal <iamrdy>.
+    Found 1-bit register for signal <rawdata_vld_q>.
+    Found 1-bit register for signal <rawdata_vld_rising>.
+    Found 1-bit register for signal <ra_en>.
+    Found 4-bit register for signal <ra>.
+    Found 4-bit adder for signal <wa[3]_GND_20_o_add_2_OUT> created at line 79.
+    Found 4-bit adder for signal <ra[3]_GND_20_o_add_17_OUT> created at line 167.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+Unit <chnlbond> synthesized.
+
+Synthesizing Unit <DRAM16XN_1>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/common/DRAM16XN.v".
+        data_width = 10
+    Summary:
+	no macro.
+Unit <DRAM16XN_1> synthesized.
+
+Synthesizing Unit <rgb2ycbcr>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2ycbcr.v".
+    Summary:
+	no macro.
+Unit <rgb2ycbcr> synthesized.
+
+Synthesizing Unit <delayx_1>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/delayx.v".
+        N = 9
+        DELAY = 2
+    Summary:
+	no macro.
+Unit <delayx_1> synthesized.
+
+Synthesizing Unit <delay_1>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/delay.v".
+        N = 9
+    Found 9-bit register for signal <val>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <delay_1> synthesized.
+
+Synthesizing Unit <delayx_2>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/delayx.v".
+        N = 3
+        DELAY = 6
+    Summary:
+	no macro.
+Unit <delayx_2> synthesized.
+
+Synthesizing Unit <delay_2>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/delay.v".
+        N = 3
+    Found 3-bit register for signal <val>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <delay_2> synthesized.
+
+Synthesizing Unit <rgb2hsv>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v".
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" line 46: Output port <rfd> of the instance <r_div_255> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" line 63: Output port <rfd> of the instance <g_div_255> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" line 80: Output port <rfd> of the instance <b_div_255> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" line 144: Output port <rfd> of the instance <diff_div_v> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" line 178: Output port <rfd> of the instance <sub_div_diff> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" line 214: Output port <rfd> of the instance <h_div_360> is unconnected or connected to loadless signal.
+    Found 32-bit comparator greater for signal <v_01[9]_GND_30_o_LessThan_5_o> created at line 153
+    Summary:
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <rgb2hsv> synthesized.
+
+Synthesizing Unit <max>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/max.v".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <r_index>.
+    Found 10-bit register for signal <r_value>.
+    Found 10-bit comparator greater for signal <green[9]_red[9]_LessThan_2_o> created at line 36
+    Found 10-bit comparator greater for signal <blue[9]_red[9]_LessThan_3_o> created at line 36
+    Found 10-bit comparator greater for signal <red[9]_green[9]_LessThan_4_o> created at line 41
+    Found 10-bit comparator greater for signal <blue[9]_green[9]_LessThan_5_o> created at line 41
+    Found 10-bit comparator greater for signal <red[9]_blue[9]_LessThan_6_o> created at line 46
+    Found 10-bit comparator greater for signal <green[9]_blue[9]_LessThan_7_o> created at line 46
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <max> synthesized.
+
+Synthesizing Unit <min>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/min.v".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <r_index>.
+    Found 10-bit register for signal <r_value>.
+    Found 10-bit comparator greater for signal <red[9]_green[9]_LessThan_2_o> created at line 36
+    Found 10-bit comparator greater for signal <red[9]_blue[9]_LessThan_3_o> created at line 36
+    Found 10-bit comparator greater for signal <green[9]_red[9]_LessThan_4_o> created at line 41
+    Found 10-bit comparator greater for signal <green[9]_blue[9]_LessThan_5_o> created at line 41
+    Found 10-bit comparator greater for signal <blue[9]_red[9]_LessThan_6_o> created at line 46
+    Found 10-bit comparator greater for signal <blue[9]_green[9]_LessThan_7_o> created at line 46
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <min> synthesized.
+
+Synthesizing Unit <sub_RGB>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/sub_RGB.v".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit register for signal <r_value>.
+    Found 10-bit subtractor for signal <green[9]_blue[9]_sub_4_OUT> created at line 44.
+    Found 10-bit subtractor for signal <blue[9]_red[9]_sub_6_OUT> created at line 48.
+    Found 10-bit subtractor for signal <red[9]_green[9]_sub_8_OUT> created at line 52.
+    Found 2-bit comparator equal for signal <min_index[1]_max_index[1]_equal_2_o> created at line 36
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <sub_RGB> synthesized.
+
+Synthesizing Unit <add_to_H>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/add_to_H.v".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit register for signal <r_value>.
+    Found 10-bit adder for signal <h[9]_GND_38_o_add_3_OUT> created at line 39.
+    Found 10-bit adder for signal <h[9]_GND_38_o_add_5_OUT> created at line 43.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <add_to_H> synthesized.
+
+Synthesizing Unit <dvi_encoder_top>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/dvi_encoder_top.v".
+    Found 5-bit register for signal <tmdsclkint>.
+    Found 1-bit register for signal <toggle>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <dvi_encoder_top> synthesized.
+
+Synthesizing Unit <serdes_n_to_1>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/serdes_n_to_1.v".
+        SF = 5
+    Summary:
+	no macro.
+Unit <serdes_n_to_1> synthesized.
+
+Synthesizing Unit <encode>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/encode.v".
+        CTRLTOKEN0 = 10'b1101010100
+        CTRLTOKEN1 = 10'b0010101011
+        CTRLTOKEN2 = 10'b0101010100
+        CTRLTOKEN3 = 10'b1010101011
+    Found 10-bit register for signal <dout>.
+    Found 5-bit register for signal <cnt>.
+    Found 8-bit register for signal <din_q>.
+    Found 4-bit register for signal <n1q_m>.
+    Found 4-bit register for signal <n0q_m>.
+    Found 1-bit register for signal <de_q>.
+    Found 1-bit register for signal <de_reg>.
+    Found 1-bit register for signal <c0_q>.
+    Found 1-bit register for signal <c0_reg>.
+    Found 1-bit register for signal <c1_q>.
+    Found 1-bit register for signal <c1_reg>.
+    Found 9-bit register for signal <q_m_reg>.
+    Found 4-bit register for signal <n1d>.
+    Found 4-bit subtractor for signal <PWR_47_o_BUS_0017_sub_29_OUT> created at line 110.
+    Found 5-bit subtractor for signal <n0233> created at line 169.
+    Found 5-bit subtractor for signal <n0235> created at line 175.
+    Found 5-bit subtractor for signal <n0236> created at line 175.
+    Found 2-bit adder for signal <n0183[1:0]> created at line 66.
+    Found 3-bit adder for signal <n0186[2:0]> created at line 66.
+    Found 2-bit adder for signal <n0204[1:0]> created at line 109.
+    Found 3-bit adder for signal <n0207[2:0]> created at line 109.
+    Found 5-bit adder for signal <n0232> created at line 169.
+    Found 5-bit adder for signal <cnt[4]_GND_48_o_add_47_OUT> created at line 169.
+    Found 5-bit adder for signal <cnt[4]_GND_48_o_add_50_OUT> created at line 175.
+    Found 4-bit adder for signal <_n0248> created at line 66.
+    Found 4-bit adder for signal <_n0249> created at line 66.
+    Found 4-bit adder for signal <_n0250> created at line 66.
+    Found 4-bit adder for signal <_n0251> created at line 66.
+    Found 4-bit adder for signal <BUS_0003_GND_48_o_add_7_OUT> created at line 66.
+    Found 4-bit adder for signal <_n0253> created at line 109.
+    Found 4-bit adder for signal <_n0254> created at line 109.
+    Found 4-bit adder for signal <_n0255> created at line 109.
+    Found 4-bit adder for signal <_n0256> created at line 109.
+    Found 4-bit adder for signal <BUS_0010_GND_48_o_add_20_OUT> created at line 109.
+    Found 5-bit adder for signal <cnt[4]_GND_48_o_sub_41_OUT> created at line 162.
+    Found 5-bit adder for signal <cnt[4]_GND_48_o_sub_43_OUT> created at line 162.
+    Found 4x10-bit Read Only RAM for signal <c1_reg_PWR_47_o_wide_mux_53_OUT>
+    Found 4-bit comparator greater for signal <GND_48_o_n1d[3]_LessThan_11_o> created at line 77
+    Found 4-bit comparator equal for signal <n1q_m[3]_n0q_m[3]_equal_33_o> created at line 121
+    Found 4-bit comparator greater for signal <n0q_m[3]_n1q_m[3]_LessThan_34_o> created at line 125
+    Found 4-bit comparator greater for signal <n1q_m[3]_n0q_m[3]_LessThan_35_o> created at line 125
+    Summary:
+	inferred   1 RAM(s).
+	inferred  23 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  37 Multiplexer(s).
+Unit <encode> synthesized.
+
+Synthesizing Unit <convert_30to15_fifo>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/convert_30to15_fifo.v".
+        ADDR0 = 4'b0000
+        ADDR1 = 4'b0001
+        ADDR2 = 4'b0010
+        ADDR3 = 4'b0011
+        ADDR4 = 4'b0100
+        ADDR5 = 4'b0101
+        ADDR6 = 4'b0110
+        ADDR7 = 4'b0111
+        ADDR8 = 4'b1000
+        ADDR9 = 4'b1001
+        ADDR10 = 4'b1010
+        ADDR11 = 4'b1011
+        ADDR12 = 4'b1100
+        ADDR13 = 4'b1101
+        ADDR14 = 4'b1110
+        ADDR15 = 4'b1111
+    Set property "ASYNC_REG = TRUE" for instance <fdp_rst>.
+INFO:Xst:3210 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/tx/convert_30to15_fifo.v" line 64: Output port <O_DATA_OUT> of the instance <fifo_u> is unconnected or connected to loadless signal.
+    Found 16x4-bit Read Only RAM for signal <wa_d>
+    Found 16x4-bit Read Only RAM for signal <ra_d>
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <convert_30to15_fifo> synthesized.
+
+Synthesizing Unit <DRAM16XN_2>.
+    Related source file is "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/common/DRAM16XN.v".
+        data_width = 30
+    Summary:
+	no macro.
+Unit <DRAM16XN_2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x4-bit single-port Read Only RAM                    : 2
+ 4x10-bit single-port Read Only RAM                    : 3
+# Adders/Subtractors                                   : 95
+ 1-bit adder                                           : 3
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
+ 12-bit adder                                          : 3
+ 2-bit adder                                           : 6
+ 3-bit adder                                           : 9
+ 4-bit adder                                           : 36
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 18
+ 5-bit subtractor                                      : 9
+ 7-bit adder                                           : 3
+ 9-bit adder                                           : 3
+# Registers                                            : 199
+ 1-bit register                                        : 124
+ 10-bit register                                       : 16
+ 12-bit register                                       : 3
+ 2-bit register                                        : 5
+ 3-bit register                                        : 9
+ 4-bit register                                        : 15
+ 5-bit register                                        : 10
+ 7-bit register                                        : 3
+ 8-bit register                                        : 6
+ 9-bit register                                        : 8
+# Comparators                                          : 26
+ 10-bit comparator greater                             : 12
+ 2-bit comparator equal                                : 1
+ 32-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 3
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 198
+ 1-bit 2-to-1 multiplexer                              : 141
+ 10-bit 2-to-1 multiplexer                             : 14
+ 15-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 24
+ 8-bit 2-to-1 multiplexer                              : 15
+ 9-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 6
+# Xors                                                 : 87
+ 1-bit xor2                                            : 87
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/mult.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/adder.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/divider_255.ngc>.
+Reading core <ipcore_dir/subtracter.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/div_01.ngc>.
+Reading core <ipcore_dir/mult_60.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/div_360.ngc>.
+Reading core <ipcore_dir/mult_255.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <mult> for timing and area information for instance <Y_R>.
+Loading core <mult> for timing and area information for instance <Y_G>.
+Loading core <mult> for timing and area information for instance <Y_B>.
+Loading core <adder> for timing and area information for instance <Y_adder1>.
+Loading core <adder> for timing and area information for instance <Y_adder2>.
+Loading core <mult> for timing and area information for instance <Cb_R>.
+Loading core <mult> for timing and area information for instance <Cb_G>.
+Loading core <mult> for timing and area information for instance <Cb_B>.
+Loading core <adder> for timing and area information for instance <Cb_adder1>.
+Loading core <adder> for timing and area information for instance <Cb_adder2>.
+Loading core <adder> for timing and area information for instance <Cb_adder3>.
+Loading core <mult> for timing and area information for instance <Cr_R>.
+Loading core <mult> for timing and area information for instance <Cr_G>.
+Loading core <mult> for timing and area information for instance <Cr_B>.
+Loading core <adder> for timing and area information for instance <Cr_adder1>.
+Loading core <adder> for timing and area information for instance <Cr_adder2>.
+Loading core <adder> for timing and area information for instance <Cr_adder3>.
+Loading core <divider_255> for timing and area information for instance <r_div_255>.
+Loading core <divider_255> for timing and area information for instance <g_div_255>.
+Loading core <divider_255> for timing and area information for instance <b_div_255>.
+Loading core <subtracter> for timing and area information for instance <sub_max_min>.
+Loading core <div_01> for timing and area information for instance <diff_div_v>.
+Loading core <div_01> for timing and area information for instance <sub_div_diff>.
+Loading core <mult_60> for timing and area information for instance <m60>.
+Loading core <div_360> for timing and area information for instance <h_div_360>.
+Loading core <mult_255> for timing and area information for instance <mult_V>.
+Loading core <mult_255> for timing and area information for instance <mult_H>.
+Loading core <mult_255> for timing and area information for instance <mult_S>.
+INFO:Xst:2261 - The FF/Latch <tmdsclkint_0> in Unit <dvi_tx> is equivalent to the following 4 FFs/Latches, which will be removed : <tmdsclkint_1> <tmdsclkint_2> <tmdsclkint_3> <tmdsclkint_4> 
+WARNING:Xst:1710 - FF/Latch <c1_q> (without init value) has a constant value of 0 in block <encg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c0_q> (without init value) has a constant value of 0 in block <encg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c1_q> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <c0_q> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_reg> (without init value) has a constant value of 0 in block <encg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_reg> (without init value) has a constant value of 0 in block <encg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c0_reg> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <c1_reg> (without init value) has a constant value of 0 in block <encr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <val_8> of sequential type is unconnected in block <[0].delay_i>.
+WARNING:Xst:2677 - Node <val_8> of sequential type is unconnected in block <[1].delay_i>.
+
+Synthesizing (advanced) Unit <chnlbond>.
+The following registers are absorbed into counter <wa>: 1 register on signal <wa>.
+The following registers are absorbed into counter <ra>: 1 register on signal <ra>.
+Unit <chnlbond> synthesized (advanced).
+
+Synthesizing (advanced) Unit <convert_30to15_fifo>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_wa_d> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <wa>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <wa_d>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ra_d> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ra>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ra_d>          |          |
+    -----------------------------------------------------------------------
+Unit <convert_30to15_fifo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <encode>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0010_GND_48_o_add_20_OUT_Madd1> :
+ 	<Madd__n0253> in block <encode>, 	<Madd__n0254> in block <encode>, 	<Madd__n0256_Madd> in block <encode>, 	<Madd_n0204[1:0]> in block <encode>, 	<Madd_BUS_0010_GND_48_o_add_20_OUT_Madd> in block <encode>.
+	The following adders/subtractors are grouped into adder tree <Madd_BUS_0003_GND_48_o_add_7_OUT_Madd1> :
+ 	<Madd__n0248> in block <encode>, 	<Madd__n0249> in block <encode>, 	<Madd__n0251_Madd> in block <encode>, 	<Madd_n0183[1:0]> in block <encode>, 	<Madd_BUS_0003_GND_48_o_add_7_OUT_Madd> in block <encode>.
+INFO:Xst:3231 - The small RAM <Mram_c1_reg_PWR_47_o_wide_mux_53_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(c1_reg,c0_reg)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3217 - HDL ADVISOR - Register <dout> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_c1_reg_PWR_47_o_wide_mux_53_OUT> for implementation on block RAM resources if you made this reset synchronous instead.
+Unit <encode> synthesized (advanced).
+
+Synthesizing (advanced) Unit <phsaligner>.
+The following registers are absorbed into counter <ctkn_srh_timer>: 1 register on signal <ctkn_srh_timer>.
+The following registers are absorbed into counter <ctkn_counter>: 1 register on signal <ctkn_counter>.
+Unit <phsaligner> synthesized (advanced).
+
+Synthesizing (advanced) Unit <serdes_1_to_5_diff_data>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <serdes_1_to_5_diff_data> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x4-bit single-port distributed Read Only RAM        : 2
+ 4x10-bit single-port distributed Read Only RAM        : 3
+# Adders/Subtractors                                   : 38
+ 1-bit adder                                           : 3
+ 10-bit adder                                          : 1
+ 10-bit subtractor                                     : 1
+ 3-bit adder                                           : 3
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 18
+ 5-bit subtractor                                      : 9
+# Adder Trees                                          : 6
+ 4-bit / 6-inputs adder tree                           : 6
+# Counters                                             : 15
+ 12-bit up counter                                     : 3
+ 4-bit up counter                                      : 6
+ 7-bit up counter                                      : 3
+ 9-bit up counter                                      : 3
+# Registers                                            : 557
+ Flip-Flops                                            : 557
+# Comparators                                          : 26
+ 10-bit comparator greater                             : 12
+ 2-bit comparator equal                                : 1
+ 32-bit comparator greater                             : 1
+ 4-bit comparator equal                                : 3
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 195
+ 1-bit 2-to-1 multiplexer                              : 141
+ 10-bit 2-to-1 multiplexer                             : 14
+ 15-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 24
+ 8-bit 2-to-1 multiplexer                              : 15
+# FSMs                                                 : 6
+# Xors                                                 : 87
+ 1-bit xor2                                            : 87
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <tmdsclkint_0> in Unit <dvi_encoder_top> is equivalent to the following 4 FFs/Latches, which will be removed : <tmdsclkint_1> <tmdsclkint_2> <tmdsclkint_3> <tmdsclkint_4> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <dvi_rx1/dec_b/des_0/FSM_0> on signal <state[1:4]> with user encoding.
+Optimizing FSM <dvi_rx1/dec_g/des_0/FSM_0> on signal <state[1:4]> with user encoding.
+Optimizing FSM <dvi_rx1/dec_r/des_0/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 0001  | 0001
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <dvi_rx1/dec_b/phsalgn_0/FSM_1> on signal <cstate[1:6]> with user encoding.
+Optimizing FSM <dvi_rx1/dec_g/phsalgn_0/FSM_1> on signal <cstate[1:6]> with user encoding.
+Optimizing FSM <dvi_rx1/dec_r/phsalgn_0/FSM_1> on signal <cstate[1:6]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000001 | 000001
+ 000010 | 000010
+ 000100 | 000100
+ 001000 | 001000
+ 010000 | 010000
+ 100000 | 100000
+--------------------
+WARNING:Xst:1710 - FF/Latch <max_calculator/r_value_9> (without init value) has a constant value of 0 in block <rgb2hsv>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <min_calculator/r_value_9> (without init value) has a constant value of 0 in block <rgb2hsv>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance PLL_ISERDES in unit PLL_ISERDES of type PLL_BASE has been replaced by PLL_ADV
+INFO:Xst:1901 - Instance PLL_OSERDES_0 in unit PLL_OSERDES_0 of type PLL_BASE has been replaced by PLL_ADV
+INFO:Xst:2261 - The FF/Latch <n1q_m_0> in Unit <encode> is equivalent to the following FF/Latch, which will be removed : <n0q_m_0> 
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <n1q_m_0> is unconnected in block <encode>.
+
+Optimizing unit <DRAM16XN_1> ...
+
+Optimizing unit <rgb2ycbcr> ...
+
+Optimizing unit <delay_1> ...
+
+Optimizing unit <DRAM16XN_2> ...
+
+Optimizing unit <hdmi_main> ...
+
+Optimizing unit <dvi_decoder> ...
+
+Optimizing unit <decode> ...
+
+Optimizing unit <serdes_1_to_5_diff_data> ...
+
+Optimizing unit <phsaligner> ...
+
+Optimizing unit <chnlbond> ...
+
+Optimizing unit <rgb2hsv> ...
+
+Optimizing unit <sub_RGB> ...
+
+Optimizing unit <add_to_H> ...
+
+Optimizing unit <dvi_encoder_top> ...
+
+Optimizing unit <encode> ...
+WARNING:Xst:1710 - FF/Latch <cnt_0> (without init value) has a constant value of 0 in block <encode>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <convert_30to15_fifo> ...
+WARNING:Xst:1710 - FF/Latch <dvi_tx/encr/c1_q> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dvi_tx/encr/c0_q> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dvi_tx/encg/c1_q> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dvi_tx/encg/c0_q> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_tx/encr/c1_reg> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_tx/encr/c0_reg> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_tx/encg/c1_reg> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dvi_tx/encg/c0_reg> (without init value) has a constant value of 0 in block <hdmi_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_9> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_8> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_7> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_6> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_5> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_4> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_3> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_2> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_1> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/sdout_0> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/de> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/c1> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_r/c0> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_9> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_8> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_7> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_6> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_5> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_4> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_3> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_2> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_1> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/sdout_0> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/de> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/c1> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_g/c0> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_9> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_8> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_7> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_6> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_5> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_4> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_3> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_2> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_1> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <dvi_rx1/dec_b/sdout_0> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <ycbcr_converter/Y_delay/[0].delay_i/val_8> of sequential type is unconnected in block <hdmi_main>.
+WARNING:Xst:2677 - Node <ycbcr_converter/Y_delay/[1].delay_i/val_8> of sequential type is unconnected in block <hdmi_main>.
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/cbnd/rawdata_vld_rising> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/cbnd/rawdata_vld_rising> <dvi_rx1/dec_r/cbnd/rawdata_vld_rising> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/enable> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/enable> <dvi_rx1/dec_r/des_0/enable> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_0> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_0> <dvi_rx1/dec_r/des_0/counter_0> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_1> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_1> <dvi_rx1/dec_r/des_0/counter_1> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_2> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_2> <dvi_rx1/dec_r/des_0/counter_2> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_3> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_3> <dvi_rx1/dec_r/des_0/counter_3> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_4> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_4> <dvi_rx1/dec_r/des_0/counter_4> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_5> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_5> <dvi_rx1/dec_r/des_0/counter_5> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_6> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_6> <dvi_rx1/dec_r/des_0/counter_6> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_7> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_7> <dvi_rx1/dec_r/des_0/counter_7> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/des_0/counter_8> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/des_0/counter_8> <dvi_rx1/dec_r/des_0/counter_8> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_r/toggle> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/toggle> <dvi_rx1/dec_b/toggle> 
+INFO:Xst:2261 - The FF/Latch <dvi_tx/encr/de_q> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_tx/encg/de_q> <dvi_tx/encb/de_q> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/cbnd/wa_0> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/cbnd/wa_0> <dvi_rx1/dec_r/cbnd/wa_0> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/cbnd/wa_1> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/cbnd/wa_1> <dvi_rx1/dec_r/cbnd/wa_1> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/cbnd/wa_2> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/cbnd/wa_2> <dvi_rx1/dec_r/cbnd/wa_2> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/cbnd/wa_3> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/cbnd/wa_3> <dvi_rx1/dec_r/cbnd/wa_3> 
+INFO:Xst:2261 - The FF/Latch <dvi_tx/encr/de_reg> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_tx/encg/de_reg> <dvi_tx/encb/de_reg> 
+INFO:Xst:2261 - The FF/Latch <dvi_rx1/dec_b/cbnd/rawdata_vld_q> in Unit <hdmi_main> is equivalent to the following 2 FFs/Latches, which will be removed : <dvi_rx1/dec_g/cbnd/rawdata_vld_q> <dvi_rx1/dec_r/cbnd/rawdata_vld_q> 
+INFO:Xst:2261 - The FF/Latch <hsv_converter/subtr_RGB/r_value_9> in Unit <hdmi_main> is equivalent to the following FF/Latch, which will be removed : <hsv_converter/subtr_RGB/r_value_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block hdmi_main, actual ratio is 9.
+INFO:Xst:2260 - The FF/Latch <blk00000048> in Unit <blk00000003> is equivalent to the following FF/Latch : <blk00000b19> 
+INFO:Xst:2260 - The FF/Latch <blk00000049> in Unit <blk00000003> is equivalent to the following FF/Latch : <blk00000b18> 
+INFO:Xst:2260 - The FF/Latch <blk00000048> in Unit <blk00000003> is equivalent to the following FF/Latch : <blk00000b19> 
+INFO:Xst:2260 - The FF/Latch <blk00000049> in Unit <blk00000003> is equivalent to the following FF/Latch : <blk00000b18> 
+INFO:Xst:2260 - The FF/Latch <blk00000048> in Unit <blk00000003> is equivalent to the following FF/Latch : <blk00000b19> 
+INFO:Xst:2260 - The FF/Latch <blk00000049> in Unit <blk00000003> is equivalent to the following FF/Latch : <blk00000b18> 
+
+Final Macro Processing ...
+
+Processing Unit <hdmi_main> :
+	Found 6-bit shift register for signal <ycbcr_converter/sync_delay/[5].delay_i/val_0>.
+	Found 6-bit shift register for signal <ycbcr_converter/sync_delay/[5].delay_i/val_1>.
+	Found 6-bit shift register for signal <ycbcr_converter/sync_delay/[5].delay_i/val_2>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_7>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_6>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_5>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_4>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_3>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_2>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_1>.
+	Found 2-bit shift register for signal <ycbcr_converter/Y_delay/[1].delay_i/val_0>.
+Unit <hdmi_main> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 558
+ Flip-Flops                                            : 558
+# Shift Registers                                      : 11
+ 2-bit shift register                                  : 8
+ 6-bit shift register                                  : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : hdmi_main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 5834
+#      GND                         : 29
+#      INV                         : 295
+#      LUT1                        : 86
+#      LUT2                        : 370
+#      LUT3                        : 1218
+#      LUT4                        : 193
+#      LUT5                        : 118
+#      LUT6                        : 323
+#      MUXCY                       : 1600
+#      MUXF7                       : 27
+#      VCC                         : 17
+#      XORCY                       : 1558
+# FlipFlops/Latches                : 4903
+#      FD                          : 4427
+#      FDC                         : 68
+#      FDCE                        : 12
+#      FDE                         : 263
+#      FDP                         : 9
+#      FDPE                        : 3
+#      FDR                         : 72
+#      FDRE                        : 49
+# RAMS                             : 60
+#      RAM16X1D                    : 60
+# Shift Registers                  : 82
+#      SRLC16E                     : 80
+#      SRLC32E                     : 2
+# Clock Buffers                    : 7
+#      BUFG                        : 6
+#      BUFGMUX                     : 1
+# IO Buffers                       : 23
+#      BUFIO2                      : 2
+#      IBUF                        : 5
+#      IBUFDS                      : 4
+#      OBUF                        : 8
+#      OBUFDS                      : 4
+# DSPs                             : 9
+#      DSP48A1                     : 9
+# Others                           : 24
+#      BUFPLL                      : 2
+#      IODELAY2                    : 6
+#      ISERDES2                    : 6
+#      OSERDES2                    : 8
+#      PLL_ADV                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            4903  out of  54576     8%  
+ Number of Slice LUTs:                 2805  out of  27288    10%  
+    Number used as Logic:              2603  out of  27288     9%  
+    Number used as Memory:              202  out of   6408     3%  
+       Number used as RAM:              120
+       Number used as SRL:               82
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5866
+   Number with an unused Flip Flop:     963  out of   5866    16%  
+   Number with an unused LUT:          3061  out of   5866    52%  
+   Number of fully used LUT-FF pairs:  1842  out of   5866    31%  
+   Number of unique control sets:        42
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  29  out of    218    13%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                7  out of     16    43%  
+ Number of DSP48A1s:                      9  out of     58    15%  
+ Number of PLL_ADVs:                      2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+dvi_rx1/PLL_ISERDES/CLKOUT1        | BUFGMUX                | 4880  |
+dvi_rx1/PLL_ISERDES/CLKOUT2        | BUFG                   | 119   |
+PLL_OSERDES_0/CLKOUT2              | BUFG                   | 55    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.868ns (Maximum Frequency: 145.603MHz)
+   Minimum input arrival time before clock: 6.996ns
+   Maximum output required time after clock: 4.380ns
+   Maximum combinational path delay: 3.593ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dvi_rx1/PLL_ISERDES/CLKOUT1'
+  Clock period: 6.868ns (frequency: 145.603MHz)
+  Total number of paths / destination ports: 61783 / 5445
+-------------------------------------------------------------------------
+Delay:               6.868ns (Levels of Logic = 5)
+  Source:            dvi_tx/encr/din_q_0 (FF)
+  Destination:       dvi_tx/encr/n0q_m_2 (FF)
+  Source Clock:      dvi_rx1/PLL_ISERDES/CLKOUT1 rising
+  Destination Clock: dvi_rx1/PLL_ISERDES/CLKOUT1 rising
+
+  Data Path: dvi_tx/encr/din_q_0 to dvi_tx/encr/n0q_m_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              19   0.525   1.261  dvi_tx/encr/din_q_0 (dvi_tx/encr/din_q_0)
+     LUT3:I2->O            7   0.254   0.909  dvi_tx/encr/Mmux_q_m<2>11 (dvi_tx/encr/q_m<2>)
+     MUXF7:S->O            5   0.185   1.271  dvi_tx/encr/Mmux_q_m<3>13 (dvi_tx/encr/q_m<3>)
+     LUT6:I1->O            5   0.254   0.841  dvi_tx/encr/ADDERTREE_INTERNAL_Madd9_lut<0>11 (dvi_tx/encr/ADDERTREE_INTERNAL_Madd9_lut<0>1)
+     LUT5:I4->O            1   0.254   0.790  dvi_tx/encr/Msub_PWR_47_o_BUS_0017_sub_29_OUT_xor<2>12 (dvi_tx/encr/Msub_PWR_47_o_BUS_0017_sub_29_OUT_xor<2>11)
+     LUT6:I4->O            1   0.250   0.000  dvi_tx/encr/Msub_PWR_47_o_BUS_0017_sub_29_OUT_xor<2>14 (dvi_tx/encr/PWR_47_o_BUS_0017_sub_29_OUT<2>)
+     FD:D                      0.074          dvi_tx/encr/n0q_m_2
+    ----------------------------------------
+    Total                      6.868ns (1.796ns logic, 5.072ns route)
+                                       (26.2% logic, 73.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dvi_rx1/PLL_ISERDES/CLKOUT2'
+  Clock period: 5.499ns (frequency: 181.851MHz)
+  Total number of paths / destination ports: 1139 / 119
+-------------------------------------------------------------------------
+Delay:               5.499ns (Levels of Logic = 3)
+  Source:            dvi_rx1/dec_b/des_0/pdcounter_4 (FF)
+  Destination:       dvi_rx1/dec_b/des_0/pdcounter_4 (FF)
+  Source Clock:      dvi_rx1/PLL_ISERDES/CLKOUT2 rising
+  Destination Clock: dvi_rx1/PLL_ISERDES/CLKOUT2 rising
+
+  Data Path: dvi_rx1/dec_b/des_0/pdcounter_4 to dvi_rx1/dec_b/des_0/pdcounter_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.525   1.340  dvi_rx1/dec_b/des_0/pdcounter_4 (dvi_rx1/dec_b/des_0/pdcounter_4)
+     LUT5:I0->O            8   0.254   1.052  dvi_rx1/dec_b/des_0/pdcounter[4]_GND_10_o_equal_50_o<4>1 (dvi_rx1/dec_b/des_0/pdcounter[4]_GND_10_o_equal_50_o)
+     LUT6:I4->O            1   0.250   0.682  dvi_rx1/dec_b/des_0/_n0278_inv1 (dvi_rx1/dec_b/des_0/_n0278_inv1)
+     LUT4:I3->O            5   0.254   0.840  dvi_rx1/dec_b/des_0/_n0278_inv2 (dvi_rx1/dec_b/des_0/_n0278_inv)
+     FDCE:CE                   0.302          dvi_rx1/dec_b/des_0/pdcounter_0
+    ----------------------------------------
+    Total                      5.499ns (1.585ns logic, 3.914ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PLL_OSERDES_0/CLKOUT2'
+  Clock period: 3.355ns (frequency: 298.063MHz)
+  Total number of paths / destination ports: 219 / 93
+-------------------------------------------------------------------------
+Delay:               3.355ns (Levels of Logic = 1)
+  Source:            dvi_tx/pixel2x/sync_gen (FF)
+  Destination:       dvi_tx/pixel2x/sync_gen (FF)
+  Source Clock:      PLL_OSERDES_0/CLKOUT2 rising
+  Destination Clock: PLL_OSERDES_0/CLKOUT2 rising
+
+  Data Path: dvi_tx/pixel2x/sync_gen to dvi_tx/pixel2x/sync_gen
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             50   0.525   1.820  dvi_tx/pixel2x/sync_gen (dvi_tx/pixel2x/sync)
+     INV:I->O              1   0.255   0.681  dvi_tx/pixel2x/sync_INV_61_o1_INV_0 (dvi_tx/pixel2x/sync_INV_61_o)
+     FDR:D                     0.074          dvi_tx/pixel2x/sync_gen
+    ----------------------------------------
+    Total                      3.355ns (0.854ns logic, 2.501ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'dvi_rx1/PLL_ISERDES/CLKOUT2'
+  Total number of paths / destination ports: 110 / 104
+-------------------------------------------------------------------------
+Offset:              4.993ns (Levels of Logic = 3)
+  Source:            dvi_rx1/ioclk_buf:LOCK (PAD)
+  Destination:       dvi_rx1/dec_b/des_0/rst_data (FF)
+  Destination Clock: dvi_rx1/PLL_ISERDES/CLKOUT2 rising
+
+  Data Path: dvi_rx1/ioclk_buf:LOCK to dvi_rx1/dec_b/des_0/rst_data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BUFPLL:LOCK            1   0.000   0.681  dvi_rx1/ioclk_buf (dvi_rx1/bufpll_lock)
+     INV:I->O            108   0.255   2.342  dvi_rx1/reset1_INV_0 (rx_reset)
+     LUT6:I4->O            1   0.250   1.137  dvi_rx1/dec_b/des_0/rst_data_rstpot (dvi_rx1/dec_b/des_0/rst_data_rstpot)
+     LUT6:I0->O            1   0.254   0.000  dvi_rx1/dec_b/des_0/rst_data_rstpot1 (dvi_rx1/dec_b/des_0/rst_data_rstpot1)
+     FD:D                      0.074          dvi_rx1/dec_b/des_0/rst_data
+    ----------------------------------------
+    Total                      4.993ns (0.833ns logic, 4.160ns route)
+                                       (16.7% logic, 83.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'dvi_rx1/PLL_ISERDES/CLKOUT1'
+  Total number of paths / destination ports: 715 / 84
+-------------------------------------------------------------------------
+Offset:              6.996ns (Levels of Logic = 5)
+  Source:            SW<2> (PAD)
+  Destination:       dvi_tx/encr/n1d_3 (FF)
+  Destination Clock: dvi_rx1/PLL_ISERDES/CLKOUT1 rising
+
+  Data Path: SW<2> to dvi_tx/encr/n1d_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   1.328   1.908  SW_2_IBUF (SW_2_IBUF)
+     LUT6:I0->O            7   0.254   1.018  Mmux_tx_blue61 (tx_blue<5>)
+     LUT2:I0->O            1   0.250   0.790  dvi_tx/encb/ADDERTREE_INTERNAL_Madd_lut<0>1 (dvi_tx/encb/ADDERTREE_INTERNAL_Madd_lut<0>)
+     LUT6:I4->O            3   0.250   0.874  dvi_tx/encb/ADDERTREE_INTERNAL_Madd41 (dvi_tx/encb/ADDERTREE_INTERNAL_Madd4)
+     LUT6:I4->O            1   0.250   0.000  dvi_tx/encb/ADDERTREE_INTERNAL_Madd4_xor<0>21 (dvi_tx/encb/ADDERTREE_INTERNAL_Madd_14)
+     FD:D                      0.074          dvi_tx/encb/n1d_1
+    ----------------------------------------
+    Total                      6.996ns (2.406ns logic, 4.590ns route)
+                                       (34.4% logic, 65.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dvi_rx1/PLL_ISERDES/CLKOUT1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.380ns (Levels of Logic = 1)
+  Source:            dvi_rx1/dec_r/cbnd/iamrdy (FF)
+  Destination:       LED<7> (PAD)
+  Source Clock:      dvi_rx1/PLL_ISERDES/CLKOUT1 rising
+
+  Data Path: dvi_rx1/dec_r/cbnd/iamrdy to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.525   0.943  dvi_rx1/dec_r/cbnd/iamrdy (dvi_rx1/dec_r/cbnd/iamrdy)
+     OBUF:I->O                 2.912          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                      4.380ns (3.437ns logic, 0.943ns route)
+                                       (78.5% logic, 21.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dvi_rx1/PLL_ISERDES/CLKOUT2'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              1.328ns (Levels of Logic = 0)
+  Source:            dvi_rx1/dec_b/des_0/inc_data_int (FF)
+  Destination:       dvi_rx1/dec_b/des_0/iodelay_s:INC (PAD)
+  Source Clock:      dvi_rx1/PLL_ISERDES/CLKOUT2 rising
+
+  Data Path: dvi_rx1/dec_b/des_0/inc_data_int to dvi_rx1/dec_b/des_0/iodelay_s:INC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   0.803  dvi_rx1/dec_b/des_0/inc_data_int (dvi_rx1/dec_b/des_0/inc_data_int)
+    IODELAY2:INC               0.000          dvi_rx1/dec_b/des_0/iodelay_m
+    ----------------------------------------
+    Total                      1.328ns (0.525ns logic, 0.803ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PLL_OSERDES_0/CLKOUT2'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              1.365ns (Levels of Logic = 0)
+  Source:            dvi_tx/tmdsclkint_0 (FF)
+  Destination:       dvi_tx/clkout/oserdes_m:D1 (PAD)
+  Source Clock:      PLL_OSERDES_0/CLKOUT2 rising
+
+  Data Path: dvi_tx/tmdsclkint_0 to dvi_tx/clkout/oserdes_m:D1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.525   0.840  dvi_tx/tmdsclkint_0 (dvi_tx/tmdsclkint_0)
+    OSERDES2:D1                0.000          dvi_tx/clkout/oserdes_s
+    ----------------------------------------
+    Total                      1.365ns (0.525ns logic, 0.840ns route)
+                                       (38.5% logic, 61.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 91 / 84
+-------------------------------------------------------------------------
+Delay:               3.593ns (Levels of Logic = 1)
+  Source:            dvi_tx/clkout/oserdes_m:OQ (PAD)
+  Destination:       TX0_TMDS<3> (PAD)
+
+  Data Path: dvi_tx/clkout/oserdes_m:OQ to TX0_TMDS<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    OSERDES2:OQ            1   0.000   0.681  dvi_tx/clkout/oserdes_m (dvi_tx/tmdsclk)
+     OBUFDS:I->O               2.912          dvi_tx/TMDS3 (TX0_TMDS<3>)
+    ----------------------------------------
+    Total                      3.593ns (2.912ns logic, 0.681ns route)
+                                       (81.0% logic, 19.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PLL_OSERDES_0/CLKOUT2
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+PLL_OSERDES_0/CLKOUT2      |    3.355|         |         |         |
+dvi_rx1/PLL_ISERDES/CLKOUT1|    1.937|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dvi_rx1/PLL_ISERDES/CLKOUT1
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+PLL_OSERDES_0/CLKOUT2      |    2.077|         |         |         |
+dvi_rx1/PLL_ISERDES/CLKOUT1|    6.868|         |         |         |
+dvi_rx1/PLL_ISERDES/CLKOUT2|    3.089|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dvi_rx1/PLL_ISERDES/CLKOUT2
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+dvi_rx1/PLL_ISERDES/CLKOUT1|    1.723|         |         |         |
+dvi_rx1/PLL_ISERDES/CLKOUT2|    5.499|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 57.00 secs
+Total CPU time to Xst completion: 44.52 secs
+ 
+--> 
+
+
+Total memory usage is 512776 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  137 (   0 filtered)
+Number of infos    :   62 (   0 filtered)
+

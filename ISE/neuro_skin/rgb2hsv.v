@@ -156,30 +156,56 @@ module rgb2hsv(
 
 	// Odpowiednie odejmowanie zalezne od tego co jest max
 	
-	
+	wire signed [9:0] sub_value;
+
+	sub_RGB subtr_RGB (
+		 .clk(clk), 
+		 .ce(ce), 
+		 .red(red), 
+		 .green(green), 
+		 .blue(blue), 
+		 .max_index(max_index), 
+		 .min_index(min_index), 
+		 .value(sub_value)
+		 );
 	
 	// Dzielenie przez diff
 	
-		div_01 diff_div_diff (
+	wire signed [9:0] sub_diff_q;
+	wire signed [9:0] sub_diff_f;
+	wire signed [9:0] sub_diff;
+	
+		div_01 sub_div_diff (
 		.clk(clk), // input clk
 		.rfd(rfd), // output rfd
-		.dividend(...), // input [9 : 0] dividend
+		.dividend(sub_value), // input [9 : 0] dividend
 		.divisor(diff_value), // input [9 : 0] divisor
-		.quotient(...), // output [9 : 0] quotient
-		.fractional(...) // output [9 : 0] fractional
+		.quotient(sub_diff_q), // output [9 : 0] quotient
+		.fractional(sub_diff_f) // output [9 : 0] fractional
 	); 	
 	
-	// Mno¿enie przez 60	
+	assign sub_diff = {sub_diff_q[0], sub_diff_f[8:1]};
+	wire signed [15:0] temp_1;
+	wire signed [9:0] multed_h;
 	
-	mult_60 your_instance_name (
+	// Mnozenie przez 60		
+	mult_60 m60 (
 	  .clk(clk), // input clk
-	  .a(a), // input [9 : 0] a
-	  .p(p) // output [15 : 0] p
+	  .a(sub_diff), // input [9 : 0] a
+	  .p(temp_1) // output [15 : 0] p
 	);
+	assign multed_h = temp_1[15:6];
 	
-	// Dodawanie zale¿e od tego co jest max
-	
+	// Dodawanie zalee od tego co jest max
 	// (Dodawanie 360 jesli H < 0)
+		wire signed [9:0] h_360;
+	add_to_H add_to_h (
+    .clk(clk), 
+    .ce(ce), 
+    .h(multed_h), 
+    .max_index(max_index),  
+    .value(h_360)
+    );	
 	
 	// Dzielenie przez 360	
 	wire signed [15:0] h_01_q;
@@ -198,25 +224,43 @@ module rgb2hsv(
 	
 	// MULT TO RANGE 0-255
 	
+	wire signed [13:0] temp_H;
+	wire signed [13:0] temp_S;
+	wire signed [13:0] temp_V;
+	
 	mult_255 mult_H (
 	  .a(h_01), // input [9 : 0] a
-	  .p({H,4'b0}) // output [13 : 0] p
+	  .p(temp_H) // output [13 : 0] p
 	);
+
+	assign H = temp_H[13:4];
 
 	mult_255 mult_S (
 	  .a(s_01), // input [9 : 0] a
-	  .p({S,4'b0}) // output [13 : 0] p
+	  .p(temp_S) // output [13 : 0] p
 	);
+	
+	assign S = temp_S[13:4];
 
 	mult_255 mult_V (
 	  .a(v_01), // input [9 : 0] a
-	  .p({V,4'b0}) // output [13 : 0] p
+	  .p(temp_V) // output [13 : 0] p
 	);	
+	
+	assign V = temp_V[13:4];
 	 
-
-	 assign de_out = de_in;
-	 assign hsync_out = hsync_in;
-	 assign vsync_out = vsync_in;
+	//============ SYNC ===============
+	
+	delayx #(
+		.N(3),
+		.DELAY(6)
+	)
+	sync_delay(
+    .clk(clk), 
+    .ce(ce), 
+    .d({de_in, hsync_in, vsync_in}), 
+    .q({de_out, hsync_out, vsync_out})
+    );
 
 
 endmodule

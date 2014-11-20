@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/max.tfi -lib work /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin//max.v -module max -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

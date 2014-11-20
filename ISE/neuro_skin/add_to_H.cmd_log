@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi -o /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/add_to_H.tfi -lib work /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin//add_to_H.v -module add_to_H -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
