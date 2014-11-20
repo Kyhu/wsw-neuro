@@ -1,7 +1,7 @@
 ##############################################################
 #
-# Xilinx Core Generator version 14.7
-# Date: Sun Nov  2 18:41:51 2014
+# Xilinx Core Generator version 14.6
+# Date: Thu Nov 20 17:50:39 2014
 #
 ##############################################################
 #
@@ -67,7 +67,7 @@ CSET sync_ce_priority=Sync_Overrides_CE
 CSET sync_ctrl_priority=Reset_Overrides_Set
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2013-07-22T10:35:41Z
+MISC pkg_timestamp=2012-11-05T13:04:17Z
 # END Extra information
 GENERATE
-# CRC: 5e7a63ea
+# CRC: 66f52ade

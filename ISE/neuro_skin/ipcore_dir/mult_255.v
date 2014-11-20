@@ -7,7 +7,7 @@
 // \   \   \/     Version: P.68d
 //  \   \         Application: netgen
 //  /   /         Filename: mult_255.v
-// /___/   /\     Timestamp: Thu Nov 13 17:51:56 2014
+// /___/   /\     Timestamp: Thu Nov 20 18:21:13 2014
 // \   \  /  \ 
 //  \___\/\___\
 //             
@@ -37,39 +37,435 @@ module mult_255 (
 a, p
 )/* synthesis syn_black_box syn_noprune=1 */;
   input [9 : 0] a;
-  output [13 : 0] p;
+  output [17 : 0] p;
   
   // synthesis translate_off
   
-  wire [9 : 0] NlwRenamedSignal_a;
-  wire [0 : 0] NlwRenamedSignal_p;
+  wire \blk00000001/sig00000040 ;
+  wire \blk00000001/sig0000003f ;
+  wire \blk00000001/sig0000003e ;
+  wire \blk00000001/sig0000003d ;
+  wire \blk00000001/sig0000003c ;
+  wire \blk00000001/sig0000003b ;
+  wire \blk00000001/sig0000003a ;
+  wire \blk00000001/sig00000039 ;
+  wire \blk00000001/sig00000038 ;
+  wire \blk00000001/sig00000037 ;
+  wire \blk00000001/sig00000036 ;
+  wire \blk00000001/sig00000035 ;
+  wire \blk00000001/sig00000034 ;
+  wire \blk00000001/sig00000033 ;
+  wire \blk00000001/sig00000032 ;
+  wire \blk00000001/sig00000031 ;
+  wire \blk00000001/sig00000030 ;
+  wire \blk00000001/sig0000002f ;
+  wire \blk00000001/sig0000002e ;
+  wire \blk00000001/sig0000002d ;
+  wire \blk00000001/sig0000002c ;
+  wire \blk00000001/sig0000002b ;
+  wire \blk00000001/sig0000002a ;
+  wire \blk00000001/sig00000029 ;
+  wire \blk00000001/sig00000028 ;
+  wire \blk00000001/sig00000027 ;
+  wire \blk00000001/sig00000026 ;
+  wire \blk00000001/sig00000025 ;
+  wire \blk00000001/sig00000024 ;
+  wire \blk00000001/sig00000023 ;
+  wire \blk00000001/sig00000022 ;
+  wire \blk00000001/sig00000021 ;
+  wire \blk00000001/sig00000020 ;
+  wire \blk00000001/sig0000001f ;
+  wire \blk00000001/sig0000001e ;
+  wire \blk00000001/sig0000001d ;
+  wire \blk00000001/sig0000001c ;
+  wire [0 : 0] NlwRenamedSignal_a;
   assign
-    NlwRenamedSignal_a[9] = a[9],
-    NlwRenamedSignal_a[8] = a[8],
-    NlwRenamedSignal_a[7] = a[7],
-    NlwRenamedSignal_a[6] = a[6],
-    NlwRenamedSignal_a[5] = a[5],
-    NlwRenamedSignal_a[4] = a[4],
-    NlwRenamedSignal_a[3] = a[3],
-    NlwRenamedSignal_a[2] = a[2],
-    NlwRenamedSignal_a[1] = a[1],
     NlwRenamedSignal_a[0] = a[0],
-    p[13] = NlwRenamedSignal_a[9],
-    p[12] = NlwRenamedSignal_a[9],
-    p[11] = NlwRenamedSignal_a[8],
-    p[10] = NlwRenamedSignal_a[7],
-    p[9] = NlwRenamedSignal_a[6],
-    p[8] = NlwRenamedSignal_a[5],
-    p[7] = NlwRenamedSignal_a[4],
-    p[6] = NlwRenamedSignal_a[3],
-    p[5] = NlwRenamedSignal_a[2],
-    p[4] = NlwRenamedSignal_a[1],
-    p[3] = NlwRenamedSignal_a[0],
-    p[2] = NlwRenamedSignal_p[0],
-    p[1] = NlwRenamedSignal_p[0],
-    p[0] = NlwRenamedSignal_p[0];
+    p[0] = NlwRenamedSignal_a[0];
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk00000037  (
+    .I0(a[6]),
+    .I1(a[7]),
+    .O(\blk00000001/sig0000001d )
+  );
+  LUT3 #(
+    .INIT ( 8'h56 ))
+  \blk00000001/blk00000036  (
+    .I0(a[8]),
+    .I1(a[7]),
+    .I2(a[6]),
+    .O(\blk00000001/sig0000001e )
+  );
+  LUT4 #(
+    .INIT ( 16'h5556 ))
+  \blk00000001/blk00000035  (
+    .I0(a[9]),
+    .I1(a[7]),
+    .I2(a[8]),
+    .I3(a[6]),
+    .O(\blk00000001/sig0000001f )
+  );
+  LUT4 #(
+    .INIT ( 16'h5554 ))
+  \blk00000001/blk00000034  (
+    .I0(a[9]),
+    .I1(a[8]),
+    .I2(a[6]),
+    .I3(a[7]),
+    .O(\blk00000001/sig00000020 )
+  );
+  LUT4 #(
+    .INIT ( 16'h9998 ))
+  \blk00000001/blk00000033  (
+    .I0(a[6]),
+    .I1(a[9]),
+    .I2(a[7]),
+    .I3(a[8]),
+    .O(\blk00000001/sig00000021 )
+  );
+  LUT4 #(
+    .INIT ( 16'hA9A8 ))
+  \blk00000001/blk00000032  (
+    .I0(a[7]),
+    .I1(a[9]),
+    .I2(a[6]),
+    .I3(a[8]),
+    .O(\blk00000001/sig00000022 )
+  );
+  LUT4 #(
+    .INIT ( 16'hAAA8 ))
+  \blk00000001/blk00000031  (
+    .I0(a[8]),
+    .I1(a[9]),
+    .I2(a[6]),
+    .I3(a[7]),
+    .O(\blk00000001/sig00000023 )
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk00000030  (
+    .I0(NlwRenamedSignal_a[0]),
+    .I1(a[1]),
+    .O(p[1])
+  );
+  LUT3 #(
+    .INIT ( 8'h56 ))
+  \blk00000001/blk0000002f  (
+    .I0(a[2]),
+    .I1(a[1]),
+    .I2(NlwRenamedSignal_a[0]),
+    .O(p[2])
+  );
+  LUT4 #(
+    .INIT ( 16'h5556 ))
+  \blk00000001/blk0000002e  (
+    .I0(a[3]),
+    .I1(a[1]),
+    .I2(a[2]),
+    .I3(NlwRenamedSignal_a[0]),
+    .O(p[3])
+  );
+  LUT5 #(
+    .INIT ( 32'h55555556 ))
+  \blk00000001/blk0000002d  (
+    .I0(a[4]),
+    .I1(NlwRenamedSignal_a[0]),
+    .I2(a[1]),
+    .I3(a[2]),
+    .I4(a[3]),
+    .O(p[4])
+  );
+  LUT6 #(
+    .INIT ( 64'h5555555555555556 ))
+  \blk00000001/blk0000002c  (
+    .I0(a[5]),
+    .I1(a[4]),
+    .I2(a[3]),
+    .I3(a[2]),
+    .I4(a[1]),
+    .I5(NlwRenamedSignal_a[0]),
+    .O(p[5])
+  );
+  LUT6 #(
+    .INIT ( 64'hFFFFFFFFFFFFFFFE ))
+  \blk00000001/blk0000002b  (
+    .I0(a[5]),
+    .I1(NlwRenamedSignal_a[0]),
+    .I2(a[1]),
+    .I3(a[2]),
+    .I4(a[3]),
+    .I5(a[4]),
+    .O(\blk00000001/sig00000024 )
+  );
+  LUT6 #(
+    .INIT ( 64'h5555555555555554 ))
+  \blk00000001/blk0000002a  (
+    .I0(NlwRenamedSignal_a[0]),
+    .I1(a[1]),
+    .I2(a[2]),
+    .I3(a[3]),
+    .I4(a[4]),
+    .I5(a[5]),
+    .O(\blk00000001/sig00000025 )
+  );
+  LUT6 #(
+    .INIT ( 64'h9999999999999998 ))
+  \blk00000001/blk00000029  (
+    .I0(NlwRenamedSignal_a[0]),
+    .I1(a[1]),
+    .I2(a[2]),
+    .I3(a[3]),
+    .I4(a[4]),
+    .I5(a[5]),
+    .O(\blk00000001/sig00000026 )
+  );
+  LUT6 #(
+    .INIT ( 64'hA9A9A9A9A9A9A9A8 ))
+  \blk00000001/blk00000028  (
+    .I0(a[2]),
+    .I1(NlwRenamedSignal_a[0]),
+    .I2(a[1]),
+    .I3(a[3]),
+    .I4(a[4]),
+    .I5(a[5]),
+    .O(\blk00000001/sig00000027 )
+  );
+  LUT6 #(
+    .INIT ( 64'hAAA9AAA9AAA9AAA8 ))
+  \blk00000001/blk00000027  (
+    .I0(a[3]),
+    .I1(NlwRenamedSignal_a[0]),
+    .I2(a[1]),
+    .I3(a[2]),
+    .I4(a[4]),
+    .I5(a[5]),
+    .O(\blk00000001/sig00000028 )
+  );
+  LUT6 #(
+    .INIT ( 64'hAAAAAAA9AAAAAAA8 ))
+  \blk00000001/blk00000026  (
+    .I0(a[4]),
+    .I1(NlwRenamedSignal_a[0]),
+    .I2(a[1]),
+    .I3(a[2]),
+    .I4(a[3]),
+    .I5(a[5]),
+    .O(\blk00000001/sig00000029 )
+  );
+  LUT6 #(
+    .INIT ( 64'hAAAAAAAAAAAAAAA8 ))
+  \blk00000001/blk00000025  (
+    .I0(a[5]),
+    .I1(NlwRenamedSignal_a[0]),
+    .I2(a[1]),
+    .I3(a[2]),
+    .I4(a[3]),
+    .I5(a[4]),
+    .O(\blk00000001/sig0000002a )
+  );
+  LUT1 #(
+    .INIT ( 2'h2 ))
+  \blk00000001/blk00000024  (
+    .I0(\blk00000001/sig00000021 ),
+    .O(\blk00000001/sig00000040 )
+  );
+  LUT1 #(
+    .INIT ( 2'h2 ))
+  \blk00000001/blk00000023  (
+    .I0(\blk00000001/sig00000022 ),
+    .O(\blk00000001/sig0000003f )
+  );
+  LUT1 #(
+    .INIT ( 2'h2 ))
+  \blk00000001/blk00000022  (
+    .I0(\blk00000001/sig00000023 ),
+    .O(\blk00000001/sig0000003e )
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk00000021  (
+    .I0(\blk00000001/sig00000024 ),
+    .I1(a[6]),
+    .O(\blk00000001/sig0000003d )
+  );
+  MUXCY   \blk00000001/blk00000020  (
+    .CI(\blk00000001/sig0000001c ),
+    .DI(\blk00000001/sig00000024 ),
+    .S(\blk00000001/sig0000003d ),
+    .O(\blk00000001/sig0000003c )
+  );
+  XORCY   \blk00000001/blk0000001f  (
+    .CI(\blk00000001/sig0000001c ),
+    .LI(\blk00000001/sig0000003d ),
+    .O(p[6])
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk0000001e  (
+    .I0(\blk00000001/sig00000024 ),
+    .I1(\blk00000001/sig0000001d ),
+    .O(\blk00000001/sig0000003b )
+  );
+  MUXCY   \blk00000001/blk0000001d  (
+    .CI(\blk00000001/sig0000003c ),
+    .DI(\blk00000001/sig00000024 ),
+    .S(\blk00000001/sig0000003b ),
+    .O(\blk00000001/sig0000003a )
+  );
+  XORCY   \blk00000001/blk0000001c  (
+    .CI(\blk00000001/sig0000003c ),
+    .LI(\blk00000001/sig0000003b ),
+    .O(p[7])
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk0000001b  (
+    .I0(\blk00000001/sig00000025 ),
+    .I1(\blk00000001/sig0000001e ),
+    .O(\blk00000001/sig00000039 )
+  );
+  MUXCY   \blk00000001/blk0000001a  (
+    .CI(\blk00000001/sig0000003a ),
+    .DI(\blk00000001/sig00000025 ),
+    .S(\blk00000001/sig00000039 ),
+    .O(\blk00000001/sig00000038 )
+  );
+  XORCY   \blk00000001/blk00000019  (
+    .CI(\blk00000001/sig0000003a ),
+    .LI(\blk00000001/sig00000039 ),
+    .O(p[8])
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk00000018  (
+    .I0(\blk00000001/sig00000026 ),
+    .I1(\blk00000001/sig0000001f ),
+    .O(\blk00000001/sig00000037 )
+  );
+  MUXCY   \blk00000001/blk00000017  (
+    .CI(\blk00000001/sig00000038 ),
+    .DI(\blk00000001/sig00000026 ),
+    .S(\blk00000001/sig00000037 ),
+    .O(\blk00000001/sig00000036 )
+  );
+  XORCY   \blk00000001/blk00000016  (
+    .CI(\blk00000001/sig00000038 ),
+    .LI(\blk00000001/sig00000037 ),
+    .O(p[9])
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk00000015  (
+    .I0(\blk00000001/sig00000027 ),
+    .I1(\blk00000001/sig00000020 ),
+    .O(\blk00000001/sig00000035 )
+  );
+  MUXCY   \blk00000001/blk00000014  (
+    .CI(\blk00000001/sig00000036 ),
+    .DI(\blk00000001/sig00000027 ),
+    .S(\blk00000001/sig00000035 ),
+    .O(\blk00000001/sig00000034 )
+  );
+  XORCY   \blk00000001/blk00000013  (
+    .CI(\blk00000001/sig00000036 ),
+    .LI(\blk00000001/sig00000035 ),
+    .O(p[10])
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk00000012  (
+    .I0(\blk00000001/sig00000028 ),
+    .I1(\blk00000001/sig00000020 ),
+    .O(\blk00000001/sig00000033 )
+  );
+  MUXCY   \blk00000001/blk00000011  (
+    .CI(\blk00000001/sig00000034 ),
+    .DI(\blk00000001/sig00000028 ),
+    .S(\blk00000001/sig00000033 ),
+    .O(\blk00000001/sig00000032 )
+  );
+  XORCY   \blk00000001/blk00000010  (
+    .CI(\blk00000001/sig00000034 ),
+    .LI(\blk00000001/sig00000033 ),
+    .O(p[11])
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk0000000f  (
+    .I0(\blk00000001/sig00000029 ),
+    .I1(\blk00000001/sig00000020 ),
+    .O(\blk00000001/sig00000031 )
+  );
+  MUXCY   \blk00000001/blk0000000e  (
+    .CI(\blk00000001/sig00000032 ),
+    .DI(\blk00000001/sig00000029 ),
+    .S(\blk00000001/sig00000031 ),
+    .O(\blk00000001/sig00000030 )
+  );
+  XORCY   \blk00000001/blk0000000d  (
+    .CI(\blk00000001/sig00000032 ),
+    .LI(\blk00000001/sig00000031 ),
+    .O(p[12])
+  );
+  LUT2 #(
+    .INIT ( 4'h6 ))
+  \blk00000001/blk0000000c  (
+    .I0(\blk00000001/sig0000002a ),
+    .I1(\blk00000001/sig00000020 ),
+    .O(\blk00000001/sig0000002f )
+  );
+  MUXCY   \blk00000001/blk0000000b  (
+    .CI(\blk00000001/sig00000030 ),
+    .DI(\blk00000001/sig0000002a ),
+    .S(\blk00000001/sig0000002f ),
+    .O(\blk00000001/sig0000002e )
+  );
+  XORCY   \blk00000001/blk0000000a  (
+    .CI(\blk00000001/sig00000030 ),
+    .LI(\blk00000001/sig0000002f ),
+    .O(p[13])
+  );
+  MUXCY   \blk00000001/blk00000009  (
+    .CI(\blk00000001/sig0000002e ),
+    .DI(\blk00000001/sig0000001c ),
+    .S(\blk00000001/sig00000040 ),
+    .O(\blk00000001/sig0000002d )
+  );
+  XORCY   \blk00000001/blk00000008  (
+    .CI(\blk00000001/sig0000002e ),
+    .LI(\blk00000001/sig00000040 ),
+    .O(p[14])
+  );
+  MUXCY   \blk00000001/blk00000007  (
+    .CI(\blk00000001/sig0000002d ),
+    .DI(\blk00000001/sig0000001c ),
+    .S(\blk00000001/sig0000003f ),
+    .O(\blk00000001/sig0000002c )
+  );
+  XORCY   \blk00000001/blk00000006  (
+    .CI(\blk00000001/sig0000002d ),
+    .LI(\blk00000001/sig0000003f ),
+    .O(p[15])
+  );
+  MUXCY   \blk00000001/blk00000005  (
+    .CI(\blk00000001/sig0000002c ),
+    .DI(\blk00000001/sig0000001c ),
+    .S(\blk00000001/sig0000003e ),
+    .O(\blk00000001/sig0000002b )
+  );
+  XORCY   \blk00000001/blk00000004  (
+    .CI(\blk00000001/sig0000002c ),
+    .LI(\blk00000001/sig0000003e ),
+    .O(p[16])
+  );
+  XORCY   \blk00000001/blk00000003  (
+    .CI(\blk00000001/sig0000002b ),
+    .LI(a[9]),
+    .O(p[17])
+  );
   GND   \blk00000001/blk00000002  (
-    .G(NlwRenamedSignal_p[0])
+    .G(\blk00000001/sig0000001c )
   );
 
 // synthesis translate_on

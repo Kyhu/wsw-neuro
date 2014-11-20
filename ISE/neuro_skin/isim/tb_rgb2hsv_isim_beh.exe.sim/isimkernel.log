@@ -1,0 +1,10 @@
+Command line:
+   tb_rgb2hsv_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49363
+
+Thu Nov 20 18:39:40 2014
+
+
+ Elaboration Time: 0.546003 sec

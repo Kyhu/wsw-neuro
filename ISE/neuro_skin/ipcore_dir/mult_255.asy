@@ -8,6 +8,6 @@ PINATTR PinName a[9:0]
 PINATTR Polarity IN
 LINE Wide 576 80 544 80
 PIN 576 80 RIGHT 36
-PINATTR PinName p[13:0]
+PINATTR PinName p[17:0]
 PINATTR Polarity OUT
 

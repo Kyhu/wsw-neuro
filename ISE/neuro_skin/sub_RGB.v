@@ -26,10 +26,10 @@ module sub_RGB(
     input [9:0] blue,
 	 input [1:0] max_index,
 	 input [1:0] min_index,
-	 output [9:0] value
+	 output [10:0] value
     );
 	 
-	 reg[9:0] r_value;
+	 reg[10:0] r_value;
 	 
 	 always @(posedge clk)
 	 begin

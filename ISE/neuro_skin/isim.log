@@ -1,0 +1,58 @@
+ISim log file
+Running: D:\WSW14\wsw-neuro\ISE\neuro_skin\tb_rgb2hsv_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/WSW14/wsw-neuro/ISE/neuro_skin/tb_rgb2hsv_isim_beh.wdb 
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 227.  For instance uut/mult_H/, width 18 of formal port p is not equal to width 14 of actual signal temp_H.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 228.  For instance uut/mult_S/, width 18 of formal port p is not equal to width 14 of actual signal temp_S.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/neuro_skin/rgb2hsv.v" Line 229.  For instance uut/mult_V/, width 18 of formal port p is not equal to width 14 of actual signal temp_V.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.68d (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

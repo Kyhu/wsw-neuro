@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.6
-# Date: Thu Nov 13 16:51:27 2014
+# Date: Thu Nov 20 17:20:44 2014
 #
 ##############################################################
 #
@@ -42,12 +42,12 @@ SELECT Multiplier xilinx.com:ip:mult_gen:11.2
 CSET ccmimp=Distributed_Memory
 CSET clockenable=false
 CSET component_name=mult_255
-CSET constvalue=8
+CSET constvalue=255
 CSET internaluser=0
 CSET multiplier_construction=Use_LUTs
 CSET multtype=Constant_Coefficient_Multiplier
 CSET optgoal=Speed
-CSET outputwidthhigh=13
+CSET outputwidthhigh=17
 CSET outputwidthlow=0
 CSET pipestages=0
 CSET portatype=Signed
@@ -65,4 +65,4 @@ CSET zerodetect=false
 MISC pkg_timestamp=2012-11-05T14:23:07Z
 # END Extra information
 GENERATE
-# CRC: bd4a05a5
+# CRC: a64168dc

@@ -4,20 +4,20 @@
 //   ____  ____
 //  /   /\/   /
 // /___/  \  /    Vendor: Xilinx
-// \   \   \/     Version: P.20131013
+// \   \   \/     Version: P.68d
 //  \   \         Application: netgen
 //  /   /         Filename: subtracter.v
-// /___/   /\     Timestamp: Sun Nov  2 19:42:51 2014
+// /___/   /\     Timestamp: Thu Nov 20 18:51:04 2014
 // \   \  /  \ 
 //  \___\/\___\
 //             
-// Command	: -w -sim -ofmt verilog /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.ngc /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.v 
+// Command	: -w -sim -ofmt verilog D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.ngc D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.v 
 // Device	: 6slx45csg324-2
-// Input file	: /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.ngc
-// Output file	: /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.v
+// Input file	: D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.ngc
+// Output file	: D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/subtracter.v
 // # of Modules	: 1
 // Design Name	: subtracter
-// Xilinx        : /opt/Xilinx/14.7/ISE_DS/ISE/
+// Xilinx        : C:\Xilinx\14.6\ISE_DS\ISE\
 //             
 // Purpose:    
 //     This verilog netlist is a verification model and uses simulation 

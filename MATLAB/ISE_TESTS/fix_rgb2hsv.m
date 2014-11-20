@@ -1,7 +1,7 @@
 function [ h,s,v ] = fix_rgb2hsv( rgb )
 
 sign = 1; % signed
-prec_i = 4; % NC
+prec_i = 1; % NC
 prec_f = 8;  % NU
 word = sign + prec_i + prec_f;
 
@@ -49,9 +49,9 @@ end;
 
 h_fix = fi(double(h_fix)/(6*sixty_fix),1,word,prec_f,'RoundingMethod','Floor');
 
-h = floor(double(h_fix)*255);
-s = floor(double(s_fix)*255);
-v = floor(double(v_fix)*255);
+h = floor(double(h_fix*255));
+s = floor(double(s_fix*255));
+v = floor(double(v_fix*255));
 
 end
 

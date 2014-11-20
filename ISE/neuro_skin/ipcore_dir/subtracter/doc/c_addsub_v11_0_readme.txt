@@ -1,6 +1,6 @@
 CHANGE LOG for Xilinx LogiCORE Adder/Subtracter v11.0
 
-Release Date:  October 2, 2013 
+Release Date:  June 19, 2013 
 --------------------------------------------------------------------------------
 
 Table of Contents
@@ -96,7 +96,6 @@ Table of Contents
 
 Date        By            Version      Description
 ================================================================================
-10/02/2013  Xilinx, Inc.  11.0         ISE 14.7 support and Production support for Series 7
 06/19/2012  Xilinx, Inc.  11.0         ISE 14.6 support
 03/20/2012  Xilinx, Inc.  11.0         ISE 14.5 support. 
 10/16/2012  Xilinx, Inc.  11.0         ISE 14.3 and Vivado 2012.3 support

@@ -52,7 +52,7 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 mult_255 your_instance_name (
   .a(a), // input [9 : 0] a
-  .p(p) // output [13 : 0] p
+  .p(p) // output [17 : 0] p
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

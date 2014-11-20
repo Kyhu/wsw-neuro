@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi -o D:/WSW14/wsw-neuro/ISE/neuro_skin/rgb2hsv.tfi -lib work D:/WSW14/wsw-neuro/ISE/neuro_skin//rgb2hsv.v -module rgb2hsv -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 

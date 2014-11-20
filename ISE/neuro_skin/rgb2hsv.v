@@ -99,8 +99,8 @@ module rgb2hsv(
 		 .clk(clk), 
 		 .ce(ce), 
 		 .red(r_01), 
-		 .green(b_01), 
-		 .blue(g_01), 
+		 .green(g_01), 
+		 .blue(b_01), 
 		 .value(max_value), 
 		 .index(max_index)
     );
@@ -112,8 +112,8 @@ module rgb2hsv(
 		 .clk(clk), 
 		 .ce(ce), 
 		 .red(r_01), 
-		 .green(b_01), 
-		 .blue(g_01), 
+		 .green(g_01), 
+		 .blue(b_01), 
 		 .value(min_value), 
 		 .index(min_index)
     );
@@ -125,7 +125,7 @@ module rgb2hsv(
 	  .b(min_value), // input [9 : 0] b
 	  .clk(clk), // input clk
 	  .ce(ce), // input ce
-	  .s(diff_value) // output [9 : 0] s
+	  .s(diff_value) // output [10 : 0] s
 	);
 	
 	wire signed [9:0] h_01;
@@ -150,7 +150,7 @@ module rgb2hsv(
 		.fractional(s_01_f) // output [9 : 0] fractional
 	); 		
 		
-	assign s_01 = (v_01 > 0) ? {s_01_q[0], s_01_f[8:1]} : 10'b0;
+	assign s_01 = (v_01 > 0) ? {1'b0, s_01_q[0], s_01_f[9:2]} : 10'b0;
 	
 	// ###== H ==###
 
@@ -161,13 +161,18 @@ module rgb2hsv(
 	sub_RGB subtr_RGB (
 		 .clk(clk), 
 		 .ce(ce), 
-		 .red(red), 
-		 .green(green), 
-		 .blue(blue), 
+		 .red(r_01), 
+		 .green(g_01), 
+		 .blue(b_01), 
 		 .max_index(max_index), 
 		 .min_index(min_index), 
 		 .value(sub_value)
 		 );
+	
+	// DO TAD NA RAZIE SPOKO
+	// Oprocz tego ze diff i sub_value nie zawieraj¹ bitow znakow
+	// Diff moze nie miec bo zawsze bedzie dodatnia (max>min)
+	// Sub_value MUSI miec bit znaku
 	
 	// Dzielenie przez diff
 	
@@ -198,7 +203,7 @@ module rgb2hsv(
 	
 	// Dodawanie zalee od tego co jest max
 	// (Dodawanie 360 jesli H < 0)
-		wire signed [9:0] h_360;
+	wire signed [9:0] h_360;
 	add_to_H add_to_h (
     .clk(clk), 
     .ce(ce), 
@@ -214,7 +219,7 @@ module rgb2hsv(
 	div_360 h_div_360 (
 	.clk(clk), // input clk
 	.rfd(rfd), // output rfd
-	.dividend(h_360), // input [15 : 0] dividend
+	.dividend({h_360,6'd0}), // input [15 : 0] dividend
 	.divisor(16'd360), // input [15 : 0] divisor
 	.quotient(h_01_q), // output [15 : 0] quotient
 	.fractional(h_01_f) // output [9 : 0] fractional
@@ -224,35 +229,35 @@ module rgb2hsv(
 	
 	// MULT TO RANGE 0-255
 	
-	wire signed [13:0] temp_H;
-	wire signed [13:0] temp_S;
-	wire signed [13:0] temp_V;
+	wire signed [17:0] temp_H;
+	wire signed [17:0] temp_S;
+	wire signed [17:0] temp_V;
 	
 	mult_255 mult_H (
 	  .a(h_01), // input [9 : 0] a
-	  .p(temp_H) // output [13 : 0] p
+	  .p(temp_H) // output [17 : 0] p
 	);
 
-	assign H = temp_H[13:4];
+	assign H = temp_H[15:8];
 
 	mult_255 mult_S (
 	  .a(s_01), // input [9 : 0] a
-	  .p(temp_S) // output [13 : 0] p
+	  .p(temp_S) // output [17 : 0] p
 	);
 	
-	assign S = temp_S[13:4];
+	assign S = temp_S[15:8];
 
 	mult_255 mult_V (
 	  .a(v_01), // input [9 : 0] a
-	  .p(temp_V) // output [13 : 0] p
+	  .p(temp_V) // output [17 : 0] p
 	);	
 	
-	assign V = temp_V[13:4];
+	assign V = temp_V[15:8];
 	 
 	//============ SYNC ===============
 	
-	delayx #(
-		.N(3),
+	/*delayx #(
+		.N(3), 
 		.DELAY(6)
 	)
 	sync_delay(
@@ -260,7 +265,11 @@ module rgb2hsv(
     .ce(ce), 
     .d({de_in, hsync_in, vsync_in}), 
     .q({de_out, hsync_out, vsync_out})
-    );
+    );*/
+	 
+	 assign de_out = de_in;
+	 assign hsync_out = hsync_in;
+	 assign vsync_out = vsync_in;
 
 
 endmodule

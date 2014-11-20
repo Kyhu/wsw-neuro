@@ -32,13 +32,13 @@ wire [7:0] r_in;
 wire [7:0] g_in;
 wire [7:0] b_in;
 
-wire de_ycbcr_bin;
-wire hsync_ycbcr_bin;
-wire vsync_ycbcr_bin;
-
 wire [7:0] y;
 wire [7:0] cb;
 wire [7:0] cr;
+
+wire [7:0] H;
+wire [7:0] S;
+wire [7:0] V;
 
 wire de_out;
 wire hsync_out;
@@ -70,22 +70,40 @@ hdmi_in file_input (
 // Output assigment
 // --------------------------------------
 	
-	rgb2ycbcr converter (
+//	rgb2ycbcr converter (
+//    .clk(clk), 
+//    .ce({1'b1}), 
+//    .de_in(de_in), 
+//    .hsync_in(hsync_in), 
+//    .vsync_in(vsync_in), 
+//    .red(r_in), 
+//    .green(g_in), 
+//    .blue(b_in), 
+//    .Y(y), 
+//    .Cb(cb), 
+//    .Cr(cr), 
+//    .de_out(de_ycbcr_bin), 
+//    .hsync_out(hsync_ycbcr_bin), 
+//    .vsync_out(vsync_ycbcr_bin)
+//    );	 
+
+rgb2hsv instance_name (
     .clk(clk), 
-    .ce({1'b1}), 
+    .ce(ce), 
     .de_in(de_in), 
     .hsync_in(hsync_in), 
     .vsync_in(vsync_in), 
     .red(r_in), 
     .green(g_in), 
     .blue(b_in), 
-    .Y(y), 
-    .Cb(cb), 
-    .Cr(cr), 
-    .de_out(de_ycbcr_bin), 
-    .hsync_out(hsync_ycbcr_bin), 
-    .vsync_out(vsync_ycbcr_bin)
-    );	 
+    .H(H), 
+    .S(S), 
+    .V(V), 
+    .de_out(de_out), 
+    .hsync_out(hsync_out), 
+    .vsync_out(vsync_out)
+    );
+
 	 
 
 // --------------------------------------
@@ -93,9 +111,9 @@ hdmi_in file_input (
 // --------------------------------------
 hdmi_out file_output (
     .hdmi_clk(clk), 
-    .hdmi_vs(vsync_ycbcr_bin), 
-    .hdmi_de(de_ycbcr_bin), 
-    .hdmi_data({8'b0,y,cb,cr})
+    .hdmi_vs(vsync_out), 
+    .hdmi_de(de_out), 
+    .hdmi_data({8'b0,H,S,V})
     );
 
 

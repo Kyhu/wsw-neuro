@@ -5,10 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/adder.v" Line 531: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/subtracter.v" Line 569: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/delayx.v" Line 36: Block identifier is required on this block
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult_255.v" Line 482: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/div_01.v" Line 10704: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/mult_60.v" Line 477: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/neuro_skin/ipcore_dir/div_360.v" Line 22769: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
