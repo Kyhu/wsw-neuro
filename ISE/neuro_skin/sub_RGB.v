@@ -26,16 +26,16 @@ module sub_RGB(
     input [9:0] blue,
 	 input [1:0] max_index,
 	 input [1:0] min_index,
-	 output [10:0] value
+	 output [9:0] value
     );
 	 
-	 reg[10:0] r_value;
+	 reg[9:0] r_value;
 	 
 	 always @(posedge clk)
 	 begin
 		if (min_index == max_index)
 		begin
-			r_value = 10'd0;
+			r_value = 9'd0;
 		end
 		else
 		begin

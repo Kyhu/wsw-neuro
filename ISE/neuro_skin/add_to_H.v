@@ -21,12 +21,12 @@
 module add_to_H(
     input clk,
 	 input ce,
-    input [9:0] h,
+    input [11:0] h,
 	 input [1:0] max_index,
-	 output [9:0] value
+	 output [11:0] value
     );
 	 
-	 reg[9:0] r_value;
+	 reg[11:0] r_value;
 	 
 	 always @(posedge clk)
 	 begin
@@ -36,14 +36,14 @@ module add_to_H(
 			end
 			else if (max_index == 1)
 			begin
-				r_value = h + 10'd120;
+				r_value = h + 12'b000001111000;
 			end
 			else if (max_index == 2)
 			begin
-				r_value = h + 10'd240;
+				r_value = h + 12'b000011110000;
 			end
 
-			if (r_value < 0) r_value = r_value - 10'd360;
+			if (r_value < 0) r_value = r_value + 12'b000101101000;
 	end
 	
 	assign value = r_value;

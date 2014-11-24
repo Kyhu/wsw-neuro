@@ -1,9 +1,22 @@
+# Date: Mon Nov 24 14:56:20 2014
+
+SET addpads = false
+SET asysymbol = false
 SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = false
 SET designentry = Verilog
 SET device = xc6slx45
 SET devicefamily = spartan6
 SET flowvendor = Other
+SET formalverification = false
+SET foundationsym = false
+SET implementationfiletype = Ngc
 SET package = csg324
+SET removerpms = false
+SET simulationfiles = Behavioral
 SET speedgrade = -2
 SET verilogsim = true
 SET vhdlsim = false
+SET workingdirectory = ./tmp/
+
+# CRC: 9e35522c

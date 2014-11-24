@@ -82,14 +82,14 @@ hdmi_in file_input (
 //    .Y(y), 
 //    .Cb(cb), 
 //    .Cr(cr), 
-//    .de_out(de_ycbcr_bin), 
-//    .hsync_out(hsync_ycbcr_bin), 
-//    .vsync_out(vsync_ycbcr_bin)
+//    .de_out(de_out), 
+//    .hsync_out(hsync_out), 
+//    .vsync_out(vsync_out)
 //    );	 
 
 rgb2hsv instance_name (
     .clk(clk), 
-    .ce(ce), 
+    .ce({1'b1}), 
     .de_in(de_in), 
     .hsync_in(hsync_in), 
     .vsync_in(vsync_in), 

@@ -1,7 +1,7 @@
 ##############################################################
 #
-# Xilinx Core Generator version 14.6
-# Date: Thu Nov 13 17:14:35 2014
+# Xilinx Core Generator version 14.7
+# Date: Mon Nov 24 14:55:15 2014
 #
 ##############################################################
 #
@@ -50,7 +50,7 @@ CSET optgoal=Speed
 CSET outputwidthhigh=15
 CSET outputwidthlow=0
 CSET pipestages=1
-CSET portatype=Unsigned
+CSET portatype=Signed
 CSET portawidth=10
 CSET portbtype=Signed
 CSET portbwidth=18
@@ -62,7 +62,7 @@ CSET userounding=false
 CSET zerodetect=false
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2012-11-05T14:23:07Z
+MISC pkg_timestamp=2013-07-22T11:36:26Z
 # END Extra information
 GENERATE
-# CRC: ec70b878
+# CRC: 48abf655

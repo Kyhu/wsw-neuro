@@ -1,5 +1,5 @@
 The following files were generated for 'div_01' in directory
-D:\WSW14\wsw-neuro\ISE\neuro_skin\ipcore_dir\
+/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.
@@ -39,6 +39,11 @@ Generate ISE subproject:
    * _xmsgs/pn_parser.xmsgs
    * div_01.gise
    * div_01.xise
+
+ISE file generator:
+   Add description here...
+
+   * div_01_flist.txt
 
 Deliver Readme:
    Readme file for the IP.

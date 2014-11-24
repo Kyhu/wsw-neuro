@@ -36,11 +36,14 @@
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/centroid - centroid</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/converter - rgb2ycbcr</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_b - decode</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_g - decode</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder/dec_r - decode</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top/pixel2x - convert_30to15_fifo</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/hsv_converter - rgb2hsv</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr/Y_delay - delayx</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr/sync_delay - delayx</ClosedNode>
          <ClosedNode>/mainLUT |home|kyhu|Workspace|ISE|hdmi_centroid3|mainLUT.v</ClosedNode>
@@ -55,15 +58,16 @@
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi|tb_src|tb_hdmi.v/converter - rgb2ycbcr/Y_delay - delayx</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi|tb_src|tb_hdmi.v/converter - rgb2ycbcr/sync_delay - delayx</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/converter - rgb2ycbcr</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_accumulator (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_accumulator.v)</SelectedItem>
+         <SelectedItem>hsv_converter - rgb2hsv (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >26</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000032c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000032c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000030d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000030d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_accumulator (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_accumulator.v)</CurrentItem>
+      <CurrentItem>hsv_converter - rgb2hsv (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/rgb2hsv.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -91,7 +95,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000594000000040101000100000000000000000000000064ffffffff000000810000000000000004000001b400000001000000000000009d0000000100000000000000660000000100000000000002dd0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/accumulator.v</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -106,7 +110,7 @@
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff000000000000000200000186000000cd01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -126,13 +130,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -141,27 +145,43 @@
          <ClosedNode>/dvi_decoder |home|kyhu|Workspace|ISE|hdmi|src|rx|dvi_decoder.v</ClosedNode>
          <ClosedNode>/dvi_decoder_nok |home|kyhu|Workspace|ISE|hdmi_bin|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
          <ClosedNode>/dvi_decoder_nok |home|kyhu|Workspace|ISE|hdmi|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
+         <ClosedNode>/dvi_decoder_nok |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|rx_nok|dvi_decoder_nok.v</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi_bin|src|hdmi_main.v</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v/dvi_rx1 - dvi_decoder_nok</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/hsv_converter - rgb2hsv</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr</ClosedNode>
+         <ClosedNode>/tb_accumulator |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_accumulator.v</ClosedNode>
          <ClosedNode>/tb_bin |home|kyhu|Workspace|ISE|hdmi_bin|tb_bin.v</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi_bin|tb_src|tb_hdmi.v</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi|tb_src|tb_hdmi.v/converter - rgb2ycbcr</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi|tb_src|tb_hdmi.v/instance_name - rgb2ycbcr</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/diff_value_delay1 - delayx</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/min_index_delay1 - delayx</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/rgb_01_delay1 - delayx</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/s_01_delay1 - delayx</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/subtr_RGB_value_delay1 - delayx</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/sync_delay - delayx</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/v_01_delay1 - delayx</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/v_01_delay2 - delayx</ClosedNode>
          <ClosedNode>/tb_mainLUT |home|kyhu|Workspace|ISE|hdmi_bin|tb_mainLUT.v</ClosedNode>
          <ClosedNode>/tb_mainLUT |home|kyhu|Workspace|ISE|hdmi|tb_mainLUT.v</ClosedNode>
+         <ClosedNode>/tb_rgb2hsv |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_rgb2hsv.v</ClosedNode>
          <ClosedNode>/tb_rgb2ycbcr |home|kyhu|Workspace|ISE|hdmi_bin|tb_rgb2ycbcr.v</ClosedNode>
          <ClosedNode>/tb_rgb2ycbcr |home|kyhu|Workspace|ISE|hdmi|tb_rgb2ycbcr.v</ClosedNode>
+         <ClosedNode>/tb_rgb2ycbcr |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_rgb2ycbcr.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_hdmi (/home/kyhu/Workspace/ISE/hdmi_bin/tb_src/tb_hdmi.v)</SelectedItem>
+         <SelectedItem>tb_hdmi (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_src/tb_hdmi.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000026b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000026b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000032b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000032b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_hdmi (/home/kyhu/Workspace/ISE/hdmi_bin/tb_src/tb_hdmi.v)</CurrentItem>
+      <CurrentItem>tb_hdmi (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_src/tb_hdmi.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -182,13 +202,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="div_01">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-11-13T17:12:25</timestamp>
+    <timestamp>2014-11-24T14:26:21</timestamp>
     <pin polarity="Input" x="0" y="80" name="clk" />
     <pin polarity="Input" x="0" y="208" name="dividend[9:0]" />
     <pin polarity="Input" x="0" y="240" name="divisor[9:0]" />

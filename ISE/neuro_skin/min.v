@@ -33,17 +33,17 @@ module min(
 	 
 	always @(posedge clk)
 	begin
-		if (red < green && red < blue)
+		if (red <= green && red <= blue)
 		begin
 			r_value = red;
 			r_index = 2'd0;
 		end
-		else if (green < red && green < blue)
+		else if (green <= red && green <= blue)
 		begin
 			r_value = green;
 			r_index = 2'd1;
 		end
-		else if (blue < red && blue < green)
+		else if (blue <= red && blue <= green)
 		begin
 			r_value = blue;
 			r_index = 2'd2;

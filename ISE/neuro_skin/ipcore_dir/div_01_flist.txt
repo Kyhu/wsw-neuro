@@ -1,5 +1,5 @@
 # Output products list for <div_01>
-_xmsgs\pn_parser.xmsgs
+_xmsgs/pn_parser.xmsgs
 div_01.asy
 div_01.gise
 div_01.ngc
@@ -9,5 +9,4 @@ div_01.veo
 div_01.xco
 div_01.xise
 div_01_flist.txt
-div_01_readme.txt
 div_01_xmdf.tcl

@@ -1,7 +1,7 @@
 ##############################################################
 #
-# Xilinx Core Generator version 14.6
-# Date: Thu Nov 13 17:10:51 2014
+# Xilinx Core Generator version 14.7
+# Date: Mon Nov 24 14:23:32 2014
 #
 ##############################################################
 #
@@ -47,15 +47,15 @@ CSET divide_by_zero_detect=false
 CSET dividend_and_quotient_width=10
 CSET divisor_width=10
 CSET fractional_width=10
-CSET latency=22
+CSET latency=24
 CSET latency_configuration=Automatic
-CSET operand_sign=Unsigned
+CSET operand_sign=Signed
 CSET remainder_type=Fractional
 CSET sclr=false
 CSET sclr_ce_priority=SCLR_overrides_CE
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2013-06-08T23:00:50Z
+MISC pkg_timestamp=2013-10-13T18:46:09Z
 # END Extra information
 GENERATE
-# CRC: f479a4e5
+# CRC: b813d68a
