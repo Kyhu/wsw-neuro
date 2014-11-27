@@ -245,7 +245,7 @@ module rgb2ycbcr(
 	
 	delayx #(
 		.N(3),
-		.DELAY(6)
+		.DELAY(7)
 	)
 	sync_delay(
     .clk(clk), 

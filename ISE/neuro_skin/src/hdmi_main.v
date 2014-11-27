@@ -253,7 +253,35 @@ module hdmi_main
     .hsync_out(hsync_hsv), 
     .vsync_out(vsync_hsv)
 	 );
-
+	 
+	// NN
+	
+	//DELAY RGB AND YCBR to sync with HSV and syncs signal!
+	wire [7:0]  skin;
+ 
+ 	wire  de_skin;
+	wire  hsync_skin;
+	wire  vsync_skin;
+	
+	neural_network nn (
+    .clk(clk), 
+    .ce(ce), 
+    .de_in(de_hsv), 
+    .hsync_in(hsync_hsv), 
+    .vsync_in(vsync_hsv), 
+    .R(R), 
+    .G(G), 
+    .B(B), 
+    .H(H), 
+    .S(S), 
+    .Cb(Cb), 
+    .Cr(Cr), 
+    .skin(skin), 
+    .de_out(de_skin), 
+    .hsync_out(hsync_skin), 
+    .vsync_out(vsync_skin)
+    );
+	 
 	// MUX 
 	wire [7:0]r_mux[7:0];
 	wire [7:0]g_mux[7:0];
@@ -283,6 +311,13 @@ module hdmi_main
 	assign de_mux[2] = de_hsv;
 	assign hsync_mux[2] = hsync_hsv;
 	assign vsync_mux[2] = vsync_hsv;
+	
+	assign r_mux[3] = skin;
+	assign g_mux[3] = skin;
+	assign b_mux[3] = skin;
+	assign de_mux[3] = de_skin;
+	assign hsync_mux[3] = hsync_skin;
+	assign vsync_mux[3] = vsync_skin;
 	
   // -----------------------------------------------------------------------------
   // HDMI output port 
