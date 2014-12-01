@@ -20,19 +20,24 @@ results = 0;
         outputOfNeuronsINPUT(i) = input(i);
     end
     
+    sum = zeros(length(outputOfNeuronsHIDDEN));
     [m, n] = size(hiddenLayerWireWeight);
     for i = 1:length(outputOfNeuronsHIDDEN)
         for j = 1:m
-            outputOfNeuronsHIDDEN(i) = outputOfNeuronsHIDDEN(i) + hiddenLayerWireWeight(j,i)*outputOfNeuronsINPUT(j);
+            sum(i) = sum(i) + hiddenLayerWireWeight(j,i)*outputOfNeuronsINPUT(j);
         end
+        outputOfNeuronsHIDDEN(i) = tanh(sum(i));
     end
     
+    sum = zeros(length(outputOfNeuronsOUTPUT));
     [m1, n1] = size(outputWireWeight);
     for i = 1:length(outputOfNeuronsOUTPUT)
         for j = 1:m1
-            outputOfNeuronsOUTPUT(i) = outputOfNeuronsOUTPUT(i) + outputWireWeight(j,i) * outputOfNeuronsHIDDEN(j);
+            sum(i) = sum(i) + outputWireWeight(j,i) * outputOfNeuronsHIDDEN(j);
         end
+        outputOfNeuronsOUTPUT(i) = tanh(sum(i));
     end
+    
 % % feedForward(input, outputOfNeuronsINPUT,
 %                      outputOfNeuronsHIDDEN,
 %                      outputOfNeuronsOUTPUT, hiddenLayerWireWeight, outputWireWeight);
