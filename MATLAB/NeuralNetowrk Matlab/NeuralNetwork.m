@@ -38,12 +38,43 @@ results = 0;
         outputOfNeuronsOUTPUT(i) = tanh(sum(i));
     end
     
-% % feedForward(input, outputOfNeuronsINPUT,
-%                      outputOfNeuronsHIDDEN,
-%                      outputOfNeuronsOUTPUT, hiddenLayerWireWeight, outputWireWeight);
-% {   
-% 
-% 
-% }
-%backPropagation(expectedOutput);
-%getResults(results);
+%%backPropagation;
+error = 0;
+
+    for i = 1:length(outputOfNeuronsOUTPUT)
+        delta = expectedOutput(i) - outputOfNeuronsOUTPUT(i);
+        error = error + delta*delta;
+    end
+    
+    error = error / length(outputOfNeuronsOUTPUT);
+    error = sqrt(error);
+    
+    %%%%%%%%%%
+%calculate overall net error
+ %   recentAverageError = recentAverageError + 
+%calculate output layer gradients
+
+gradientOfOutputNeurons = outputOfNeuronsOUTPUT;
+    for i = 1:length(outputOfNeuronsOUTPUT)
+        delta = expectedOutput(i) - outputOfNeuronsOUTPUT(i);
+        gradientOfOutputNeurons(i) = delta*(1- outputOfNeuronsOUTPUT(i)*outputOfNeuronsOUTPUT(i));
+    end
+    
+    
+% calculatd gradiens on hidden layer
+gradientOfHiddenNeurons = outputOfNeuronsHIDDEN;
+    for i = 1:length(outputOfNeuronsHIDDEN)
+        sum
+        
+        dow = 
+        gradientOfHiddenNeurons(i) = dow*(1- outputOfNeuronsHIDDEN(i)*outputOfNeuronsHIDDEN(i));
+    end
+%for all layers from outputs to first hidden layer,
+%update weight
+
+    for i = 1:length(outputOfNeuronsOUTPUT)
+        outputWireWeight
+    end
+    for i = 1:length(outputOfNeuronsHIDDEN)
+        deltaHiddenLayerWireWeight
+    end
