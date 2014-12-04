@@ -2,6 +2,9 @@ inputNeurons = 2;
 hiddenLayerNeurons = 3;
 outputNeurons = 1;
 
+eta = 0.15;
+alpha = 0.5;
+
 hiddenLayerWireWeight = rand(inputNeurons, hiddenLayerNeurons); %polaczenia(+1 bias) , ilosc neuronow 
 deltaHiddenLayerWireWeight = ones(inputNeurons, hiddenLayerNeurons); %polaczenia(+1 bias) , ilosc neuronow 
 outputWireWeight = rand(hiddenLayerNeurons, outputNeurons); %polaczenia(+1 bias) , ilosc neuronow
@@ -61,20 +64,32 @@ gradientOfOutputNeurons = outputOfNeuronsOUTPUT;
     end
     
     
-% calculatd gradiens on hidden layer
-gradientOfHiddenNeurons = outputOfNeuronsHIDDEN;
-    for i = 1:length(outputOfNeuronsHIDDEN)
-        sum
-        
-        dow = 
-        gradientOfHiddenNeurons(i) = dow*(1- outputOfNeuronsHIDDEN(i)*outputOfNeuronsHIDDEN(i));
+%calculatd gradiens on hidden layer
+sum = 0;
+
+    for i = 1:length(outputOfNeuronsINPUT)
+        %%sumDOW
+        for i = 1:length(outputOfNeuronsHIDDEN)
+            sum = sum + hiddenLayerWireWeight(i)*outputOfNeuronsHIDDEN(i);
+        %
+        gradientOfHiddenNeurons(i) = sum*(1- outputOfNeuronsHIDDEN(i)*outputOfNeuronsHIDDEN(i));
+        end
     end
 %for all layers from outputs to first hidden layer,
 %update weight
 
-    for i = 1:length(outputOfNeuronsOUTPUT)
-        outputWireWeight
-    end
     for i = 1:length(outputOfNeuronsHIDDEN)
-        deltaHiddenLayerWireWeight
+        newDeltaOutputWireWeight =  2;%...
+           % eta*outputOfNeuronsHIDDEN(i)*gradientOfOutputNeurons(i) ...
+          %  + alpha*deltaOutputWireWeight(i);
+        deltaOutputWireWeight(i) = newDeltaOutputWireWeight;
+        outputWireWeight(i) = outputWireWeight(i) + newDeltaOutputWireWeight;
+    end
+    
+    for i = 1:length(outputOfNeuronsINPUT)
+        newDeltaHiddenLayerWireWeight =  2;%...
+           % eta*outputOfNeuronsINPUT(i)*gradientOfHiddenNeurons(i) ...
+           % + alpha*deltaHiddenLayerWireWeight(i);
+        deltaHiddenLayerWireWeight(i) = newDeltaHiddenLayerWireWeight;
+        hiddenLayerWireWeight(i) = hiddenLayerWireWeight(i) + newDeltaHiddenLayerWireWeight;
     end
