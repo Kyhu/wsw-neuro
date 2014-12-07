@@ -1,95 +1,111 @@
-inputNeurons = 2;
-hiddenLayerNeurons = 3;
-outputNeurons = 1;
+% INICJALIZACJA SIECI
+clear all;
+INPUTNeurons_Num = 2;
+HIDDENNeurons_Num = 4;
+OUTPUTNeurons_Num = 1;
 
+INPUTNeurons_Output = ones(INPUTNeurons_Num + 1, 1);                            % inicialization with 1 - makes sure that bias will have const 1 output
+INPUTNeurons_Weight = rand(INPUTNeurons_Num + 1, HIDDENNeurons_Num);           
+INPUTNeurons_DeltaWeight = zeros(INPUTNeurons_Num + 1, HIDDENNeurons_Num + 1);
+
+HIDDENNeurons_Output = ones(HIDDENNeurons_Num + 1,1);
+HIDDENNeurons_Gradient = zeros(HIDDENNeurons_Num + 1,1);
+HIDDENNeurons_Weight = rand(HIDDENNeurons_Num + 1, OUTPUTNeurons_Num); %polaczenia(+1 bias) , ilosc neuronow
+HIDDENNeurons_DeltaWeight = zeros(HIDDENNeurons_Num + 1, OUTPUTNeurons_Num + 1); %polaczenia(+1 bias) , ilosc neuronow
+
+OUTPUTNeurons_Output = zeros(OUTPUTNeurons_Num,1);
+OUTPUTNeurons_Gradient = zeros(OUTPUTNeurons_Num,1);
+
+% PARAMETERS
 eta = 0.15;
 alpha = 0.5;
+recentAverageError = 0;
 
-hiddenLayerWireWeight = rand(inputNeurons, hiddenLayerNeurons); %polaczenia(+1 bias) , ilosc neuronow 
-deltaHiddenLayerWireWeight = ones(inputNeurons, hiddenLayerNeurons); %polaczenia(+1 bias) , ilosc neuronow 
-outputWireWeight = rand(hiddenLayerNeurons, outputNeurons); %polaczenia(+1 bias) , ilosc neuronow
-deltaOutputWireWeight = ones(hiddenLayerNeurons, outputNeurons); %polaczenia(+1 bias) , ilosc neuronow
-
-outputOfNeuronsINPUT = zeros(inputNeurons, 1);
-outputOfNeuronsHIDDEN =  zeros(hiddenLayerNeurons,1);
-outputOfNeuronsOUTPUT = zeros(outputNeurons,1);
-
-
-input = [2, 2];
+% TEST
+input = [1, 1];
 expectedOutput = 0;
-results = 0;
 
-    for i = 1:length(outputOfNeuronsINPUT)
-        outputOfNeuronsINPUT(i) = input(i);
-    end
+% for k = 1:2000
+%     value1 = round(rand())
+%     value2 = round(rand())
+%     input = [value1, value2];
+%     expectedOutput = xor(value1, value2);
+%FEED FORWARD
+
+%init INPUT output
+for i = 1:INPUTNeurons_Num
+    INPUTNeurons_Output(i) = input(i);
+end
     
-    sum = zeros(length(outputOfNeuronsHIDDEN));
-    [m, n] = size(hiddenLayerWireWeight);
-    for i = 1:length(outputOfNeuronsHIDDEN)
-        for j = 1:m
-            sum(i) = sum(i) + hiddenLayerWireWeight(j,i)*outputOfNeuronsINPUT(j);
-        end
-        outputOfNeuronsHIDDEN(i) = tanh(sum(i));
+%calc HIDDEN output
+sum = zeros(length(HIDDENNeurons_Output));
+[m, n] = size(INPUTNeurons_Weight);
+for i = 1:length(HIDDENNeurons_Output) - 1
+    for j = 1:m
+        sum(i) = sum(i) + INPUTNeurons_Weight(j,i)*INPUTNeurons_Output(j);
     end
-    
-    sum = zeros(length(outputOfNeuronsOUTPUT));
-    [m1, n1] = size(outputWireWeight);
-    for i = 1:length(outputOfNeuronsOUTPUT)
-        for j = 1:m1
-            sum(i) = sum(i) + outputWireWeight(j,i) * outputOfNeuronsHIDDEN(j);
-        end
-        outputOfNeuronsOUTPUT(i) = tanh(sum(i));
+    HIDDENNeurons_Output(i) = tanh(sum(i));
+end
+
+%calc OUTPUT output
+sum = zeros(length(OUTPUTNeurons_Output));
+[m1, n1] = size(HIDDENNeurons_Weight);
+for i = 1:length(OUTPUTNeurons_Output)
+    for j = 1:m1
+        sum(i) = sum(i) + HIDDENNeurons_Weight(j,i) * HIDDENNeurons_Output(j);
     end
+    OUTPUTNeurons_Output(i) = tanh(sum(i));
+end
     
-%%backPropagation;
+% BACK PROPAGATION
+
+% calc ERROR
 error = 0;
+for i = 1:length(OUTPUTNeurons_Output)
+    delta = expectedOutput(i) - OUTPUTNeurons_Output(i);
+    error = error + delta*delta;
+end    
+error = error / length(OUTPUTNeurons_Output);
+error = sqrt(error);
 
-    for i = 1:length(outputOfNeuronsOUTPUT)
-        delta = expectedOutput(i) - outputOfNeuronsOUTPUT(i);
-        error = error + delta*delta;
-    end
+%recentAverageError = (recentAverageError * m_recentAverageSmoothingFactor + error)/ (m_recentAverageSmoothingFactor + 1.0);
+            
+% calc OUTPUT gradient
+for i = 1:length(OUTPUTNeurons_Output)
+    delta = expectedOutput(i) - OUTPUTNeurons_Output(i);
+    OUTPUTNeurons_Gradient(i) = delta*(1 - (OUTPUTNeurons_Output(i)*OUTPUTNeurons_Output(i)));
+end
     
-    error = error / length(outputOfNeuronsOUTPUT);
-    error = sqrt(error);
-    
-    %%%%%%%%%%
-%calculate overall net error
- %   recentAverageError = recentAverageError + 
-%calculate output layer gradients
+% calc HIDDEN gradient
 
-gradientOfOutputNeurons = outputOfNeuronsOUTPUT;
-    for i = 1:length(outputOfNeuronsOUTPUT)
-        delta = expectedOutput(i) - outputOfNeuronsOUTPUT(i);
-        gradientOfOutputNeurons(i) = delta*(1- outputOfNeuronsOUTPUT(i)*outputOfNeuronsOUTPUT(i));
+for i = 1:length(HIDDENNeurons_Output)
+    sum = 0;
+    %%sumDOW
+    for j = 1:length(OUTPUTNeurons_Output)
+        sum = sum + HIDDENNeurons_Weight(i)*OUTPUTNeurons_Gradient(j);
     end
+    %
+    HIDDENNeurons_Gradient(i) = sum*(1- HIDDENNeurons_Output(i)*HIDDENNeurons_Output(i));
+end
+%%
+% update HIDDEN weights
+for i = 1:length(OUTPUTNeurons_Output)
+    for j = 1:length(HIDDENNeurons_Output)
+        newHIDDENNeurons_DeltaWeight = eta * HIDDENNeurons_Output(j) * OUTPUTNeurons_Gradient(i) + alpha * HIDDENNeurons_DeltaWeight(j,i);
+        HIDDENNeurons_DeltaWeight(j,i) = newHIDDENNeurons_DeltaWeight;
+        HIDDENNeurons_Weight(j,i) = HIDDENNeurons_Weight(j,i) + newHIDDENNeurons_DeltaWeight;
+    end
+end
     
-    
-%calculatd gradiens on hidden layer
-sum = 0;
+% update INPUT weights
+for i = 1:length(HIDDENNeurons_Output) - 1
+    for j = 1:length(INPUTNeurons_Output)
+        newINPUTNeurons_DeltaWeight = eta * INPUTNeurons_Output(j) * HIDDENNeurons_Gradient(i) + alpha * INPUTNeurons_DeltaWeight(j,i);
+        INPUTNeurons_DeltaWeight(j,i) = newINPUTNeurons_DeltaWeight;
+        INPUTNeurons_Weight(j,i) = INPUTNeurons_Weight(j,i) + newINPUTNeurons_DeltaWeight;
+    end
+end
 
-    for i = 1:length(outputOfNeuronsINPUT)
-        %%sumDOW
-        for i = 1:length(outputOfNeuronsHIDDEN)
-            sum = sum + hiddenLayerWireWeight(i)*outputOfNeuronsHIDDEN(i);
-        %
-        gradientOfHiddenNeurons(i) = sum*(1- outputOfNeuronsHIDDEN(i)*outputOfNeuronsHIDDEN(i));
-        end
-    end
-%for all layers from outputs to first hidden layer,
-%update weight
+OUTPUTNeurons_Output
 
-    for i = 1:length(outputOfNeuronsHIDDEN)
-        newDeltaOutputWireWeight =  2;%...
-           % eta*outputOfNeuronsHIDDEN(i)*gradientOfOutputNeurons(i) ...
-          %  + alpha*deltaOutputWireWeight(i);
-        deltaOutputWireWeight(i) = newDeltaOutputWireWeight;
-        outputWireWeight(i) = outputWireWeight(i) + newDeltaOutputWireWeight;
-    end
-    
-    for i = 1:length(outputOfNeuronsINPUT)
-        newDeltaHiddenLayerWireWeight =  2;%...
-           % eta*outputOfNeuronsINPUT(i)*gradientOfHiddenNeurons(i) ...
-           % + alpha*deltaHiddenLayerWireWeight(i);
-        deltaHiddenLayerWireWeight(i) = newDeltaHiddenLayerWireWeight;
-        hiddenLayerWireWeight(i) = hiddenLayerWireWeight(i) + newDeltaHiddenLayerWireWeight;
-    end
+% end
