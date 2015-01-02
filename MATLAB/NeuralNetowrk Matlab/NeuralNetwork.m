@@ -1,25 +1,25 @@
 % INICJALIZACJA SIECI
 % clear all;
-INPUTNeurons_Num = 7;
-HIDDENNeurons_Num = 13;
-OUTPUTNeurons_Num = 1;
+%INPUTNeurons_Num = 7;
+%HIDDENNeurons_Num = 13;
+%OUTPUTNeurons_Num = 1;
 
-INPUTNeurons_Output = ones(INPUTNeurons_Num + 1, 1);                            % inicialization with 1 - makes sure that bias will have const 1 output
-INPUTNeurons_Weight = rand(INPUTNeurons_Num + 1, HIDDENNeurons_Num);
-INPUTNeurons_DeltaWeight = zeros(INPUTNeurons_Num + 1, HIDDENNeurons_Num + 1);
-
-HIDDENNeurons_Output = ones(HIDDENNeurons_Num + 1,1);
-HIDDENNeurons_Gradient = zeros(HIDDENNeurons_Num + 1,1);
-HIDDENNeurons_Weight = rand(HIDDENNeurons_Num + 1, OUTPUTNeurons_Num); %polaczenia(+1 bias) , ilosc neuronow
-HIDDENNeurons_DeltaWeight = zeros(HIDDENNeurons_Num + 1, OUTPUTNeurons_Num + 1); %polaczenia(+1 bias) , ilosc neuronow
-
-OUTPUTNeurons_Output = zeros(OUTPUTNeurons_Num,1);
-OUTPUTNeurons_Gradient = zeros(OUTPUTNeurons_Num,1);
-
+%INPUTNeurons_Output = ones(INPUTNeurons_Num + 1, 1);                            % inicialization with 1 - makes sure that bias will have const 1 output
+% INPUTNeurons_Weight = rand(INPUTNeurons_Num + 1, HIDDENNeurons_Num);
+% INPUTNeurons_DeltaWeight = zeros(INPUTNeurons_Num + 1, HIDDENNeurons_Num + 1);
+% 
+% HIDDENNeurons_Output = ones(HIDDENNeurons_Num + 1,1);
+% HIDDENNeurons_Gradient = zeros(HIDDENNeurons_Num + 1,1);
+% HIDDENNeurons_Weight = rand(HIDDENNeurons_Num + 1, OUTPUTNeurons_Num); %polaczenia(+1 bias) , ilosc neuronow
+% HIDDENNeurons_DeltaWeight = zeros(HIDDENNeurons_Num + 1, OUTPUTNeurons_Num + 1); %polaczenia(+1 bias) , ilosc neuronow
+% 
+% OUTPUTNeurons_Output = zeros(OUTPUTNeurons_Num,1);
+% OUTPUTNeurons_Gradient = zeros(OUTPUTNeurons_Num,1);
+% 
 % PARAMETERS
-eta = 0.15;
-alpha = 0.5;
-recentAverageError = 0;
+% eta = 0.15;
+% alpha = 0.5;
+% recentAverageError = 0;
 
 % TEST
 % input =
@@ -30,15 +30,18 @@ recentAverageError = 0;
 
 test_picture = imread('hand64.ppm');
 skin = zeros(size(test_picture,1), size(test_picture,2));
-for i = 1:size(test_picture,1)
-    i
-    for j = 1:size(test_picture,2)
-        rgb = [test_picture(i,j,1), test_picture(i,j,2), test_picture(i,j,3)];
+for p = 1:size(test_picture,1)
+%     p
+    for z = 1:size(test_picture,2)
+%         z
+        rgb = [test_picture(p,z,1), test_picture(p,z,2), test_picture(p,z,3)];
         ycbr = rgb2ycbcr(rgb);
         hsv = rgb2hsv(rgb);
 
+%         p
+%         z
         input =[rgb';ycbr(2:3);hsv(1:2)'];
-        
+        input = double(input)./255;
 % for k = 1:length(RGBCbCrHS)
 %     if(mod(k,100) == 0)
 %         k
@@ -51,7 +54,7 @@ for i = 1:size(test_picture,1)
     for i = 1:INPUTNeurons_Num
         INPUTNeurons_Output(i) = input(i);
     end
-    
+%     INPUTNeurons_Output
     %calc HIDDEN output
     sum = zeros(length(HIDDENNeurons_Output));
     [m, n] = size(INPUTNeurons_Weight);
@@ -59,9 +62,10 @@ for i = 1:size(test_picture,1)
         for j = 1:m
             sum(i) = sum(i) + INPUTNeurons_Weight(j,i)*INPUTNeurons_Output(j);
         end
-        HIDDENNeurons_Output(i) = tanh(sum(i));
+        HIDDENNeurons_Output(i) = sum(i);
+%                 HIDDENNeurons_Output(i) = sum(i);
     end
-    
+%     HIDDENNeurons_Output
     %calc OUTPUT output
     sum = zeros(length(OUTPUTNeurons_Output));
     [m1, n1] = size(HIDDENNeurons_Weight);
@@ -71,7 +75,7 @@ for i = 1:size(test_picture,1)
         end
         OUTPUTNeurons_Output(i) = tanh(sum(i));
     end
-    
+%     OUTPUTNeurons_Output
     % % BACK PROPAGATION
     %
     % % calc ERROR
@@ -125,7 +129,11 @@ for i = 1:size(test_picture,1)
     
 % end
 
-        skin(i,j) = OUTPUTNeurons_Output;
+        if(OUTPUTNeurons_Output > 0.20)
+            skin(p,z) = 0;
+        else
+            skin(p,z) = 1;
+        end
     end;
 end;
 figure(3);

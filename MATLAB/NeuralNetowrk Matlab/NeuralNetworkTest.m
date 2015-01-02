@@ -29,6 +29,7 @@ for b = 1:10
     b
 for k = 1:length(RGBCbCrHS)
     input = RGBCbCrHS(k,:);
+    input = double(input)./255;
     expectedOutput = skin(k);
 %FEED FORWARD
 

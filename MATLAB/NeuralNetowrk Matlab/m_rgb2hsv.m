@@ -1,10 +1,10 @@
-function [ hsv ] = rgb2hsv( rgb )
+function [ hsv ] = m_rgb2hsv( rgb )
 
-% hsv = [];
-% for i=1:length(rgb)
-r = double(rgb(1)/255);
-g = double(rgb(2)/255);
-b = double(rgb(3)/255);
+hsv = [];
+for i=1:length(rgb)
+r = double(rgb(i,1)/255);
+g = double(rgb(i,2)/255);
+b = double(rgb(i,3)/255);
 
 [Cmax,max_i]  = max([r,g,b]);
 [Cmin,min_i] = min([r,g,b]);
@@ -23,11 +23,9 @@ end
 S = delta/Cmax;
 V = Cmax;   
 
-
-hsv = uint8([H 100*S 100*V]);
     
-% hsv = [ hsv; uint8([H 100*S 100*V])];
+hsv = [ hsv; uint8([H 100*S 100*V])];
     
 end
 
-% end
+end
