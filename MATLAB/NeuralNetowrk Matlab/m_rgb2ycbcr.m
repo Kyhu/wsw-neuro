@@ -9,6 +9,3 @@ for i = 1:length(rgb)
     ycbcr_double = ycbcr_A * rgb_double(i,:)' + ycbcr_B;
     ycbcr = [ycbcr; uint8(ycbcr_double)'];
 end
-
-
-
