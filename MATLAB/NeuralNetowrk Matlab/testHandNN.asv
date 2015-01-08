@@ -1,15 +1,13 @@
 % Test NN on hand
-clear variables;
+%clear variables;
 
 %% Load data
 % Load model
 load('nnModel.04-01-15_17-39-06.mat');
 
 % Fix model
-global tanh_x;
-global tanh_y;
-tanh_x = -3:0.002:3;
-tanh_y = tanh(tanh_x);
+%  tanh_x = -3:0.002:3;
+%  tanh_y = tanh(tanh_x);
 nn = nnfix(nn);
 nn.hidden.func = @tanhFix;
 nn.output.func = @tanhFix;
