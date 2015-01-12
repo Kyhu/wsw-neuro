@@ -1,0 +1,767 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\ipcore_dir\mul17.v" into library work
+Parsing module <mul17>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\ipcore_dir\LUTSigma.v" into library work
+Parsing module <LUTSigma>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\ipcore_dir\adder19.v" into library work
+Parsing module <adder19>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\ipcore_dir\adder18.v" into library work
+Parsing module <adder18>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\ipcore_dir\adder.v" into library work
+Parsing module <adder>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron_13in.v" into library work
+Parsing module <neuron_13in>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron2.v" into library work
+Parsing module <neuron_2warstwy>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron1.v" into library work
+Parsing module <neuron_1warstwy>.
+Analyzing Verilog file "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" into library work
+Parsing module <main>.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 99: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 100: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 101: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 102: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 103: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 104: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 105: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 106: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 107: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 108: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 109: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 110: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 111: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 112: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 113: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 114: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 115: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 116: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 117: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 118: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 119: Constant value is truncated to fit in <16> bits.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <main>.
+
+Elaborating module <neuron_1warstwy>.
+
+Elaborating module <mul17>.
+
+Elaborating module <adder>.
+WARNING:HDLCompiler:413 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron1.v" Line 65: Result of 33-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron1.v" Line 67: Result of 15-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <LUTSigma>.
+WARNING:HDLCompiler:1499 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\ipcore_dir\LUTSigma.v" Line 39: Empty module <LUTSigma> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 125: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 134: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 143: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 152: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 161: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 170: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 179: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+
+Elaborating module <neuron_2warstwy>.
+
+Elaborating module <adder18>.
+
+Elaborating module <adder19>.
+WARNING:HDLCompiler:413 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron2.v" Line 161: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron2.v" Line 163: Result of 17-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 194: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 204: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 214: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 224: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 234: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 244: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 254: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 264: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 274: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 284: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 294: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 304: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 314: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+
+Elaborating module <neuron_13in>.
+WARNING:HDLCompiler:413 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron_13in.v" Line 68: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron_13in.v" Line 70: Result of 15-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 329: Size mismatch in connection of port <threshold>. Formal port size is 21-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 330: Assignment to y_out ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" Line 125: Net <threshold> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v".
+INFO:Xst:3210 - "C:\Users\gosia\Desktop\wsw studia miczal\wsw\main.v" line 325: Output port <y> of the instance <n_31> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <threshold> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <neuron_1warstwy>.
+    Related source file is "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron1.v".
+WARNING:Xst:647 - Input <threshold> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 11-bit register for signal <lut_inr>.
+    Found 14-bit adder for signal <n0021> created at line 67.
+    Found 11-bit subtractor for signal <GND_2_o_GND_2_o_sub_4_OUT<10:0>> created at line 65.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <neuron_1warstwy> synthesized.
+
+Synthesizing Unit <div_14u_4u>.
+    Related source file is "".
+    Found 18-bit adder for signal <n0565> created at line 0.
+    Found 18-bit adder for signal <GND_5_o_b[3]_add_1_OUT> created at line 0.
+    Found 17-bit adder for signal <n0569> created at line 0.
+    Found 17-bit adder for signal <GND_5_o_b[3]_add_3_OUT> created at line 0.
+    Found 16-bit adder for signal <n0573> created at line 0.
+    Found 16-bit adder for signal <GND_5_o_b[3]_add_5_OUT> created at line 0.
+    Found 15-bit adder for signal <n0577> created at line 0.
+    Found 15-bit adder for signal <GND_5_o_b[3]_add_7_OUT> created at line 0.
+    Found 14-bit adder for signal <n0581> created at line 0.
+    Found 14-bit adder for signal <a[13]_b[3]_add_9_OUT> created at line 0.
+    Found 14-bit adder for signal <n0585> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_11_OUT> created at line 0.
+    Found 14-bit adder for signal <n0589> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_13_OUT> created at line 0.
+    Found 14-bit adder for signal <n0593> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_15_OUT> created at line 0.
+    Found 14-bit adder for signal <n0597> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_17_OUT> created at line 0.
+    Found 14-bit adder for signal <n0601> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_19_OUT> created at line 0.
+    Found 14-bit adder for signal <n0605> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_21_OUT> created at line 0.
+    Found 14-bit adder for signal <n0609> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_23_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <n0613> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_25_OUT[13:0]> created at line 0.
+    Found 14-bit adder for signal <n0617> created at line 0.
+    Found 14-bit adder for signal <a[13]_GND_5_o_add_27_OUT[13:0]> created at line 0.
+    Found 18-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Summary:
+	inferred  28 Adder/Subtractor(s).
+	inferred  15 Comparator(s).
+	inferred 157 Multiplexer(s).
+Unit <div_14u_4u> synthesized.
+
+Synthesizing Unit <neuron_2warstwy>.
+    Related source file is "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron2.v".
+WARNING:Xst:647 - Input <threshold> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 11-bit register for signal <lut_inr>.
+    Found 16-bit adder for signal <n0032> created at line 163.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_4_OUT<10:0>> created at line 161.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <neuron_2warstwy> synthesized.
+
+Synthesizing Unit <div_16u_4u>.
+    Related source file is "".
+    Found 20-bit adder for signal <GND_10_o_b[3]_add_1_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_10_o_b[3]_add_3_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_10_o_b[3]_add_5_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_10_o_b[3]_add_7_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[3]_add_9_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_11_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_13_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_15_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_17_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_19_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_21_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_23_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_25_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_27_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_29_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_10_o_add_31_OUT[15:0]> created at line 0.
+    Found 20-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 211 Multiplexer(s).
+Unit <div_16u_4u> synthesized.
+
+Synthesizing Unit <neuron_13in>.
+    Related source file is "C:\Users\gosia\Desktop\wsw studia miczal\wsw\neuron_13in.v".
+WARNING:Xst:647 - Input <threshold> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 11-bit register for signal <lut_inr>.
+    Found 35-bit adder for signal <n0091[34:0]> created at line 60.
+    Found 36-bit adder for signal <n0094[35:0]> created at line 60.
+    Found 37-bit adder for signal <n0097[36:0]> created at line 60.
+    Found 18-bit adder for signal <n0128> created at line 61.
+    Found 14-bit adder for signal <n0069> created at line 70.
+    Found 11-bit subtractor for signal <GND_11_o_GND_11_o_sub_30_OUT<10:0>> created at line 68.
+    Found 38-bit adder for signal <_n0133> created at line 60.
+    Found 38-bit adder for signal <_n0134> created at line 60.
+    Found 38-bit adder for signal <_n0135> created at line 60.
+    Found 38-bit adder for signal <_n0136> created at line 60.
+    Found 38-bit adder for signal <_n0137> created at line 60.
+    Found 38-bit adder for signal <_n0138> created at line 60.
+    Found 38-bit adder for signal <_n0139> created at line 60.
+    Found 38-bit adder for signal <_n0140> created at line 60.
+    Found 38-bit adder for signal <sumtotal1> created at line 60.
+    Found 17x17-bit multiplier for signal <sum1> created at line 45.
+    Found 17x17-bit multiplier for signal <sum2> created at line 46.
+    Found 17x17-bit multiplier for signal <sum3> created at line 47.
+    Found 17x17-bit multiplier for signal <sum4> created at line 48.
+    Found 17x17-bit multiplier for signal <sum5> created at line 49.
+    Found 17x17-bit multiplier for signal <sum6> created at line 50.
+    Found 17x17-bit multiplier for signal <sum7> created at line 51.
+    Found 17x17-bit multiplier for signal <sum8> created at line 52.
+    Found 17x17-bit multiplier for signal <sum9> created at line 53.
+    Found 17x17-bit multiplier for signal <sum10> created at line 54.
+    Found 17x17-bit multiplier for signal <sum11> created at line 55.
+    Found 17x17-bit multiplier for signal <sum12> created at line 56.
+    Found 17x17-bit multiplier for signal <sum13> created at line 57.
+    Summary:
+	inferred  13 Multiplier(s).
+	inferred  15 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <neuron_13in> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 13
+ 17x17-bit multiplier                                  : 13
+# Adders/Subtractors                                   : 487
+ 11-bit subtractor                                     : 21
+ 14-bit adder                                          : 168
+ 15-bit adder                                          : 16
+ 16-bit adder                                          : 185
+ 17-bit adder                                          : 29
+ 18-bit adder                                          : 30
+ 19-bit adder                                          : 13
+ 20-bit adder                                          : 13
+ 35-bit adder                                          : 1
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 9
+# Registers                                            : 21
+ 11-bit register                                       : 21
+# Comparators                                          : 341
+ 14-bit comparator lessequal                           : 88
+ 15-bit comparator lessequal                           : 8
+ 16-bit comparator lessequal                           : 177
+ 17-bit comparator lessequal                           : 21
+ 18-bit comparator lessequal                           : 21
+ 19-bit comparator lessequal                           : 13
+ 20-bit comparator lessequal                           : 13
+# Multiplexers                                         : 4020
+ 1-bit 2-to-1 multiplexer                              : 3936
+ 11-bit 2-to-1 multiplexer                             : 21
+ 14-bit 2-to-1 multiplexer                             : 24
+ 16-bit 2-to-1 multiplexer                             : 39
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/mul17.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/adder.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/LUTSigma.ngc>.
+Reading core <ipcore_dir/adder18.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/adder19.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <mul17> for timing and area information for instance <mnozarka>.
+Loading core <adder> for timing and area information for instance <dodaj>.
+Loading core <LUTSigma> for timing and area information for instance <your_instance_name>.
+Loading core <adder> for timing and area information for instance <dodaj4>.
+Loading core <mul17> for timing and area information for instance <mnozarka1>.
+Loading core <mul17> for timing and area information for instance <mnozarka2>.
+Loading core <mul17> for timing and area information for instance <mnozarka3>.
+Loading core <mul17> for timing and area information for instance <mnozarka4>.
+Loading core <mul17> for timing and area information for instance <mnozarka5>.
+Loading core <mul17> for timing and area information for instance <mnozarka6>.
+Loading core <mul17> for timing and area information for instance <mnozarka7>.
+Loading core <adder> for timing and area information for instance <dodaj1>.
+Loading core <adder> for timing and area information for instance <dodaj2>.
+Loading core <adder> for timing and area information for instance <dodaj3>.
+Loading core <adder18> for timing and area information for instance <dodaj5>.
+Loading core <adder18> for timing and area information for instance <dodaj6>.
+Loading core <adder19> for timing and area information for instance <dodaj7>.
+Loading core <LUTSigma> for timing and area information for instance <your_instance_name>.
+Loading core <LUTSigma> for timing and area information for instance <your_instance_name>.
+
+Synthesizing (advanced) Unit <neuron_13in>.
+	The following adders/subtractors are grouped into adder tree <Madd_sumtotal11> :
+ 	<Madd_n0091[34:0]> in block <neuron_13in>, 	<Madd_n0094[35:0]> in block <neuron_13in>, 	<Madd_n0097[36:0]> in block <neuron_13in>, 	<Madd__n0133> in block <neuron_13in>, 	<Madd__n0134> in block <neuron_13in>, 	<Madd__n0136> in block <neuron_13in>, 	<Madd__n0138> in block <neuron_13in>, 	<Madd__n0137> in block <neuron_13in>.
+	The following adders/subtractors are grouped into adder tree <Madd__n01401> :
+ 	<Madd__n0135> in block <neuron_13in>, 	<Madd__n0139> in block <neuron_13in>.
+	Multiplier <Mmult_sum6> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd11> in block <neuron_13in> are combined into a MAC<Maddsub_sum6>.
+	Multiplier <Mmult_sum5> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd10> in block <neuron_13in> are combined into a MAC<Maddsub_sum5>.
+	Multiplier <Mmult_sum13> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd9> in block <neuron_13in> are combined into a MAC<Maddsub_sum13>.
+	Multiplier <Mmult_sum12> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd8> in block <neuron_13in> are combined into a MAC<Maddsub_sum12>.
+	Multiplier <Mmult_sum11> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd7> in block <neuron_13in> are combined into a MAC<Maddsub_sum11>.
+	Multiplier <Mmult_sum10> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd6> in block <neuron_13in> are combined into a MAC<Maddsub_sum10>.
+	Multiplier <Mmult_sum9> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd5> in block <neuron_13in> are combined into a MAC<Maddsub_sum9>.
+	Multiplier <Mmult_sum8> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd4> in block <neuron_13in> are combined into a MAC<Maddsub_sum8>.
+	Multiplier <Mmult_sum7> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd3> in block <neuron_13in> are combined into a MAC<Maddsub_sum7>.
+	Multiplier <Mmult_sum4> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd2> in block <neuron_13in> are combined into a MAC<Maddsub_sum4>.
+	Multiplier <Mmult_sum3> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd1> in block <neuron_13in> are combined into a MAC<Maddsub_sum3>.
+	Multiplier <Mmult_sum1> in block <neuron_13in> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <neuron_13in> are combined into a MAC<Maddsub_sum1>.
+Unit <neuron_13in> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 12
+ 17x17-to-38-bit MAC                                   : 12
+# Multipliers                                          : 1
+ 17x17-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 363
+ 11-bit adder                                          : 21
+ 11-bit subtractor                                     : 21
+ 14-bit adder carry in                                 : 112
+ 16-bit adder                                          : 208
+ 18-bit adder                                          : 1
+# Registers                                            : 231
+ Flip-Flops                                            : 231
+# Comparators                                          : 341
+ 14-bit comparator lessequal                           : 88
+ 15-bit comparator lessequal                           : 8
+ 16-bit comparator lessequal                           : 177
+ 17-bit comparator lessequal                           : 21
+ 18-bit comparator lessequal                           : 21
+ 19-bit comparator lessequal                           : 13
+ 20-bit comparator lessequal                           : 13
+# Multiplexers                                         : 4020
+ 1-bit 2-to-1 multiplexer                              : 3936
+ 11-bit 2-to-1 multiplexer                             : 21
+ 14-bit 2-to-1 multiplexer                             : 24
+ 16-bit 2-to-1 multiplexer                             : 39
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <main> ...
+
+Optimizing unit <neuron_1warstwy> ...
+
+Optimizing unit <div_14u_4u> ...
+
+Optimizing unit <neuron_2warstwy> ...
+
+Optimizing unit <div_16u_4u> ...
+
+Optimizing unit <neuron_13in> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 22.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 231
+ Flip-Flops                                            : 231
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 26153
+#      GND                         : 218
+#      INV                         : 16
+#      LUT1                        : 560
+#      LUT2                        : 1934
+#      LUT3                        : 706
+#      LUT4                        : 476
+#      LUT5                        : 1405
+#      LUT6                        : 9582
+#      MUXCY                       : 3078
+#      MUXF7                       : 3304
+#      MUXF8                       : 1512
+#      VCC                         : 99
+#      XORCY                       : 3263
+# FlipFlops/Latches                : 2973
+#      FD                          : 567
+#      FDE                         : 2406
+# Shift Registers                  : 531
+#      SRLC16E                     : 531
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2006
+#      IBUF                        : 2006
+# DSPs                             : 111
+#      DSP48E1                     : 111
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2973  out of  126800     2%  
+ Number of Slice LUTs:                15210  out of  63400    23%  
+    Number used as Logic:             14679  out of  63400    23%  
+    Number used as Memory:              531  out of  19000     2%  
+       Number used as SRL:              531
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  17824
+   Number with an unused Flip Flop:   14851  out of  17824    83%  
+   Number with an unused LUT:          2614  out of  17824    14%  
+   Number of fully used LUT-FF pairs:   359  out of  17824     2%  
+   Number of unique control sets:        22
+
+IO Utilization: 
+ Number of IOs:                        2007
+ Number of bonded IOBs:                2007  out of    210   955% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                    111  out of    240    46%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 3602  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 27.754ns (Maximum Frequency: 36.031MHz)
+   Minimum input arrival time before clock: 27.527ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 27.754ns (frequency: 36.031MHz)
+  Total number of paths / destination ports: 353811011744496460000000000000 / 4960
+-------------------------------------------------------------------------
+Delay:               27.754ns (Levels of Logic = 32)
+  Source:            n_212/your_instance_name/U0/xst_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_15 (FF)
+  Destination:       n_31/lut_inr_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: n_212/your_instance_name/U0/xst_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_15 to n_31/lut_inr_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.361   0.279  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/qspo_int_15 (qspo<15>)
+     end scope: 'n_212/your_instance_name:qspo<15>'
+     DSP48E1:B15->P33      1   2.690   0.279  n_31/Mmult_sum2 (n_31/sum2<33>)
+     DSP48E1:C33->PCOUT47    1   1.474   0.000  n_31/Maddsub_sum1 (n_31/Maddsub_sum1_PCOUT_to_Maddsub_sum3_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum3 (n_31/Maddsub_sum3_PCOUT_to_Maddsub_sum4_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum4 (n_31/Maddsub_sum4_PCOUT_to_Maddsub_sum7_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum7 (n_31/Maddsub_sum7_PCOUT_to_Maddsub_sum8_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum8 (n_31/Maddsub_sum8_PCOUT_to_Maddsub_sum9_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum9 (n_31/Maddsub_sum9_PCOUT_to_Maddsub_sum10_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum10 (n_31/Maddsub_sum10_PCOUT_to_Maddsub_sum11_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum11 (n_31/Maddsub_sum11_PCOUT_to_Maddsub_sum12_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum12 (n_31/Maddsub_sum12_PCOUT_to_Maddsub_sum13_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum13 (n_31/Maddsub_sum13_PCOUT_to_Maddsub_sum5_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum5 (n_31/Maddsub_sum5_PCOUT_to_Maddsub_sum6_PCIN_47)
+     DSP48E1:PCIN47->P37   21   1.107   0.774  n_31/Maddsub_sum6 (n_31/ADDER_FOR_MULTADD_Madd_3711)
+     LUT6:I1->O           12   0.097   0.330  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_202_o1131 (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_lut<9>)
+     MUXCY:DI->O           1   0.337   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<9> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<10> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<10>)
+     XORCY:CI->O          18   0.370   0.374  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_xor<11> (n_31/sumtotal2[16]_PWR_13_o_div_30/a[13]_GND_5_o_add_17_OUT<11>)
+     LUT2:I1->O           12   0.097   0.734  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_216_o1211 (n_31/sumtotal2[16]_PWR_13_o_div_30/a[11]_a[13]_MUX_205_o)
+     LUT6:I1->O            1   0.097   0.279  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_230_o1111 (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_lut<7>)
+     MUXCY:DI->O           1   0.337   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<7> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<8> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<9> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<9>)
+     XORCY:CI->O           9   0.370   0.332  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_xor<10> (n_31/sumtotal2[16]_PWR_13_o_div_30/a[13]_GND_5_o_add_21_OUT<10>)
+     LUT6:I5->O            6   0.097   0.534  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_244_o111 (n_31/sumtotal2[16]_PWR_13_o_div_30/a[10]_a[13]_MUX_234_o)
+     LUT6:I3->O           30   0.097   0.486  n_31/sumtotal2[16]_PWR_13_o_div_30/o<3>2 (n_31/sumtotal2[16]_PWR_13_o_div_30/o<2>1)
+     LUT3:I1->O            7   0.097   0.711  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_n061121 (n_31/sumtotal2[16]_PWR_13_o_div_30/n0611<10>)
+     LUT6:I1->O           10   0.097   0.321  n_31/sumtotal2[16]_PWR_13_o_div_30/o<2>2 (n_31/sumtotal2[16]_PWR_13_o_div_30/o<1>1)
+     MUXCY:DI->O           1   0.337   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_27_OUT[13:0]_Madd_cy<3> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_27_OUT[13:0]_Madd_cy<3>)
+     XORCY:CI->O           1   0.370   0.683  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_27_OUT[13:0]_Madd_xor<4> (n_31/sumtotal2[16]_PWR_13_o_div_30/a[13]_GND_5_o_add_27_OUT[13:0]<4>)
+     LUT5:I0->O            2   0.097   0.383  n_31/sumtotal2[16]_PWR_13_o_div_30/o<0>22 (n_31/sumtotal2[16]_PWR_13_o_div_30/o<0>21)
+     LUT6:I4->O            1   0.097   0.000  n_31/Mmux_GND_11_o_GND_11_o_mux_32_OUT31 (n_31/GND_11_o_GND_11_o_mux_32_OUT<1>)
+     FD:D                      0.008          n_31/lut_inr_1
+    ----------------------------------------
+    Total                     27.754ns (21.253ns logic, 6.501ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 375924199978525920000000000000 / 2587
+-------------------------------------------------------------------------
+Offset:              27.527ns (Levels of Logic = 32)
+  Source:            w_3<33> (PAD)
+  Destination:       n_31/lut_inr_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: w_3<33> to n_31/lut_inr_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  w_3_33_IBUF (w_3_33_IBUF)
+     DSP48E1:A16->P33      1   2.823   0.279  n_31/Mmult_sum2 (n_31/sum2<33>)
+     DSP48E1:C33->PCOUT47    1   1.474   0.000  n_31/Maddsub_sum1 (n_31/Maddsub_sum1_PCOUT_to_Maddsub_sum3_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum3 (n_31/Maddsub_sum3_PCOUT_to_Maddsub_sum4_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum4 (n_31/Maddsub_sum4_PCOUT_to_Maddsub_sum7_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum7 (n_31/Maddsub_sum7_PCOUT_to_Maddsub_sum8_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum8 (n_31/Maddsub_sum8_PCOUT_to_Maddsub_sum9_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum9 (n_31/Maddsub_sum9_PCOUT_to_Maddsub_sum10_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum10 (n_31/Maddsub_sum10_PCOUT_to_Maddsub_sum11_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum11 (n_31/Maddsub_sum11_PCOUT_to_Maddsub_sum12_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum12 (n_31/Maddsub_sum12_PCOUT_to_Maddsub_sum13_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum13 (n_31/Maddsub_sum13_PCOUT_to_Maddsub_sum5_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.255   0.000  n_31/Maddsub_sum5 (n_31/Maddsub_sum5_PCOUT_to_Maddsub_sum6_PCIN_47)
+     DSP48E1:PCIN47->P37   21   1.107   0.774  n_31/Maddsub_sum6 (n_31/ADDER_FOR_MULTADD_Madd_3711)
+     LUT6:I1->O           12   0.097   0.330  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_202_o1131 (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_lut<9>)
+     MUXCY:DI->O           1   0.337   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<9> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<10> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_cy<10>)
+     XORCY:CI->O          18   0.370   0.374  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_17_OUT_Madd_xor<11> (n_31/sumtotal2[16]_PWR_13_o_div_30/a[13]_GND_5_o_add_17_OUT<11>)
+     LUT2:I1->O           12   0.097   0.734  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_216_o1211 (n_31/sumtotal2[16]_PWR_13_o_div_30/a[11]_a[13]_MUX_205_o)
+     LUT6:I1->O            1   0.097   0.279  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_230_o1111 (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_lut<7>)
+     MUXCY:DI->O           1   0.337   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<7> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<8> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<9> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_cy<9>)
+     XORCY:CI->O           9   0.370   0.332  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_21_OUT_Madd_xor<10> (n_31/sumtotal2[16]_PWR_13_o_div_30/a[13]_GND_5_o_add_21_OUT<10>)
+     LUT6:I5->O            6   0.097   0.534  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_a[0]_a[13]_MUX_244_o111 (n_31/sumtotal2[16]_PWR_13_o_div_30/a[10]_a[13]_MUX_234_o)
+     LUT6:I3->O           30   0.097   0.486  n_31/sumtotal2[16]_PWR_13_o_div_30/o<3>2 (n_31/sumtotal2[16]_PWR_13_o_div_30/o<2>1)
+     LUT3:I1->O            7   0.097   0.711  n_31/sumtotal2[16]_PWR_13_o_div_30/Mmux_n061121 (n_31/sumtotal2[16]_PWR_13_o_div_30/n0611<10>)
+     LUT6:I1->O           10   0.097   0.321  n_31/sumtotal2[16]_PWR_13_o_div_30/o<2>2 (n_31/sumtotal2[16]_PWR_13_o_div_30/o<1>1)
+     MUXCY:DI->O           1   0.337   0.000  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_27_OUT[13:0]_Madd_cy<3> (n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_27_OUT[13:0]_Madd_cy<3>)
+     XORCY:CI->O           1   0.370   0.683  n_31/sumtotal2[16]_PWR_13_o_div_30/Madd_a[13]_GND_5_o_add_27_OUT[13:0]_Madd_xor<4> (n_31/sumtotal2[16]_PWR_13_o_div_30/a[13]_GND_5_o_add_27_OUT[13:0]<4>)
+     LUT5:I0->O            2   0.097   0.383  n_31/sumtotal2[16]_PWR_13_o_div_30/o<0>22 (n_31/sumtotal2[16]_PWR_13_o_div_30/o<0>21)
+     LUT6:I4->O            1   0.097   0.000  n_31/Mmux_GND_11_o_GND_11_o_mux_32_OUT31 (n_31/GND_11_o_GND_11_o_mux_32_OUT<1>)
+     FD:D                      0.008          n_31/lut_inr_1
+    ----------------------------------------
+    Total                     27.527ns (21.026ns logic, 6.501ns route)
+                                       (76.4% logic, 23.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   27.754|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 94.00 secs
+Total CPU time to Xst completion: 94.63 secs
+ 
+--> 
+
+Total memory usage is 499516 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   56 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

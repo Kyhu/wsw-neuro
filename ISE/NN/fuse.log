@@ -1,0 +1,91 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/gosia/Desktop/wsw studia miczal/wsw/tb_main_isim_beh.exe -prj C:/Users/gosia/Desktop/wsw studia miczal/wsw/tb_main_beh.prj work.tb_main work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/mul17.v" into library work
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder.v" Line 983: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder18.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder18.v" Line 607: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder19.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder19.v" Line 636: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/LUTSigma.v" into library work
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/neuron_13in.v" into library work
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/neuron2.v" into library work
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/neuron1.v" into library work
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" into library work
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 99: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 100: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 101: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 102: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 103: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 104: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 105: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 106: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 107: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 108: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 109: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 110: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 111: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 112: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 113: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 114: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 115: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 116: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 117: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 118: Constant value is truncated to fit in <16> bits.
+WARNING:HDLCompiler:568 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 119: Constant value is truncated to fit in <16> bits.
+Analyzing Verilog file "C:/Users/gosia/Desktop/wsw studia miczal/wsw/tb_main.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 134: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 143: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 152: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 161: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 170: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 179: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 194: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 204: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 214: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 224: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 234: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 244: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 254: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 264: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 274: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 284: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 294: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 304: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 314: Size mismatch in connection of port <threshold>. Formal port size is 20-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 329: Size mismatch in connection of port <threshold>. Formal port size is 21-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module DSP48E1(ADREG=0,ALUMODEREG=0,CAR...
+Compiling module GND
+Compiling module VCC
+Compiling module mul17
+Compiling module FDE
+Compiling module SRLC16E
+Compiling module LUT1(INIT=2'b10)
+Compiling module LUT2(INIT=4'b0110)
+Compiling module MUXCY
+Compiling module XORCY
+Compiling module adder
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="arti...
+Compiling module LUTSigma
+Compiling module neuron_1warstwy
+Compiling module adder18
+Compiling module adder19
+Compiling module neuron_2warstwy
+Compiling module neuron_13in
+Compiling module main
+Compiling module tb_main
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable C:/Users/gosia/Desktop/wsw studia miczal/wsw/tb_main_isim_beh.exe
+Fuse Memory Usage: 38208 KB
+Fuse CPU Usage: 1481 ms
