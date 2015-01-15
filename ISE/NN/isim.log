@@ -1,34 +1,26 @@
 ISim log file
-Running: C:\Users\gosia\Desktop\wsw studia miczal\wsw\tb_main_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/gosia/Desktop/wsw studia miczal/wsw/tb_main_isim_beh.wdb 
-ISim P.20131013 (signature 0x7708f090)
+Running: D:\WSW14\wsw-neuro\ISE\NN\tb_main_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/WSW14/wsw-neuro/ISE/NN/tb_main_isim_beh.wdb 
+ISim P.68d (signature 0x7708f090)
 ----------------------------------------------------------------------
-INFO:Security:65 - Your license for 'ISIM' is for trial use only.
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
 
 
 ----------------------------------------------------------------------
 This is a Full version of ISim.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_11/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_12/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_13/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_14/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_15/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_16/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_17/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_21/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_22/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_23/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_24/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_25/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_26/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_27/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_28/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_29/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_210/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_211/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_212/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_213/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
-WARNING: File "C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125.  For instance uut/n_31/, width 21 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_21/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_22/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_23/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_24/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_25/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_26/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_27/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_28/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_29/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_210/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_211/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_212/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_213/, width 20 of formal port threshold is not equal to width 1 of actual signal threshold.
+WARNING: File "D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143.  For instance uut/n_31/, width 21 of formal port threshold is not equal to width 1 of actual signal threshold.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -48,41 +40,6 @@ WARNING: This core is supplied with a behavioral model. To model cycle-accurate 
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 Finished circuit initialization process.
-WARNING in tb_main.uut.n_31.your_instance_name.inst at time               103000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_31.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_21.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_21.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_22.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_22.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_23.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_23.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_24.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_24.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_25.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_25.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_26.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_26.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_27.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_27.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_28.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_28.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_29.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_29.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_210.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_210.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_211.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_211.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_212.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_212.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_213.your_instance_name.inst at time               117000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_213.your_instance_name.inst is        2047
-WARNING in tb_main.uut.n_31.your_instance_name.inst at time               121000 ns: 
-Reading from out-of-range address. Max address in tb_main.uut.n_31.your_instance_name.inst is        2047
+WARNING in tb_main.uut.n_31.lut.inst at time               103000 ns: 
+Reading from out-of-range address. Max address in tb_main.uut.n_31.lut.inst is        2047

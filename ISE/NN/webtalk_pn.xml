@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Jan 10 14:43:36 2015">
+<application name="pn" timeStamp="Thu Jan 15 17:48:37 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="FA9E740331EB42FFB3EB9C293CB90EEF" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
-<property name="ProjectFile" value="C:/Users/gosia/Desktop/wsw studia miczal/wsw/wsw.xise" type="project"/>
+<property name="ProjectFile" value="D:/WSW14/wsw-neuro/ISE/NN/wsw.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2015-01-09T17:23:34" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -37,6 +37,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
 <property name="FILE_COREGEN" value="7" type="source"/>
+<property name="FILE_ISE" value="7" type="source"/>
 <property name="FILE_VERILOG" value="5" type="source"/>
 </section>
 </application>

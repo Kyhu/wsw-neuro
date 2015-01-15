@@ -12,78 +12,85 @@
     <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
   </header>
 
-  <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>
+  <version xil_pn:ise_version="14.6" xil_pn:schema_version="2"/>
 
   <files>
     <file xil_pn:name="main.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
     <file xil_pn:name="neuron_13in.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
     <file xil_pn:name="neuron1.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
     <file xil_pn:name="neuron2.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
-    <file xil_pn:name="ipcore_dir/LUTF.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
+    <file xil_pn:name="LUTF.xco" xil_pn:type="FILE_COREGEN"/>
     <file xil_pn:name="tb_main.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="28"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="28"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="28"/>
     </file>
-    <file xil_pn:name="ipcore_dir/LUT.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="ipcore_dir/mul17.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
-    </file>
-    <file xil_pn:name="ipcore_dir/LUTSigma.xco" xil_pn:type="FILE_COREGEN">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
-    </file>
-    <file xil_pn:name="ipcore_dir/adder.xco" xil_pn:type="FILE_COREGEN">
+    <file xil_pn:name="LUT.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="mul17.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="LUTSigma.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="adder.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="adder18.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="adder19.xco" xil_pn:type="FILE_COREGEN"/>
+    <file xil_pn:name="adder.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="44"/>
     </file>
-    <file xil_pn:name="ipcore_dir/adder18.xco" xil_pn:type="FILE_COREGEN">
+    <file xil_pn:name="adder18.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="45"/>
     </file>
-    <file xil_pn:name="ipcore_dir/adder19.xco" xil_pn:type="FILE_COREGEN">
+    <file xil_pn:name="adder19.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
     </file>
-    <file xil_pn:name="ipcore_dir/LUTF.xise" xil_pn:type="FILE_COREGENISE">
+    <file xil_pn:name="LUT.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="47"/>
+    </file>
+    <file xil_pn:name="LUTF.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="48"/>
+    </file>
+    <file xil_pn:name="LUTSigma.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="49"/>
+    </file>
+    <file xil_pn:name="mul17.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="50"/>
+    </file>
+    <file xil_pn:name="ipcore_dir/LUTF.xise" xil_pn:type="FILE_ISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="ipcore_dir/LUT.xise" xil_pn:type="FILE_COREGENISE">
+    <file xil_pn:name="ipcore_dir/LUT.xise" xil_pn:type="FILE_ISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="ipcore_dir/mul17.xise" xil_pn:type="FILE_COREGENISE">
+    <file xil_pn:name="ipcore_dir/mul17.xise" xil_pn:type="FILE_ISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="ipcore_dir/LUTSigma.xise" xil_pn:type="FILE_COREGENISE">
+    <file xil_pn:name="ipcore_dir/LUTSigma.xise" xil_pn:type="FILE_ISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="ipcore_dir/adder.xise" xil_pn:type="FILE_COREGENISE">
+    <file xil_pn:name="ipcore_dir/adder.xise" xil_pn:type="FILE_ISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="ipcore_dir/adder18.xise" xil_pn:type="FILE_COREGENISE">
+    <file xil_pn:name="ipcore_dir/adder18.xise" xil_pn:type="FILE_ISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="ipcore_dir/adder19.xise" xil_pn:type="FILE_COREGENISE">
+    <file xil_pn:name="ipcore_dir/adder19.xise" xil_pn:type="FILE_ISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>

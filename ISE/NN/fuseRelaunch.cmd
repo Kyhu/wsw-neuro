@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/gosia/Desktop/wsw studia miczal/wsw/tb_main_isim_beh.exe" -prj "C:/Users/gosia/Desktop/wsw studia miczal/wsw/tb_main_beh.prj" "work.tb_main" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/WSW14/wsw-neuro/ISE/NN/tb_main_isim_beh.exe" -prj "D:/WSW14/wsw-neuro/ISE/NN/tb_main_beh.prj" "work.tb_main" "work.glbl" 

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 99: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 100: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 101: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 102: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 103: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 104: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 105: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 106: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 107: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 108: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 109: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 110: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 111: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 112: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 113: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 114: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 115: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 116: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 117: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 118: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 119: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron1.v" Line 42: Instantiating &lt;<arg fmt="%s" index="1">mnozarka</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">mul17</arg>&gt;
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron1.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">neuron_1warstwy</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 125: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 134: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 143: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 152: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 161: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 170: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 179: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron2.v" Line 101: Instantiating &lt;<arg fmt="%s" index="1">dodaj1</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">adder</arg>&gt;
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron2.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">neuron_2warstwy</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 194: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 204: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 214: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 224: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 234: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 244: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 254: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 264: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 274: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 284: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 294: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 304: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 314: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron_13in.v" Line 68: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron_13in.v" Line 70: Result of <arg fmt="%d" index="1">15</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron_13in.v" Line 77: Instantiating &lt;<arg fmt="%s" index="1">your_instance_name</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">LUTSigma</arg>&gt;
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\neuron_13in.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">neuron_13in</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 329: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">21</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 330: Assignment to <arg fmt="%s" index="1">y_out</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"D:\WSW14\wsw-neuro\ISE\NN\main.v" Line 125: Net &lt;<arg fmt="%s" index="1">threshold</arg>&gt; does not have a driver.
+</msg>
+
+</messages>
+

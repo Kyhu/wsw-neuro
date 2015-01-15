@@ -53,10 +53,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420897528" xil_pn:in_ck="7296388154578200053" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1420897528">
+    <transform xil_pn:end_ts="1421343689" xil_pn:in_ck="-1000661657737117008" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1421343689">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="LUT.v"/>
+      <outfile xil_pn:name="LUTF.v"/>
+      <outfile xil_pn:name="LUTSigma.v"/>
+      <outfile xil_pn:name="adder.v"/>
+      <outfile xil_pn:name="adder18.v"/>
+      <outfile xil_pn:name="adder19.v"/>
       <outfile xil_pn:name="main.v"/>
+      <outfile xil_pn:name="mul17.v"/>
       <outfile xil_pn:name="neuron1.v"/>
       <outfile xil_pn:name="neuron2.v"/>
       <outfile xil_pn:name="neuron_13in.v"/>
@@ -70,39 +77,27 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420893251" xil_pn:in_ck="-7295812759643840688" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2023861438074427138" xil_pn:start_ts="1420893249">
+    <transform xil_pn:end_ts="1421340800" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2023861438074427138" xil_pn:start_ts="1421340800">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ipcore_dir/LUT.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/LUT.v"/>
-      <outfile xil_pn:name="ipcore_dir/LUTF.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/LUTF.v"/>
-      <outfile xil_pn:name="ipcore_dir/LUTSigma.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/LUTSigma.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/adder.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder18.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/adder18.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder19.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/adder19.v"/>
-      <outfile xil_pn:name="ipcore_dir/mul17.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/mul17.v"/>
     </transform>
-    <transform xil_pn:end_ts="1420897535" xil_pn:in_ck="-5375662693797487997" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1420897534">
+    <transform xil_pn:end_ts="1421343689" xil_pn:in_ck="-1000661657737117008" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1421343689">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ipcore_dir/LUTSigma.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder18.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder19.v"/>
-      <outfile xil_pn:name="ipcore_dir/mul17.v"/>
+      <outfile xil_pn:name="LUT.v"/>
+      <outfile xil_pn:name="LUTF.v"/>
+      <outfile xil_pn:name="LUTSigma.v"/>
+      <outfile xil_pn:name="adder.v"/>
+      <outfile xil_pn:name="adder18.v"/>
+      <outfile xil_pn:name="adder19.v"/>
       <outfile xil_pn:name="main.v"/>
+      <outfile xil_pn:name="mul17.v"/>
       <outfile xil_pn:name="neuron1.v"/>
       <outfile xil_pn:name="neuron2.v"/>
       <outfile xil_pn:name="neuron_13in.v"/>
       <outfile xil_pn:name="tb_main.v"/>
     </transform>
-    <transform xil_pn:end_ts="1420897544" xil_pn:in_ck="4949423884372402649" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7459254177714727375" xil_pn:start_ts="1420897535">
+    <transform xil_pn:end_ts="1421343693" xil_pn:in_ck="-1000661657737117008" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7459254177714727375" xil_pn:start_ts="1421343689">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -112,7 +107,7 @@
       <outfile xil_pn:name="tb_main_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1420897544" xil_pn:in_ck="-3641965227446876375" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6623029969151400300" xil_pn:start_ts="1420897544">
+    <transform xil_pn:end_ts="1421343693" xil_pn:in_ck="-3641965227446876375" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6623029969151400300" xil_pn:start_ts="1421343693">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>
@@ -127,23 +122,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420893133" xil_pn:in_ck="-7295812759643840688" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2023861438074427138" xil_pn:start_ts="1420893132">
+    <transform xil_pn:end_ts="1421340517" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2023861438074427138" xil_pn:start_ts="1421340517">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ipcore_dir/LUT.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/LUT.v"/>
-      <outfile xil_pn:name="ipcore_dir/LUTF.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/LUTF.v"/>
-      <outfile xil_pn:name="ipcore_dir/LUTSigma.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/LUTSigma.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/adder.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder18.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/adder18.v"/>
-      <outfile xil_pn:name="ipcore_dir/adder19.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/adder19.v"/>
-      <outfile xil_pn:name="ipcore_dir/mul17.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/mul17.v"/>
     </transform>
     <transform xil_pn:end_ts="1420852747" xil_pn:in_ck="5490898220715149562" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1420852747">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -161,21 +142,27 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1420897515" xil_pn:in_ck="2874213896358002107" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="7090185287243944767" xil_pn:start_ts="1420897415">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1421340525" xil_pn:in_ck="5720950305078153815" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="7090185287243944767" xil_pn:start_ts="1421340517">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="main.lso"/>
       <outfile xil_pn:name="main.ngc"/>
       <outfile xil_pn:name="main.ngr"/>
       <outfile xil_pn:name="main.prj"/>
-      <outfile xil_pn:name="main.stx"/>
       <outfile xil_pn:name="main.syr"/>
       <outfile xil_pn:name="main.xst"/>
       <outfile xil_pn:name="main_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1421339938" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027435927655" xil_pn:start_ts="1421339938">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
   </transforms>
 

@@ -5,142 +5,121 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder.v" Line 983: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/adder19.v" Line 636: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder18.v" Line 607: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/adder18.v" Line 607: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/ipcore_dir/adder19.v" Line 636: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/adder.v" Line 983: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 99: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 112: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 100: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 113: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 101: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 114: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 102: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 115: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 103: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 116: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 104: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 117: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 105: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 118: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 106: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 119: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 107: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 120: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 108: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 121: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 109: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 122: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 110: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 123: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 111: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 124: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 112: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 125: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 113: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 126: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 114: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 127: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 115: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 128: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 116: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 129: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 117: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 130: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 118: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 131: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 119: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 132: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">16</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 125: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 143: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 134: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 152: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 143: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 161: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 152: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 170: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 161: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 179: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 170: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 188: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 179: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 197: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 194: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 206: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 204: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 216: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 214: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 225: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 224: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 234: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 234: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 243: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 244: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 252: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 254: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 264: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 274: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 284: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 294: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 304: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 314: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/gosia/Desktop/wsw studia miczal/wsw/main.v" Line 329: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">21</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/WSW14/wsw-neuro/ISE/NN/main.v" Line 267: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">threshold</arg>&gt;. Formal port size is <arg fmt="%d" index="2">21</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 </messages>
