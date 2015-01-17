@@ -82,7 +82,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -153,12 +153,14 @@
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/hsv_converter - rgb2hsv</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/nn - neural_network</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr</ClosedNode>
          <ClosedNode>/tb_accumulator |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_accumulator.v</ClosedNode>
          <ClosedNode>/tb_bin |home|kyhu|Workspace|ISE|hdmi_bin|tb_bin.v</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi_bin|tb_src|tb_hdmi.v</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi|tb_src|tb_hdmi.v/converter - rgb2ycbcr</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|ISE|hdmi|tb_src|tb_hdmi.v/instance_name - rgb2ycbcr</ClosedNode>
+         <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/diff_value_delay1 - delayx</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/min_index_delay1 - delayx</ClosedNode>
          <ClosedNode>/tb_hdmi |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_src|tb_hdmi.v/instance_name - rgb2hsv/rgb_01_delay1 - delayx</ClosedNode>
@@ -175,13 +177,13 @@
          <ClosedNode>/tb_rgb2ycbcr |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_rgb2ycbcr.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_hdmi (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_src/tb_hdmi.v)</SelectedItem>
+         <SelectedItem>hdmi_main (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000032b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000032b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000030d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000030d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_hdmi (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_src/tb_hdmi.v)</CurrentItem>
+      <CurrentItem>hdmi_main (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -206,7 +208,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000160000000010000000100000000000000000000000064ffffffff000000810000000000000001000001600000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000011b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000011b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>

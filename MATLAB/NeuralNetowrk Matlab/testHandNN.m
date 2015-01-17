@@ -3,16 +3,16 @@ clear variables;
 
 %% Load data
 % Load model
-load('nnModel.04-01-15_17-39-06.mat');
+load('nnModel.14-01-15_23-39-21.mat');
 
 % Fix model
 global tanh_x;
 global tanh_y;
-tanh_x = -1:0.002:1;
-tanh_y = tanh(tanh_x);
-nn = nnfix(nn);
-nn.hidden.func = @tanhFix;
-nn.output.func = @tanhFix;
+% tanh_x = -1:0.002:1;
+% tanh_y = tanh(tanh_x);
+% nn = nnfix(nn);
+% nn.hidden.func = @tanhFix;
+% nn.output.func = @tanhFix;
 
 % Load test picture
 test_picture = imread('reka_ppm.ppm');
@@ -38,7 +38,7 @@ for p = 1:size(test_picture,1)
         % nn = feedForward(nn, input);
         
         % FIX Feed forward
-        nn = fix_feedForward(nn, input);
+        %nn = fix_feedForward(nn, input);
         
         skin(p,z) = nn.output.output;
         

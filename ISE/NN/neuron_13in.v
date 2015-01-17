@@ -18,70 +18,105 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module neuron_13in(
+module neuron_out(
 	input clk,
-	input [17*13-1:0] x1,
-	input [17*13-1:0] w1,
-	input [20:0] threshold,
-	output [16:0] y,
-	input [16:0] bias
+	input ce,
+	input [17*14-1:0] x,
+	input [17*14-1:0] w,
+	output [16:0] y
+	);
+	
+	wire [33:0] sum[15:0];
+	wire [17:0] partial_1[7:0];
+	wire [18:0] partial_2[3:0];
+	wire [19:0] partial_3[1:0];
+	wire [20:0] total;
+	 
+	// Generacja mnozarek
+	genvar i;  
+	generate  
+		for (i=0; i < 14; i=i+1)  
+		begin
+			 mul17 mult_i (  
+			  .clk(clk), // input clk
+			  .a(x[17*(i+1)-1:17*i]), // input [16 : 0] a
+			  .b(w[17*(i+1)-1:17*i]), // input [16 : 0] b
+			  .p(sum[i]) // output [33 : 0] p
+			 );  
+		end  
+	endgenerate 
+	
+	// Add wires to tree was complete
+	assign sum[15] = 33'd0;
+	assign sum[14] = 33'd0;	
+	
+	// Generacja pierwszej warstwy drzewa sumacyjnego
+	generate  
+		for (i=0; i < 8; i=i+1)  
+		begin
+		adder adder_i (
+		  .a(sum[2*i][33:17]), // input [16 : 0] a
+		  .b(sum[2*i+1][33:17]), // input [16 : 0] b
+		  .clk(clk), // input clk
+		  .ce(ce), // input ce
+		  .s(partial_1[i]) // output [17 : 0] s	
+		); 
+		end  
+	endgenerate 
+	
+	//wyduamy dugo sowa wejciowego o jeden bit 
+	// na wejcie trafiaj wyjcie sum pierwszej warstwy drzewa sumacyjnego
+	
+	// Generacja drugiej warstwy drzewa sumacyjnego
+
+	generate  
+		for (i=0; i < 4; i=i+1)  
+		begin
+		adder18 adder18_i (
+		  .a(partial_1[2*i]), // input [17 : 0] a			
+		  .b(partial_1[2*i+1]), // input [17 : 0] b
+		  .clk(clk), // input clk
+		  .ce(ce), // input ce
+		  .s(partial_2[i]) // output [18 : 0] s	
+		); 
+		end  
+	endgenerate 
+	
+	// Generacja trzeciej warstwy drzewa sumacyjnego
+	generate  
+		for (i=0; i < 2; i=i+1)  
+		begin
+		adder19 adder19_i (
+		  .a(partial_2[2*i]), // input [18 : 0] a			
+		  .b(partial_2[2*i+1]), // input [18 : 0] b
+		  .clk(clk), // input clk
+		  .ce(ce), // input ce
+		  .s(partial_3[i]) // output [19 : 0] s	
+		); 
+		end  
+	endgenerate 
+
+	// Korzen drzewa sumacyjnego
+	adder20 adder20 (
+	  .a(partial_3[0]), // input [19:0]  a
+	  .b(partial_3[1]), // input [19:0]  b
+	  .clk(clk), // input clk
+	  .ce(ce), // input ce
+	  .s(total) // output [20 : 0] s						//wynik cakowitego sumowania 
 	);
 
-	wire [33:0] sum1;
-	wire [33:0] sum2;
-	wire [33:0] sum3;
-	wire [33:0] sum4;
-	wire [33:0] sum5;
-	wire [33:0] sum6;
-	wire [33:0] sum7;
-	wire [33:0] sum8;
-	wire [33:0] sum9;
-	wire [33:0] sum10;
-	wire [33:0] sum11;
-	wire [33:0] sum12;
-	wire [33:0] sum13;
-	wire [37:0] sumtotal1;
-	wire [17:0] sumtotal2;
-	
-	assign sum1=x1[17*1-1:17*0]*w1[17*1-1:17*0];
-	assign sum2=x1[17*2-1:17*1]*w1[17*2-1:17*1];
-	assign sum3=x1[17*3-1:17*2]*w1[17*3-1:17*2];
-	assign sum4=x1[17*4-1:17*3]*w1[17*4-1:17*3];
-	assign sum5=x1[17*5-1:17*4]*w1[17*5-1:17*4];
-	assign sum6=x1[17*6-1:17*5]*w1[17*6-1:17*5];
-	assign sum7=x1[17*7-1:17*6]*w1[17*7-1:17*6];
-	assign sum8=x1[17*8-1:17*7]*w1[17*8-1:17*7];
-	assign sum9=x1[17*9-1:17*8]*w1[17*9-1:17*8];
-	assign sum10=x1[17*10-1:17*9]*w1[17*10-1:17*9];
-	assign sum11=x1[17*11-1:17*10]*w1[17*11-1:17*10];
-	assign sum12=x1[17*12-1:17*11]*w1[17*12-1:17*11];
-	assign sum13=x1[17*13-1:17*12]*w1[17*13-1:17*12];
-
-	//wire [16:0] temp2 [0:3];
-	assign sumtotal1=sum1+sum2+sum3+sum4+sum5+sum6+sum7+sum8+sum9+sum10+sum11+sum12+sum13;
-	assign sumtotal2=sumtotal1[37:21]+bias;
 	wire [10:0]lut_in;
-	reg [10:0]lut_inr;
-	//assign sum3=sum2/10;
-	
-	always @(posedge clk)
-	begin
-		if (sumtotal2[17]==1) 
-			lut_inr= 11'd1024-(sumtotal2[16:8]*32/10);//na wejœcie przeskalowaæ sygna³ na przedzia³ 0:2048, czyli sumtotal =-10:10
-		else
-			lut_inr= 11'd1024+(sumtotal2[16:8]*32/10);
-	end
-	assign lut_in=lut_inr;
-
-	//assign lut_in= 11'd1024+(sumtotal2[17:8]*32/10);//na wejœcie przeskalowaæ sygna³ na przedzia³ -10:10
-															// tu mozna tez sprobowac mnozarek
+	assign lut_in = (total[20]==1) ? 11'd1024-(total[18:8]*32/10) : 11'd1024+(total[18:8]*32/10);
+				
 	wire [16:0] qspo;
-	LUTSigma lut (
-	  .a(lut_in[10:0]), // input [10 : 0] a			na wejœcie przeskalowaæ sygna³ na przedzia³ -10:10
+
+	LUTSigma activation_lut (
+	  .a(lut_in), // input [10 : 0] a
 	  .clk(clk), // input clk
 	  .qspo(qspo) // output [16 : 0] qspo
 	);
 
-	assign y=qspo;  //wyjœcie sieci
+	assign y=qspo; 
+	
 endmodule
 

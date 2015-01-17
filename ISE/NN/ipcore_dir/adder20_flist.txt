@@ -1,0 +1,14 @@
+# Output products list for <adder20>
+_xmsgs/pn_parser.xmsgs
+adder20/doc/c_addsub_v11_0_readme.txt
+adder20/doc/c_addsub_v11_0_vinfo.html
+adder20/doc/ds214_addsub.pdf
+adder20.asy
+adder20.gise
+adder20.ngc
+adder20.v
+adder20.veo
+adder20.xco
+adder20.xise
+adder20_flist.txt
+adder20_xmdf.tcl
