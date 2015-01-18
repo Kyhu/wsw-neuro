@@ -1,0 +1,14 @@
+# Output products list for <adder17>
+_xmsgs/pn_parser.xmsgs
+adder17/doc/c_addsub_v11_0_readme.txt
+adder17/doc/c_addsub_v11_0_vinfo.html
+adder17/doc/ds214_addsub.pdf
+adder17.asy
+adder17.gise
+adder17.ngc
+adder17.v
+adder17.veo
+adder17.xco
+adder17.xise
+adder17_flist.txt
+adder17_xmdf.tcl

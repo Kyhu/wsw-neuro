@@ -7,14 +7,14 @@
 // \   \   \/     Version: P.20131013
 //  \   \         Application: netgen
 //  /   /         Filename: adder.v
-// /___/   /\     Timestamp: Sat Apr 12 16:32:50 2014
+// /___/   /\     Timestamp: Sun Jan 18 17:15:10 2015
 // \   \  /  \ 
 //  \___\/\___\
 //             
-// Command	: -w -sim -ofmt verilog /home/kyhu/Workspace/ISE/hdmi/ipcore_dir/tmp/_cg/adder.ngc /home/kyhu/Workspace/ISE/hdmi/ipcore_dir/tmp/_cg/adder.v 
+// Command	: -w -sim -ofmt verilog /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/adder.ngc /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/adder.v 
 // Device	: 6slx45csg324-2
-// Input file	: /home/kyhu/Workspace/ISE/hdmi/ipcore_dir/tmp/_cg/adder.ngc
-// Output file	: /home/kyhu/Workspace/ISE/hdmi/ipcore_dir/tmp/_cg/adder.v
+// Input file	: /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/adder.ngc
+// Output file	: /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/adder.v
 // # of Modules	: 1
 // Design Name	: adder
 // Xilinx        : /opt/Xilinx/14.7/ISE_DS/ISE/

@@ -1,7 +1,7 @@
 ##############################################################
 #
-# Xilinx Core Generator version 14.6
-# Date: Thu Apr 10 08:45:23 2014
+# Xilinx Core Generator version 14.7
+# Date: Sun Jan 18 17:44:07 2015
 #
 ##############################################################
 #
@@ -44,7 +44,7 @@ CSET clockenable=false
 CSET component_name=mult
 CSET constvalue=129
 CSET internaluser=0
-CSET multiplier_construction=Use_Mults
+CSET multiplier_construction=Use_LUTs
 CSET multtype=Parallel_Multiplier
 CSET optgoal=Speed
 CSET outputwidthhigh=35
@@ -62,7 +62,7 @@ CSET userounding=false
 CSET zerodetect=false
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2012-11-05T14:23:07Z
+MISC pkg_timestamp=2013-07-22T11:36:26Z
 # END Extra information
 GENERATE
-# CRC: 45beb0fb
+# CRC: 94098d07

@@ -1,0 +1,62 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/tb_main_isim_beh.exe" -prj "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/tb_main_beh.prj" "work.tb_main" "work.glbl" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/ipcore_dir/adder20.v" into library work
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/mul17.v" into library work
+WARNING:HDLCompiler:687 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/mul17.v" Line 474: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/LUTSigma.v" into library work
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/ipcore_dir/adder19.v" into library work
+WARNING:HDLCompiler:687 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/ipcore_dir/adder19.v" Line 636: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/adder18.v" into library work
+WARNING:HDLCompiler:687 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/adder18.v" Line 607: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/adder.v" into library work
+WARNING:HDLCompiler:687 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/adder.v" Line 983: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron_13in.v" into library work
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron_13in.v" Line 38: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron_13in.v" Line 55: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron_13in.v" Line 73: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron_13in.v" Line 87: Block identifier is required on this block
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron2.v" into library work
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron2.v" Line 38: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron2.v" Line 51: Block identifier is required on this block
+WARNING:HDLCompiler:248 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/neuron2.v" Line 68: Block identifier is required on this block
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/main.v" into library work
+WARNING:HDLCompiler:751 - "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/main.v" Line 186: Redeclaration of ansi port y_out is not allowed
+Analyzing Verilog file "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/tb_main.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 100932 KB
+Fuse CPU Usage: 2590 ms
+Compiling module DSP48E1(ADREG=0,ALUMODEREG=0,CAR...
+Compiling module GND
+Compiling module VCC
+Compiling module mul17
+Compiling module FDE
+Compiling module SRLC16E
+Compiling module LUT1(INIT=2'b10)
+Compiling module LUT2_copy1
+Compiling module MUXCY
+Compiling module XORCY
+Compiling module adder
+Compiling module adder18
+Compiling module adder19
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="arti...
+Compiling module LUTSigma
+Compiling module neuron_hidden
+Compiling module adder19_2
+Compiling module adder20
+Compiling module neuron_out
+Compiling module main
+Compiling module tb_main
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable /home/kyhu/Workspace/WSW/wsw-neuro/ISE/NN/tb_main_isim_beh.exe
+Fuse Memory Usage: 404252 KB
+Fuse CPU Usage: 2850 ms
+GCC CPU Usage: 360 ms

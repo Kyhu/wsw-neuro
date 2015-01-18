@@ -6,7 +6,6 @@ adder/doc/ds214_addsub.pdf
 adder.asy
 adder.gise
 adder.ngc
-adder.sym
 adder.v
 adder.veo
 adder.xco

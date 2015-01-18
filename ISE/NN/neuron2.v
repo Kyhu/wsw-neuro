@@ -51,8 +51,8 @@ module neuron_hidden(
 		for (i=0; i < 4; i=i+1)  
 		begin
 		adder adder_i (
-		  .a(sum[2*i][33:17]), // input [16 : 0] a
-		  .b(sum[2*i+1][33:17]), // input [16 : 0] b
+		  .a(sum[2*i][28:12]), // input [16 : 0] a
+		  .b(sum[2*i+1][28:12]), // input [16 : 0] b
 		  .clk(clk), // input clk
 		  .ce(ce), // input ce
 		  .s(partial_1[i]) // output [17 : 0] s	
@@ -86,8 +86,18 @@ module neuron_hidden(
 	  .s(total) // output [19 : 0] s						//wynik cakowitego sumowania 
 	);
 
+	wire [10:0]temp_wire_1;
+	wire [10:0]temp_wire_2;
+
+	reg [19:0] min_total = 20'b11111111000000000000;
+	reg [19:0] max_total = 20'b00000000111111111111;
+	
+	assign temp_wire_1 = ($signed(total) < $signed(min_total)) ? min_total[12:2] : total[12:2];	
+	assign temp_wire_2 = ($signed(total) > $signed(max_total)) ? max_total[12:2] : temp_wire_1;	
+	
 	wire [10:0]lut_in;
-	assign lut_in = (total[19]==1) ? 11'd1024-(total[18:8]*32/10) : 11'd1024+(total[18:8]*32/10);
+	//assign lut_in = (total[19] == 1) ? 11'd1024-(temp_wire) : 11'd1024+(temp_wire);
+	assign lut_in = 11'd1024+(temp_wire_2);
 				
 	wire [16:0] qspo;
 

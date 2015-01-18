@@ -16,7 +16,7 @@ for i = 1:nn.hidden.size
 end
 
 % calc OUTPUT output
-sumn = zeros(nn.hidden.size + 1,1);
+sumn = zeros(nn.output.size + 1,1);
 
 for i = 1:nn.output.size
     for j = 1:nn.hidden.size + 1

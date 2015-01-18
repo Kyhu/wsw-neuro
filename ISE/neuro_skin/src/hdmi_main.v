@@ -211,6 +211,7 @@ module hdmi_main
 	wire  hsync_ycbcr;
 	wire  vsync_ycbcr;	
 	
+	// Latency: 7
 	rgb2ycbcr ycbcr_converter (
     .clk(rx_pclk), 
     .ce({1'b1}), 
@@ -237,6 +238,8 @@ module hdmi_main
 	wire  hsync_hsv;
 	wire  vsync_hsv;
 	 
+	 
+	 // Latency: 77
 	rgb2hsv hsv_converter (
 	 .clk(rx_pclk), 
     .ce({1'b1}), 
@@ -257,29 +260,120 @@ module hdmi_main
 	// NN
 	
 	//DELAY RGB AND YCBR to sync with HSV and syncs signal!
+	
+	wire [7:0] sync_R;
+	wire [7:0] sync_G;
+	wire [7:0] sync_B;
+	
+	delayx #(
+		.N(24),
+		.DELAY(77)
+	)
+	rgb_delay(
+    .clk(clk), 
+    .ce(ce), 
+    .d({rx_red, rx_green, rx_blue}), 
+    .q({sync_R, sync_G, sync_B})
+    );
+
+	wire [7:0] sync_Y;
+	wire [7:0] sync_Cb;
+	wire [7:0] sync_Cr;
+	 
+	delayx #(
+		.N(24),
+		.DELAY(70)
+	)
+	ycbcr_delay(
+    .clk(clk), 
+    .ce(ce), 
+    .d({Y, Cb, Cr}), 
+    .q({sync_Y, sync_Cb, sync_Cr})
+    );
+	
 	wire [7:0]  skin;
  
  	wire  de_skin;
 	wire  hsync_skin;
 	wire  vsync_skin;
 	
-	neural_network nn (
-    .clk(clk), 
-    .ce(ce), 
+	skin_binarization bin (
+    .clk(rx_pclk), 
+    .ce({1'b1}), 
     .de_in(de_hsv), 
     .hsync_in(hsync_hsv), 
     .vsync_in(vsync_hsv), 
-    .R(R), 
-    .G(G), 
-    .B(B), 
+    .R(sync_R), 
+    .G(sync_G), 
+    .B(sync_B), 
     .H(H), 
     .S(S), 
-    .Cb(Cb), 
-    .Cr(Cr), 
+    .Cb(sync_Cb), 
+    .Cr(sync_Cr), 
     .skin(skin), 
     .de_out(de_skin), 
     .hsync_out(hsync_skin), 
     .vsync_out(vsync_skin)
+    );
+	 
+	//-- MEDIAN FILTERATION
+	wire [7:0] filtered;
+	
+	wire  de_med_centr;
+	wire  hsync_med_centr;
+	wire  vsync_med_centr;
+	
+	median5x5 median (
+    .clk(rx_pclk), 
+    .ce({1'b1}), 
+    .de_in(de_skin), 
+    .hsync_in(hsync_skin), 
+    .vsync_in(vsync_skin), 
+    .pixel_in(skin), 
+    .de_out(de_med_centr), 
+    .hsync_out(hsync_med_centr), 
+    .vsync_out(vsync_med_centr), 
+    .pixel_out(filtered)
+    );	
+	 
+	 //Centroid
+	
+	wire [7:0] r_centroid;
+	wire [7:0] g_centroid;
+	wire [7:0] b_centroid;
+	
+	wire  de_out;
+	wire  hsync_out;
+	wire  vsync_out;	 
+	
+	wire [10:0]xg;
+	wire [10:0]yg;	 
+	 
+	 centroid centroid (
+    .clk(rx_pclk), 
+    .ce({1'b1}), 
+    .de(de_med_centr), 
+    .hsync(hsync_med_centr), 
+    .vsync(vsync_med_centr), 
+    .color(filtered), 
+    .x(xg), 
+    .y(yg)
+    );	 	 
+	 
+	 visualize visualize(
+    .clk(rx_pclk), 
+    .de_in(de_skin), 
+    .hsync_in(hsync_skin),
+    .vsync_in(vsync_skin),
+    .x(xg), 
+    .y(yg), 
+	 .de_out(de_out), 
+    .hsync_out(hsync_out), 
+    .vsync_out(vsync_out), 
+    .mask(skin), 
+    .red_out(r_centroid), 
+    .green_out(g_centroid), 
+    .blue_out(b_centroid)
     );
 	 
 	// MUX 
@@ -318,6 +412,20 @@ module hdmi_main
 	assign de_mux[3] = de_skin;
 	assign hsync_mux[3] = hsync_skin;
 	assign vsync_mux[3] = vsync_skin;
+	
+	assign r_mux[4] = r_centroid;
+	assign g_mux[4] = g_centroid;
+	assign b_mux[4] = b_centroid;
+	assign de_mux[4] = de_out;
+	assign hsync_mux[4] = hsync_out;
+	assign vsync_mux[4] = vsync_out;
+	
+	assign r_mux[5] = r_centroid;
+	assign g_mux[5] = g_centroid;
+	assign b_mux[5] = b_centroid;
+	assign de_mux[5] = de_out;
+	assign hsync_mux[5] = hsync_out;
+	assign vsync_mux[5] = vsync_out;
 	
   // -----------------------------------------------------------------------------
   // HDMI output port 

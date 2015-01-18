@@ -3,22 +3,22 @@ clear variables;
 
 %% Load data
 % Load model
-load('nnModel.14-01-15_23-39-21.mat');
+load('nnModel.18-01-15_13-10-42.mat');
 
 % Fix model
+nn = nnfix(nn);
 global tanh_x;
 global tanh_y;
-% tanh_x = -1:0.002:1;
-% tanh_y = tanh(tanh_x);
-% nn = nnfix(nn);
-% nn.hidden.func = @tanhFix;
-% nn.output.func = @tanhFix;
+tanh_x = -1.023:0.001:1.024;
+tanh_y = tanh(tanh_x);
+nn.hidden.func = @tanhFix;
+nn.output.func = @tanhFix;
 
 % Load test picture
-test_picture = imread('reka_ppm.ppm');
+test_picture = imread('female_sad.ppm');
 
 % Load parameters
-threshold = 0.01;
+threshold = 0.3;
 
 %% Check every pixel in picture
 skin = zeros(size(test_picture,1), size(test_picture,2));
@@ -35,10 +35,10 @@ for p = 1:size(test_picture,1)
         input = double(input)./255;
         
         % Feed forward
-        % nn = feedForward(nn, input);
+        %nn = feedForward(nn, input);
         
         % FIX Feed forward
-        %nn = fix_feedForward(nn, input);
+        nn = fix_feedForward(nn, input);
         
         skin(p,z) = nn.output.output;
         
@@ -46,9 +46,9 @@ for p = 1:size(test_picture,1)
 end;
 
 thresholded_skin = skin;
-thresholded_skin(skin > threshold) = 0;
-thresholded_skin(skin <= threshold) = 1;
+thresholded_skin(skin > threshold) = 1;
+thresholded_skin(skin <= threshold) = 0;
 
 %% Show results
 figure(1);
-imshow(skin);
+imshow(thresholded_skin);

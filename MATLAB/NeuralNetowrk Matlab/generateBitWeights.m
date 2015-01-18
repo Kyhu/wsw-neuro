@@ -1,4 +1,4 @@
-model_name = 'nnModel.04-01-15_17-39-06.mat';
+model_name = 'nnModel.18-01-15_13-10-42.mat';
 load(model_name);
 nn = nnfix(nn);
 

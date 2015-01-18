@@ -55,8 +55,8 @@ module neuron_out(
 		for (i=0; i < 8; i=i+1)  
 		begin
 		adder adder_i (
-		  .a(sum[2*i][33:17]), // input [16 : 0] a
-		  .b(sum[2*i+1][33:17]), // input [16 : 0] b
+		  .a(sum[2*i][28:12]), // input [16 : 0] a
+		  .b(sum[2*i+1][28:12]), // input [16 : 0] b
 		  .clk(clk), // input clk
 		  .ce(ce), // input ce
 		  .s(partial_1[i]) // output [17 : 0] s	
@@ -105,8 +105,17 @@ module neuron_out(
 	  .s(total) // output [20 : 0] s						//wynik cakowitego sumowania 
 	);
 
+	wire [10:0]temp_wire_1;
+	wire [10:0]temp_wire_2;
+
+	reg [20:0] min_total = 21'b111111111000000000000;
+	reg [20:0] max_total = 21'b000000000111111111111;
+	
+	assign temp_wire_1 = ($signed(total) < $signed(min_total)) ? min_total[12:2] : total[12:2];	
+	assign temp_wire_2 = ($signed(total) > $signed(max_total)) ? max_total[12:2] : temp_wire_1;	
+	
 	wire [10:0]lut_in;
-	assign lut_in = (total[20]==1) ? 11'd1024-(total[18:8]*32/10) : 11'd1024+(total[18:8]*32/10);
+	assign lut_in = 11'd1024+(temp_wire_2);
 				
 	wire [16:0] qspo;
 
