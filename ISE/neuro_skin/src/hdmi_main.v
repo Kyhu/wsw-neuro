@@ -270,7 +270,7 @@ module hdmi_main
 		.DELAY(77)
 	)
 	rgb_delay(
-    .clk(clk), 
+    .clk(rx_pclk), 
     .ce(ce), 
     .d({rx_red, rx_green, rx_blue}), 
     .q({sync_R, sync_G, sync_B})
@@ -285,7 +285,7 @@ module hdmi_main
 		.DELAY(70)
 	)
 	ycbcr_delay(
-    .clk(clk), 
+    .clk(rx_pclk), 
     .ce(ce), 
     .d({Y, Cb, Cr}), 
     .q({sync_Y, sync_Cb, sync_Cr})
@@ -346,8 +346,8 @@ module hdmi_main
 	wire  hsync_out;
 	wire  vsync_out;	 
 	
-	wire [10:0]xg;
-	wire [10:0]yg;	 
+	wire [11:0]xg;
+	wire [11:0]yg;	 
 	 
 	 centroid centroid (
     .clk(rx_pclk), 
@@ -362,15 +362,15 @@ module hdmi_main
 	 
 	 visualize visualize(
     .clk(rx_pclk), 
-    .de_in(de_skin), 
-    .hsync_in(hsync_skin),
-    .vsync_in(vsync_skin),
+    .de_in(de_med_centr), 
+    .hsync_in(hsync_med_centr),
+    .vsync_in(vsync_med_centr),
     .x(xg), 
     .y(yg), 
 	 .de_out(de_out), 
     .hsync_out(hsync_out), 
     .vsync_out(vsync_out), 
-    .mask(skin), 
+    .mask(filtered), 
     .red_out(r_centroid), 
     .green_out(g_centroid), 
     .blue_out(b_centroid)
@@ -413,12 +413,12 @@ module hdmi_main
 	assign hsync_mux[3] = hsync_skin;
 	assign vsync_mux[3] = vsync_skin;
 	
-	assign r_mux[4] = r_centroid;
-	assign g_mux[4] = g_centroid;
-	assign b_mux[4] = b_centroid;
-	assign de_mux[4] = de_out;
-	assign hsync_mux[4] = hsync_out;
-	assign vsync_mux[4] = vsync_out;
+	assign r_mux[4] = filtered;
+	assign g_mux[4] = filtered;
+	assign b_mux[4] = filtered;
+	assign de_mux[4] = de_med_centr;
+	assign hsync_mux[4] = hsync_med_centr;
+	assign vsync_mux[4] = vsync_med_centr;
 	
 	assign r_mux[5] = r_centroid;
 	assign g_mux[5] = g_centroid;

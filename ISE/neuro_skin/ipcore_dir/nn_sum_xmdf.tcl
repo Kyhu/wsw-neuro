@@ -1,29 +1,29 @@
 # The package naming convention is <core_name>_xmdf
-package provide sum_xmdf 1.0
+package provide nn_sum_xmdf 1.0
 
 # This includes some utilities that support common XMDF operations
 package require utilities_xmdf
 
 # Define a namespace for this package. The name of the name space
 # is <core_name>_xmdf
-namespace eval ::sum_xmdf {
+namespace eval ::nn_sum_xmdf {
 # Use this to define any statics
 }
 
 # Function called by client to rebuild the params and port arrays
 # Optional when the use context does not require the param or ports
 # arrays to be available.
-proc ::sum_xmdf::xmdfInit { instance } {
+proc ::nn_sum_xmdf::xmdfInit { instance } {
 # Variable containing name of library into which module is compiled
 # Recommendation: <module_name>
 # Required
-utilities_xmdf::xmdfSetData $instance Module Attributes Name sum
+utilities_xmdf::xmdfSetData $instance Module Attributes Name nn_sum
 }
-# ::sum_xmdf::xmdfInit
+# ::nn_sum_xmdf::xmdfInit
 
 # Function called by client to fill in all the xmdf* data variables
 # based on the current settings of the parameters
-proc ::sum_xmdf::xmdfApplyParams { instance } {
+proc ::nn_sum_xmdf::xmdfApplyParams { instance } {
 
 set fcount 0
 # Array containing libraries that are assumed to exist
@@ -35,43 +35,47 @@ utilities_xmdf::xmdfSetData $instance FileSet $fcount type logical_library
 utilities_xmdf::xmdfSetData $instance FileSet $fcount logical_library unisim
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum/doc/c_addsub_v11_0_readme.txt
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum/doc/c_addsub_v11_0_readme.txt
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type Ignore
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum/doc/c_addsub_v11_0_vinfo.html
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum/doc/c_addsub_v11_0_vinfo.html
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type Ignore
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum/doc/ds214_addsub.pdf
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum/doc/ds214_addsub.pdf
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type Ignore
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum.asy
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum.asy
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type asy
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum.ngc
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum.ngc
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type ngc
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum.v
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum.sym
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type symbol
+incr fcount
+
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum.v
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type verilog
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum.veo
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum.veo
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type verilog_template
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum.xco
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum.xco
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type coregen_ip
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path sum_xmdf.tcl
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path nn_sum_xmdf.tcl
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type AnyView
 incr fcount
 
-utilities_xmdf::xmdfSetData $instance FileSet $fcount associated_module sum
+utilities_xmdf::xmdfSetData $instance FileSet $fcount associated_module nn_sum
 incr fcount
 
 }

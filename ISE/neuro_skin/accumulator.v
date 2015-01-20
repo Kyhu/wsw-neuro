@@ -22,7 +22,7 @@ module accumulator(clk, rst, ce, A, Y);
 	input clk;
 	input rst;
 	input ce;
-	input [9:0]A;
+	input [11:0]A;
 	output [27:0]Y;
 
 	reg [27:0]Y_reg;
@@ -31,7 +31,7 @@ module accumulator(clk, rst, ce, A, Y);
 	//Jaka dlugosc wektorow?
 	
 	sum my_sum(
-	  .a(A), // input [9 : 0] a
+	  .a(A), // input [11 : 0] a
 	  .b(Y_reg), // input [27 : 0] b
 	  .s(sum_o) // output [27 : 0] s
 	);

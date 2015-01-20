@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_hdmi_isim_beh.exe" -prj "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_hdmi_beh.prj" "work.tb_hdmi" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_nn_mult_isim_beh.exe" -prj "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_nn_mult_beh.prj" "work.tb_nn_mult" "work.glbl" 

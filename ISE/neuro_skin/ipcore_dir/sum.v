@@ -4,20 +4,20 @@
 //   ____  ____
 //  /   /\/   /
 // /___/  \  /    Vendor: Xilinx
-// \   \   \/     Version: P.68d
+// \   \   \/     Version: P.20131013
 //  \   \         Application: netgen
 //  /   /         Filename: sum.v
-// /___/   /\     Timestamp: Thu May 08 10:15:01 2014
+// /___/   /\     Timestamp: Tue Jan 20 19:16:54 2015
 // \   \  /  \ 
 //  \___\/\___\
 //             
-// Command	: -w -sim -ofmt verilog D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/ipcore_dir/tmp/_cg/sum.ngc D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/ipcore_dir/tmp/_cg/sum.v 
+// Command	: -w -sim -ofmt verilog /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/sum.ngc /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/sum.v 
 // Device	: 6slx45csg324-2
-// Input file	: D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/ipcore_dir/tmp/_cg/sum.ngc
-// Output file	: D:/PSRA/OdrzywolekKrzysztof/hdmi_centroid2/ipcore_dir/tmp/_cg/sum.v
+// Input file	: /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/sum.ngc
+// Output file	: /home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/tmp/_cg/sum.v
 // # of Modules	: 1
 // Design Name	: sum
-// Xilinx        : C:\Xilinx\14.6\ISE_DS\ISE\
+// Xilinx        : /opt/Xilinx/14.7/ISE_DS/ISE/
 //             
 // Purpose:    
 //     This verilog netlist is a verification model and uses simulation 

@@ -36,9 +36,6 @@
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v/dvi_rx1 - dvi_decoder_nok</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
-         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization</ClosedNode>
-         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network</ClosedNode>
-         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_1 - neuron_hidden</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_10 - neuron_hidden</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_11 - neuron_hidden</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_12 - neuron_hidden</ClosedNode>
@@ -51,6 +48,7 @@
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_7 - neuron_hidden</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_8 - neuron_hidden</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_9 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/outn - neuron_out</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/sync_delay - delayx</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/centroid - centroid</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/converter - rgb2ycbcr</ClosedNode>
@@ -92,19 +90,18 @@
          <ClosedNode>/tb_neural_network |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_neural_network.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>hdmi_main (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v)</SelectedItem>
+         <SelectedItem>mult_i - mul17 (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mul17.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000030d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000030d0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000033c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000033c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>hdmi_main (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/src/hdmi_main.v)</CurrentItem>
+      <CurrentItem>mult_i - mul17 (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/ipcore_dir/mul17.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
@@ -115,7 +112,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000122000000010000000100000000000000000000000064ffffffff000000810000000000000001000001220000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000010000000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -138,38 +135,38 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000132000000010001000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000120000000010001000100000000000000000000000064ffffffff000000810000000000000001000001200000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff000000000000000200000141000000fb01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000010000000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>View HDL Instantiation Template</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000010000000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>View HDL Instantiation Template</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -183,12 +180,36 @@
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v/dvi_rx1 - dvi_decoder_nok</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|ISE|hdmi|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_1 - neuron_hidden/activation_lut - LUTSigma</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_10 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_11 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_12 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_13 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_2 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_3 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_4 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_5 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_6 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_7 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_8 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/hidden_9 - neuron_hidden</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/nn - neural_network/outn - neuron_out</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/bin - skin_binarization/sync_delay - delayx</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/centroid - centroid</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/centroid - centroid/m01_m00 - divider_28_20</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/centroid - centroid/m10_m00 - divider_28_20</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/centroid - centroid/m_10_acc - accumulator</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/centroid - centroid/sig_delay - delayx</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_rx1 - dvi_decoder</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/dvi_tx - dvi_encoder_top</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/hsv_converter - rgb2hsv</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/median - median5x5</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/median - median5x5/context_valid_delay - delayx</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/median - median5x5/d_line - delayLinieBRAM_WP/BRAM - delayLineBRAM</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/nn - neural_network/sync_delay - delayx</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/rgb_delay - delayx</ClosedNode>
          <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_converter - rgb2ycbcr</ClosedNode>
+         <ClosedNode>/hdmi_main |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|src|hdmi_main.v/ycbcr_delay - delayx</ClosedNode>
          <ClosedNode>/skin_binarization |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|neural_network.v</ClosedNode>
          <ClosedNode>/tb_accumulator |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_accumulator.v</ClosedNode>
          <ClosedNode>/tb_bin |home|kyhu|Workspace|ISE|hdmi_bin|tb_bin.v</ClosedNode>
@@ -219,19 +240,20 @@
          <ClosedNode>/tb_neural_network |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_main.v/uut - neural_network/hidden_8 - neuron_hidden</ClosedNode>
          <ClosedNode>/tb_neural_network |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_main.v/uut - neural_network/hidden_9 - neuron_hidden</ClosedNode>
          <ClosedNode>/tb_neural_network |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_main.v/uut - neural_network/outn - neuron_out</ClosedNode>
+         <ClosedNode>/tb_neural_network |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_neural_network.v/uut - neural_network</ClosedNode>
          <ClosedNode>/tb_rgb2hsv |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_rgb2hsv.v</ClosedNode>
          <ClosedNode>/tb_rgb2ycbcr |home|kyhu|Workspace|ISE|hdmi_bin|tb_rgb2ycbcr.v</ClosedNode>
          <ClosedNode>/tb_rgb2ycbcr |home|kyhu|Workspace|ISE|hdmi|tb_rgb2ycbcr.v</ClosedNode>
          <ClosedNode>/tb_rgb2ycbcr |home|kyhu|Workspace|WSW|wsw-neuro|ISE|neuro_skin|tb_rgb2ycbcr.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>inst - DIST_MEM_GEN_V7_2</SelectedItem>
+         <SelectedItem>tb_nn_mult (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_nn_mult.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >28</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >37</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000033c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000033c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>inst - DIST_MEM_GEN_V7_2</CurrentItem>
+      <CurrentItem>tb_nn_mult (/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/tb_nn_mult.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -257,7 +279,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000010000000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -270,7 +292,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000010000000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -403,13 +425,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000010000000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -417,13 +439,13 @@
          <ClosedNode>ISim Simulator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
       <ClosedNodes>
@@ -432,9 +454,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" ></ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" />
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
       <ClosedNodes>
@@ -443,8 +465,8 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" ></ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" />
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>

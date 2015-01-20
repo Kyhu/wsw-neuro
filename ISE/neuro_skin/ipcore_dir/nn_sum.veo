@@ -55,15 +55,17 @@
 // (in parentheses) to your own signal names.
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
-sum your_instance_name (
-  .a(a), // input [11 : 0] a
-  .b(b), // input [27 : 0] b
-  .s(s) // output [27 : 0] s
+nn_sum your_instance_name (
+  .a(a), // input [16 : 0] a
+  .b(b), // input [19 : 0] b
+  .clk(clk), // input clk
+  .ce(ce), // input ce
+  .s(s) // output [19 : 0] s
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 
-// You must compile the wrapper file sum.v when simulating
-// the core, sum. When compiling the wrapper file, be sure to
+// You must compile the wrapper file nn_sum.v when simulating
+// the core, nn_sum. When compiling the wrapper file, be sure to
 // reference the XilinxCoreLib Verilog simulation library. For detailed
 // instructions, please refer to the "CORE Generator Help".
 
