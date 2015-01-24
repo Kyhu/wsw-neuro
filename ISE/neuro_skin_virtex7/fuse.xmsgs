@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/home/alric/Desktop/PBAS_V_CL/pbas_mk_src/add_sub_u16_u16.v" Line 1358: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"/home/alric/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/alric/Desktop/PBAS_V_CL/pbas_mk_src/learning_rate.v" Line 113: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">b</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/alric/Desktop/PBAS_V_CL/pbas_mk_src/learning_rate.v" Line 171: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/alric/Desktop/PBAS_V_CL/pbas_mk_src/learning_rate.v" Line 172: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">o</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/alric/Desktop/PBAS_V_CL/pbas_mk_src/learning_rate.v" Line 197: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">i</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">18</arg>-bit.
+</msg>
+
+<msg type="warning" file="Simulator" num="918" delta="unknown" >&quot;<arg fmt="%s" index="1">/home/alric/Desktop/PBAS_V_CL/tb_src/t_tb.v</arg>&quot; Line <arg fmt="%d" index="2">50</arg>. System function $<arg fmt="%s" index="3">fscanf</arg> is used as system task. This system function should have a LHS e.g. x=$<arg fmt="%s" index="4">fscanf</arg>()
+</msg>
+
+</messages>
+

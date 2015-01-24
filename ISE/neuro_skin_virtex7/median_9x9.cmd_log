@@ -1,0 +1,1 @@
+vhdtdtfi -prj PBAS_V_CL -o /home/alric/Desktop/PBAS_V_CL/median_9x9.tfi -lib work /home/alric/Desktop/PBAS_V_CL/med_src//median_9x9.vhd -module median_9x9 -template /home/alric/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

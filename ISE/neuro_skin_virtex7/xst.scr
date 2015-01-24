@@ -1,0 +1,14 @@
+
+run
+-ifmt VHDL
+-ent LUT_64_9_decoder_exdes 
+-p xc7vx485t-ffg1761-2
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn LUT_64_9_decoder_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\WSW\Odrzywolek\pbas\pbas\pbas.ncd
+OUTFILE=D:\WSW\Odrzywolek\pbas\pbas\pbas.bit
+FAMILY=Virtex7
+PART=xc7vx485t-2ffg1761
+WORKINGDIR=D:\WSW\Odrzywolek\pbas\pbas
+LICENSE=ISE
+USER_INFO=176281944_174171439_210573127_948

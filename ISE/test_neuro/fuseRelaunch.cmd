@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/test_neuro/tb_rgb2hsv_isim_beh.exe" -prj "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/test_neuro/tb_rgb2hsv_beh.prj" "work.tb_rgb2hsv" "work.glbl" 

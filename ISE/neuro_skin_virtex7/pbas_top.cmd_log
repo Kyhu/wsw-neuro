@@ -1,0 +1,1 @@
+vhdtdtfi -prj PBAS_V_CL -o /home/alric/Desktop/PBAS_V_CL/pbas_top.tfi -lib work /home/alric/Desktop/PBAS_V_CL/pbas_src//pbas_top.vhd -module pbas_top -template /home/alric/Xilinx/14.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

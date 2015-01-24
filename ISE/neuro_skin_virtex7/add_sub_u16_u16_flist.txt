@@ -1,0 +1,15 @@
+# Output products list for <add_sub_u16_u16>
+_xmsgs\pn_parser.xmsgs
+add_sub_u16_u16.asy
+add_sub_u16_u16.gise
+add_sub_u16_u16.ngc
+add_sub_u16_u16.sym
+add_sub_u16_u16.vhd
+add_sub_u16_u16.vho
+add_sub_u16_u16.xco
+add_sub_u16_u16.xise
+add_sub_u16_u16\doc\c_addsub_v11_0_readme.txt
+add_sub_u16_u16\doc\c_addsub_v11_0_vinfo.html
+add_sub_u16_u16\doc\ds214_addsub.pdf
+add_sub_u16_u16_flist.txt
+add_sub_u16_u16_xmdf.tcl

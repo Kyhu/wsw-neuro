@@ -1,0 +1,14 @@
+# Output products list for <subtracter>
+_xmsgs\pn_parser.xmsgs
+subtracter.asy
+subtracter.gise
+subtracter.ngc
+subtracter.v
+subtracter.veo
+subtracter.xco
+subtracter.xise
+subtracter\doc\c_addsub_v11_0_readme.txt
+subtracter\doc\c_addsub_v11_0_vinfo.html
+subtracter\doc\ds214_addsub.pdf
+subtracter_flist.txt
+subtracter_xmdf.tcl

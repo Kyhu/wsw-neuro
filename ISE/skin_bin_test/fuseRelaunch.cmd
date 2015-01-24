@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/skin_bin_test/tb_skin_binarization_isim_beh.exe" -prj "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/skin_bin_test/tb_skin_binarization_beh.prj" "work.tb_skin_binarization" "work.glbl" 
