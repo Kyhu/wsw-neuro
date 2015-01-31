@@ -1,0 +1,23 @@
+Najlepiej u¿ywaæ Latex - po pocz¹tkowych trudnoœciach z konfiguracj¹ i przyzwyczajeniem siê jest (moim i nie tylko zdaniem - praktycznie wszystkie czasopisma i konferencje naukowe wymagaj¹ prac w Latex) ³atwiej nad ca³oœci¹ zapanowaæ ni¿ w edytorach tekstu WSIWYG (Word, OpenOffice itp.) - no mo¿e za wyj¹tkiem tabel, ale i do tego s¹ odpowiednie narzêdzia. Dla Latex'a jest przygotowany szablon dostêpny pod adresem: http://home.agh.edu.pl/~mszpyrka/dydagh:latex (dostêp 03.2014)
+a) u¿ywamy czcionek typowych (Times New Roma, Verdana, Calibri) o rozmiarze 11 - 13,
+b) do kodów Ÿród³owych wykorzystujemy czcionki o sta³ych odstêpach - np. Courier, (Latex \texttt)
+c) interlinia 1,5 - du¿o lepiej siê czyta i ew. nanosi poprawki na wydruk,
+d) wyjustowanie - do obu marginesów, 
+e) unikamy "sierotek" (samotnych literek na koñcu linii) - zapobieganie tzw. twarda spacja (Ctrl+Shift+Spacja -> Word, ~ -> Latex)
+
+Instalca Mixtex
+1. Œci¹gn¹æ i zainstalowaæ...
+http://miktex.org/
+Instalacja TexStudio
+1. Œci¹gn¹æ: 
+http://texstudio.sourceforge.net/
+2. Zainstalowaæ
+3. Options -> Configure TexStudio
+4. General -> Spelling DD - ustawiæ np. C:\Program Files (x86)\TeXstudio\dictionaries
+5. W tym folderze instaluje siê s³owniki, nale¿y œci¹gn¹æ PL (strona tam jest podana)
+6. Editor -> Default Font Encoding -> UTF8
+7. Restart softu ...
+8. Ustawiamy s³owniki polskie
+9. Próbujemy jêzyki polski. Kodowanie plików powinno byæ UTF8, (program G¿eg¿ó³ka ew. Notepad++) oraz nag³ówek:
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
