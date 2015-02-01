@@ -1,50 +1,8 @@
 \begin{thebibliography}{1}
 
-\bibitem{xilix_sp6ugCLB}
-Xilinx Inc.
-\newblock Spartan-6 {FPGA} {C}onfigurable {L}ogic {B}lock - {U}ser {G}uide.
-\newblock 2010.
-
-\bibitem{xilix_sp6ugDSP}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA DSP48A1 Slice User Guide}.
-\newblock 2010.
-
-\bibitem{xilix_sp6ugGTP}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA GTP Transceivers User Guide}.
-\newblock 2010.
-
-\bibitem{xilix_sp6ugPCI}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA Integrated Endpoint Block for PCI Express User
-  Guide}.
-\newblock 2010.
-
-\bibitem{xilix_sp6ugPCIAXI}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA Integrated Endpoint Block for PCI Express User Guide
-  (AXI)}.
-\newblock 2010.
-
-\bibitem{xilix_sp6ugRAM}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA Memory Controller User Guide}.
-\newblock 2010.
-
-\bibitem{xilix_sp6ugCLK}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA Block RAM Resources User Guide}.
-\newblock 2011.
-
-\bibitem{xilix_sp6ugBRAM}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA Clocking Resources User Guide}.
-\newblock 2011.
-
-\bibitem{xilix_sp6ugIO}
-Xilinx Inc.
-\newblock {Spartan-6 FPGA SelectIO Resources User Guide}.
+\bibitem{fdciuss}
+Mohammadreza Hajiarbabi and Arvin Agah.
+\newblock {F}ace {D}etection in {C}olor {I}mages {U}sing {S}kin {S}egmentation.
 \newblock 2014.
 
 \end{thebibliography}

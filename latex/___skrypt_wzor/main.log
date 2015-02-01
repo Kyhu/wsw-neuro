@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.31)  1 FEB 2015 09:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.31)  1 FEB 2015 10:10
 entering extended mode
 **main.tex
 
@@ -1286,28 +1286,11 @@ aux"
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\reali
 zacja.aux")
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\efekt
-.aux"
-
-LaTeX Warning: Label `fig:tree' multiply defined.
-
-
-LaTeX Warning: Label `fig:tree' multiply defined.
-
-
-LaTeX Warning: Label `fig:tree' multiply defined.
-
-
-LaTeX Warning: Label `fig:tree' multiply defined.
-
-)
+.aux")
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\podsu
 mowanie.aux")
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\dodat
-ek.aux"
-
-LaTeX Warning: Label `fig:tree' multiply defined.
-
-))
+ek.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
 LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
@@ -1506,14 +1489,14 @@ File: images/chapter_head_1.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/chapter_head_1.pdf used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 298.77907pt.
 
-<images/matlabnn.jpg, id=117, 853.1875pt x 686.565pt>
+<images/matlabnn.jpg, id=118, 853.1875pt x 686.565pt>
 File: images/matlabnn.jpg Graphic file (type jpg)
 
 <use images/matlabnn.jpg>
 Package pdftex.def Info: images/matlabnn.jpg used on input line 16.
 (pdftex.def)             Requested size: 373.86685pt x 300.85335pt.
  [7]
-<images/nn.png, id=124, 376.40625pt x 395.97937pt>
+<images/nn.png, id=126, 376.40625pt x 395.97937pt>
 File: images/nn.png Graphic file (type png)
  <use images/nn.png>
 Package pdftex.def Info: images/nn.png used on input line 30.
@@ -1565,7 +1548,7 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [8 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skrypt_wzor/i
 mages/matlabnn.jpg>]
-<images/reka.png, id=133, 96.36pt x 48.18pt>
+<images/reka.png, id=135, 96.36pt x 48.18pt>
 File: images/reka.png Graphic file (type png)
  <use images/reka.png>
 Package pdftex.def Info: images/reka.png used on input line 47.
@@ -1583,31 +1566,31 @@ File: images/chapter_head_1.pdf Graphic file (type pdf)
 <use images/chapter_head_1.pdf>
 Package pdftex.def Info: images/chapter_head_1.pdf used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 298.77907pt.
- <images/1.png, id=146, 3725.92pt x 1979.395pt>
+ <images/1.png, id=149, 3725.92pt x 1979.395pt>
 File: images/1.png Graphic file (type png)
 
 <use images/1.png>
 Package pdftex.def Info: images/1.png used on input line 15.
 (pdftex.def)             Requested size: 373.86685pt x 198.61555pt.
- <images/3.png, id=147, 3236.09pt x 2027.575pt>
+ <images/3.png, id=150, 3236.09pt x 2027.575pt>
 File: images/3.png Graphic file (type png)
 
 <use images/3.png>
 Package pdftex.def Info: images/3.png used on input line 21.
 (pdftex.def)             Requested size: 373.86685pt x 234.23358pt.
- <images/2.png, id=148, 3729.935pt x 1955.305pt>
+ <images/2.png, id=151, 3729.935pt x 1955.305pt>
 File: images/2.png Graphic file (type png)
 
 <use images/2.png>
 Package pdftex.def Info: images/2.png used on input line 27.
 (pdftex.def)             Requested size: 373.86685pt x 195.95966pt.
- <images/5.png, id=149, 4882.24pt x 2746.26pt>
+ <images/5.png, id=152, 4882.24pt x 2746.26pt>
 File: images/5.png Graphic file (type png)
 
 <use images/5.png>
 Package pdftex.def Info: images/5.png used on input line 33.
 (pdftex.def)             Requested size: 373.86685pt x 210.27678pt.
- <images/4.png, id=150, 2549.525pt x 1618.045pt>
+ <images/4.png, id=153, 2549.525pt x 1618.045pt>
 File: images/4.png Graphic file (type png)
 
 <use images/4.png>
@@ -1660,7 +1643,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<images/tree.png, id=187, 277.78781pt x 338.01282pt>
+<images/tree.png, id=190, 277.78781pt x 338.01282pt>
 File: images/tree.png Graphic file (type png)
  <use images/tree.png>
 Package pdftex.def Info: images/tree.png used on input line 9.
@@ -1686,8 +1669,8 @@ Package pdftex.def Info: images/chapter_head_1.pdf used on input line 1.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 400.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
 
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\main.
 aux"
@@ -1701,22 +1684,18 @@ zacja.aux")
 mowanie.aux")
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\dodat
 ek.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 38885007ABAEBBB2F7422A3E6226CC90;725.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 400.
  ) 
 Here is how much of TeX's memory you used:
- 28327 strings out of 493921
- 516327 string characters out of 3150870
+ 28322 strings out of 493921
+ 516113 string characters out of 3150870
  727902 words of memory out of 3000000
- 30929 multiletter control sequences out of 15000+200000
- 58321 words of font info for 137 fonts, out of 3000000 for 9000
+ 30926 multiletter control sequences out of 15000+200000
+ 58581 words of font info for 141 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  57i,12n,57p,10507b,1111s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/ToRemove/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/ToRemove/MiKTeX/fonts
@@ -1725,9 +1704,9 @@ onts/cm/cmsy10.pfb><D:/ToRemove/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><D:/
 ToRemove/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb><D:/ToRemove/MiKTeX/fonts/t
 ype1/urw/courier/ucrr8a.pfb><D:/ToRemove/MiKTeX/fonts/type1/urw/times/utmr8a.pf
 b><D:/ToRemove/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (19 pages, 65142340 bytes).
+Output written on main.pdf (19 pages, 65134708 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
  30884 words of extra memory for PDF output out of 35830 (max. 10000000)
 
