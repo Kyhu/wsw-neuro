@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.31)  31 JAN 2015 17:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.31)  1 FEB 2015 09:16
 entering extended mode
 **main.tex
 
@@ -1505,43 +1505,109 @@ File: images/chapter_head_1.pdf Graphic file (type pdf)
 <use images/chapter_head_1.pdf>
 Package pdftex.def Info: images/chapter_head_1.pdf used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 298.77907pt.
-) [7]
+
+<images/matlabnn.jpg, id=117, 853.1875pt x 686.565pt>
+File: images/matlabnn.jpg Graphic file (type jpg)
+
+<use images/matlabnn.jpg>
+Package pdftex.def Info: images/matlabnn.jpg used on input line 16.
+(pdftex.def)             Requested size: 373.86685pt x 300.85335pt.
+ [7]
+<images/nn.png, id=124, 376.40625pt x 395.97937pt>
+File: images/nn.png Graphic file (type png)
+ <use images/nn.png>
+Package pdftex.def Info: images/nn.png used on input line 30.
+(pdftex.def)             Requested size: 290.78603pt x 305.92618pt.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 37
+.
+
+(D:\ToRemove\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 37
+.
+
+(D:\ToRemove\MiKTeX\tex\latex\psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 37
+.
+
+(D:\ToRemove\MiKTeX\tex\latex\psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 37
+.
+
+(D:\ToRemove\MiKTeX\tex\latex\psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
+
+(D:\ToRemove\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+
+(D:\ToRemove\MiKTeX\tex\latex\microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(D:\ToRemove\MiKTeX\tex\latex\microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [8 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skrypt_wzor/i
+mages/matlabnn.jpg>]
+<images/reka.png, id=133, 96.36pt x 48.18pt>
+File: images/reka.png Graphic file (type png)
+ <use images/reka.png>
+Package pdftex.def Info: images/reka.png used on input line 47.
+(pdftex.def)             Requested size: 249.24878pt x 124.62463pt.
+
+Underfull \vbox (badness 1460) has occurred while \output is active []
+
+ [9 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skrypt_wzor/im
+ages/nn.png>]) [10 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/__
+_skrypt_wzor/images/reka.png>]
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\efekt
-.tex" [8
-
-
-
-]
+.tex"
 Chapter 3.
 File: images/chapter_head_1.pdf Graphic file (type pdf)
 <use images/chapter_head_1.pdf>
 Package pdftex.def Info: images/chapter_head_1.pdf used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 298.77907pt.
- <images/1.png, id=126, 3725.92pt x 1979.395pt>
+ <images/1.png, id=146, 3725.92pt x 1979.395pt>
 File: images/1.png Graphic file (type png)
 
 <use images/1.png>
 Package pdftex.def Info: images/1.png used on input line 15.
 (pdftex.def)             Requested size: 373.86685pt x 198.61555pt.
- <images/3.png, id=128, 3236.09pt x 2027.575pt>
+ <images/3.png, id=147, 3236.09pt x 2027.575pt>
 File: images/3.png Graphic file (type png)
 
 <use images/3.png>
 Package pdftex.def Info: images/3.png used on input line 21.
 (pdftex.def)             Requested size: 373.86685pt x 234.23358pt.
- <images/2.png, id=129, 3729.935pt x 1955.305pt>
+ <images/2.png, id=148, 3729.935pt x 1955.305pt>
 File: images/2.png Graphic file (type png)
 
 <use images/2.png>
 Package pdftex.def Info: images/2.png used on input line 27.
 (pdftex.def)             Requested size: 373.86685pt x 195.95966pt.
- <images/5.png, id=130, 4882.24pt x 2746.26pt>
+ <images/5.png, id=149, 4882.24pt x 2746.26pt>
 File: images/5.png Graphic file (type png)
 
 <use images/5.png>
 Package pdftex.def Info: images/5.png used on input line 33.
 (pdftex.def)             Requested size: 373.86685pt x 210.27678pt.
- <images/4.png, id=131, 2549.525pt x 1618.045pt>
+ <images/4.png, id=150, 2549.525pt x 1618.045pt>
 File: images/4.png Graphic file (type png)
 
 <use images/4.png>
@@ -1552,14 +1618,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--160
 
  []
 
-[9 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skrypt_wzor/ima
-ges/1.png>] [10 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___sk
-rypt_wzor/images/3.png> <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/lat
-ex/___skrypt_wzor/images/2.png>] [11 <D:/userdata/rwlodarz/My Documents/GitHub/
-wsw-neuro/latex/___skrypt_wzor/images/5.png> <D:/userdata/rwlodarz/My Documents
-/GitHub/wsw-neuro/latex/___skrypt_wzor/images/4.png>]
+[11
+
+
+
+ <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skrypt_wzor/image
+s/1.png>] [12 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skry
+pt_wzor/images/3.png> <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex
+/___skrypt_wzor/images/2.png>] [13 <D:/userdata/rwlodarz/My Documents/GitHub/ws
+w-neuro/latex/___skrypt_wzor/images/5.png> <D:/userdata/rwlodarz/My Documents/G
+itHub/wsw-neuro/latex/___skrypt_wzor/images/4.png>]
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\podsu
-mowanie.tex" [12
+mowanie.tex" [14
 
 
 
@@ -1569,9 +1639,9 @@ File: images/chapter_head_1.pdf Graphic file (type pdf)
 <use images/chapter_head_1.pdf>
 Package pdftex.def Info: images/chapter_head_1.pdf used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 298.77907pt.
-) [13]
+) [15]
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\dodat
-ek.tex" [14
+ek.tex" [16
 
 
 
@@ -1589,66 +1659,21 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 5.
 
-
-(D:\ToRemove\MiKTeX\tex\latex\psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 5.
-
-
-(D:\ToRemove\MiKTeX\tex\latex\psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 5.
-
-
-(D:\ToRemove\MiKTeX\tex\latex\psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 5.
-
-
-(D:\ToRemove\MiKTeX\tex\latex\psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 5.
-
-(D:\ToRemove\MiKTeX\tex\latex\psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-
-(D:\ToRemove\MiKTeX\tex\latex\microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(D:\ToRemove\MiKTeX\tex\latex\microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-<images/tree.png, id=168, 277.78781pt x 338.01282pt>
+<images/tree.png, id=187, 277.78781pt x 338.01282pt>
 File: images/tree.png Graphic file (type png)
  <use images/tree.png>
 Package pdftex.def Info: images/tree.png used on input line 9.
 (pdftex.def)             Requested size: 261.71059pt x 318.45415pt.
 
-[15 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skrypt_wzor/im
+[17 <D:/userdata/rwlodarz/My Documents/GitHub/wsw-neuro/latex/___skrypt_wzor/im
 ages/tree.png>]
 Overfull \hbox (81.43274pt too wide) in paragraph at lines 30--31
 \T1/ptm/m/n/10.95 (-20) (Com-paq Database - []$\T1/pcr/m/n/10.95 https : / / ar
 chive . ics . uci . edu / ml / machine-[]learning-[]databases /$
  []
 
-) [16]
+) [18]
 ("D:\userdata\rwlodarz\My Documents\GitHub\wsw-neuro\latex\___skrypt_wzor\main.
 bbl"
 File: images/chapter_head_1.pdf Graphic file (type pdf)
@@ -1657,7 +1682,7 @@ Package pdftex.def Info: images/chapter_head_1.pdf used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 298.77907pt.
 )
 \tf@ptc=\write7
- [17
+ [19
 
 
 ]
@@ -1687,21 +1712,22 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
  ) 
 Here is how much of TeX's memory you used:
- 28279 strings out of 493921
- 515784 string characters out of 3150870
- 726902 words of memory out of 3000000
- 30914 multiletter control sequences out of 15000+200000
- 56353 words of font info for 120 fonts, out of 3000000 for 9000
+ 28327 strings out of 493921
+ 516327 string characters out of 3150870
+ 727902 words of memory out of 3000000
+ 30929 multiletter control sequences out of 15000+200000
+ 58321 words of font info for 137 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  57i,12n,57p,10507b,1111s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/ToRemove/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/ToRemove/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><D:/ToRemove/MiKTeX/fonts/type1/urw/avantg
-ar/uagd8a.pfb><D:/ToRemove/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb><D:/ToRem
-ove/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><D:/ToRemove/MiKTeX/fonts/type1/u
-rw/times/utmr8a.pfb><D:/ToRemove/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (17 pages, 64750711 bytes).
+/type1/public/amsfonts/cm/cmr10.pfb><D:/ToRemove/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><D:/ToRemove/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><D:/
+ToRemove/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb><D:/ToRemove/MiKTeX/fonts/t
+ype1/urw/courier/ucrr8a.pfb><D:/ToRemove/MiKTeX/fonts/type1/urw/times/utmr8a.pf
+b><D:/ToRemove/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (19 pages, 65142340 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 30869 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 30884 words of extra memory for PDF output out of 35830 (max. 10000000)
 
