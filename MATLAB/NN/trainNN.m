@@ -15,7 +15,7 @@ nn = initNN(7,13,@tanh,1,@tanh);
 %% PARAMETERS
 eta = 0.15;
 alpha = 0.5;
-epochs_number = 10;
+epochs_number = 1;
 
 %% TRAINING
 for b = 1:epochs_number

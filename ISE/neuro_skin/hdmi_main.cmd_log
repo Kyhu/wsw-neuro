@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/hdmi_main.xst" -ofn "/home/kyhu/Workspace/WSW/wsw-neuro/ISE/neuro_skin/hdmi_main.syr" 
